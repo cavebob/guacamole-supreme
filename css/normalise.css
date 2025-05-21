@@ -1,0 +1,61 @@
+/* Remove html styling */ 
+
+table, td, tr, th, button {
+  padding: 0;
+  border: 0;
+  border-collapse: collapse;
+}
+td[style]:not(.tablesorter td, #sidebar-container, .lottery_table td) {
+  border: none !important;
+}
+#header[style] {
+  margin-bottom: 0px !important;
+}
+body {
+  margin: 0;
+}
+ul, li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none
+}
+a {
+  text-decoration:none
+}
+#sidebar-container {
+  padding: 0 !important;
+}
+[width="737"], [width="930"]  {
+  width: auto;
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+hr {
+  display: none;
+}
+/* #searchbox */
+[style="width:800px;"], [style="width: 116px;"] {
+  width: auto !important;
+}
+/* sidebar select */
+[style="margin-top: 7px;"] {
+  margin-top: 0 !important;
+}
+/* details page .fourcell audio info padding */
+td[style="padding-left: 30px; border-left: 1px solid black; width:53%; vertical-align:top;"] {
+  padding-left: .25rem !important;
+}
+/* actor img size */ 
+.actorpic[style="max-height: 82px"] {
+  max-height: initial !important;
+}
+/* details > tag */ 
+.js-tagcontent, 
+.js-tagcontent + td[style="width:30%;"] {
+  width: auto !important;
+}
+input[style="height: 25px"]:is([type="submit"], [type="reset"]) {
+  height: 2.125rem !important;
+}

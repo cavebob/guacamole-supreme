@@ -1,0 +1,34 @@
+#tabs {
+  display: flex;
+  flex-flow: row wrap;
+  width: auto;
+  gap: 1rem;
+}
+.tab {
+  background-color: var(--mantle);
+  flex: min(18%, 100%);
+  font-size: var(--font-size-news);
+  font-weight: 700;
+  border: var(--table-border);
+  border-radius: var(--large-br);
+  text-wrap-mode: nowrap;
+}
+.tab > a {
+  display: inline-block;
+  width: 100%;
+  padding: var(--button-padding);
+
+}
+.tab:hover {
+  background: var(--link-hover-color);
+  & a {
+  color: var(--mantle)
+  }
+}
+/* Sources without encodes (4 tabs), Offers (3 tabs), Request (7tabs) */
+table:has(.submenu-highlight){
+
+}
+/* Lists (?) table > href ="lists/my" */
+
+/* Forum (?) */

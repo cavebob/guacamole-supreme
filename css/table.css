@@ -1,0 +1,157 @@
+#header ~ .main {
+  position: relative;
+  margin-right: 1rem;
+  width: auto;
+}
+#header ~ .main > tbody > tr {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1rem;
+}
+.bottom[valign="top"]:not(#sidebar-container) {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 9999;
+  margin: auto;
+  margin-top: 1rem;
+  justify-content: center;
+  gap: 1rem;
+}
+/* All classed) tables */
+:is(#torrent-list, .tablesorter, .lottery_table, .row-seclog table, 
+[action="/log"] ~ table:not(.main), table.padding2, [action="dox.php"]+p+table,
+.label + table:has(a[href*="viewtopic"]), .table_requests, 
+form[method="get"][style="margin-bottom:20px;"] + table[cellpadding="5"]:not([class]),  
+.bottom > table[cellpadding="5"]:not([class], [id]):has(div[class*="locked"]), #latest_posts > table) {
+  border: 1px solid var(--surface0);
+  margin: 1rem 0;
+  overflow: auto;
+  border-radius: var(--large-br);
+  border-spacing: 0;
+  border-collapse: separate;
+  & tr:last-child {
+    > td:first-child  {
+      border-bottom-left-radius: var(--large-br);
+    }
+    > td:last-child  {
+      border-bottom-right-radius: var(--large-br);
+    }
+  }
+  & :is(td:first-child, th:first-child) {
+    text-indent: .5rem;
+  }
+}
+/* Only tables on main bottom */
+:is(#torrent-list, [action="/log"] ~ table:not(.main), table.padding2, [action="dox.php"]+p+table, 
+form[method="get"][style="margin-bottom:20px;"] + table[cellpadding="5"]:not([class])) td {
+  border-top: 1px solid var(--surface0);
+  background-color: var(--mantle);
+}
+:is(#torrent-list, [action="/log"] ~ table:not(.main), table.padding2, [action="dox.php"]+p+table, 
+form[method="get"][style="margin-bottom:20px;"] + table[cellpadding="5"]:not([class]),  
+.bottom > table[cellpadding="5"]:not([class], [id]):has(div[class*="locked"]), #latest_posts > table) th {
+  background-color: var(--mantle);
+}
+/* All classed tables - table heading */
+:is(#torrent-list, .tablesorter, .lottery_table, .row-seclog, 
+[action="/log"] ~ table:not(.main), table.padding2, [action="dox.php"]+p+table,
+.label + table:has(a[href*="viewtopic"]), .table_requests, 
+form[method="get"][style="margin-bottom:20px;"] + table[cellpadding="5"]:not([class]),  
+.bottom > table[cellpadding="5"]:not([class], [id]):has(div[class*="locked"]), #latest_posts > table) th {
+  line-height: 2rem;
+  white-space: nowrap;
+  &:first-child {
+    border-top-left-radius: var(--large-br)
+  }
+  &:last-child {
+    border-top-right-radius: var(--large-br)
+  }
+}
+/* All classed tables - th & td padding */ 
+:is(#torrent-list, .tablesorter, .lottery_table, .row-seclog, 
+[action="/log"] ~ table:not(.main), table.padding2, [action="dox.php"]+p+table,
+.label + table:has(a[href*="viewtopic"]), .table_requests, 
+form[method="get"][style="margin-bottom:20px;"] + table[cellpadding="5"]:not([class])) :is(td, th) {
+  padding: .25rem;
+}
+/* Only tables on surface +1 */
+.tablesorter, .lottery_table, .row-seclog table,
+.label + table:has(a[href*="viewtopic"]), .table_requests {
+  border-collapse: initial;
+  background-color: var(--mantle);
+  border: 1px solid var(--surface0);
+  border-radius: var(--large-br);
+}
+:is(.tablesorter, .lottery_table, .row-seclog table, .table_requests) td{
+  background-color: var(--base);
+  border-top: 1px solid var(--surface0);
+}
+:is(.tablesorter, .lottery_table, .row-seclog,
+.label + table:has(a[href*="viewtopic"]), .table_requests) th {
+  background-color: var(--mantle)
+}
+/* Comparison topics table */
+.label + table:has(a[href*="viewtopic"]) td:not(.embedded) {
+  background-color: var(--base);
+  border-top: 1px solid var(--surface0);
+}
+/* Comparison topics table */
+#details .label + table:has(a[href*="viewtopic"]) {
+  margin: 0;
+}
+/* My lists table */
+form[method="get"][style="margin-bottom:20px;"] + table[cellpadding="5"]:not([class]) {
+
+}
+/* Forum tables */  /* Prevent double padding from tables nested inside tables */
+:is(.bottom > table[cellpadding="5"]:not([class], [id]):has(div[class*="locked"]), #latest_posts > table) td:not(.embedded) {
+  border-top: 1px solid var(--surface0);
+  background-color: var(--mantle);
+  padding: .25rem;
+}
+#torrent-list a.fl::after,
+#torrent-list a[title^="25%"]::after,
+#torrent-list a[title^="50%"]::after {
+  font-family: var(--mono-font-stack);
+  text-transform: lowercase;
+  font-variant: small-caps;
+  float: right;
+  font-size: .625rem;
+  width: 2rem;
+  text-align: center;
+  pointer-events: none
+}
+#torrent-list a.fl::after {
+  content: "FREE";
+  color: var(--lavender);
+  
+}
+#torrent-list a[title^="25%"]::after,
+#torrent-list a[title^="50%"]::after {
+  color: var(--sapphire);
+  font-size: .625rem;
+  font-weight: 300;
+  text-align: end;
+  filter: brightness(90%);
+}
+#torrent-list a[title^="50%"]::after {
+  content: "50%";
+}
+#torrent-list a[title^="25%"]::after {
+  content: "75%";
+}
+tr.logentry {
+  background-color: inherit !important;
+}
+.logentry[style="background-color: #3FAD47;"] td:has(a) {
+  color: var(--green);
+}
+.logentry[style="background-color: #C45252;"] td:has(a) {
+  color: var(--red);
+}
+.logentry[style="background-color: #AFAB9B;"] td:has(a) {
+  color: var(--subtext0);
+}
+.logentry[style="background-color: white;"] td:last-child {
+  color: var(--sapphire);
+}

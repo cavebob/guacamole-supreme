@@ -1,0 +1,41 @@
+.menu {
+  position: sticky;
+  top: 6.125rem;
+  background: var(--header);
+  z-index: 1;
+}
+
+.menu tr {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  white-space: nowrap;
+  margin: 0 5%;
+  gap: .5rem;
+}
+
+.menunavigation, .menunavigation_new {
+  transition: all .25s ease;
+  width: max-content;
+  display: block;
+  height: 2rem;
+  border-radius: var(--actionbr);
+
+  &:hover {
+    background-color: var(--lavender);
+    & a {
+      color: var(--crust);
+    }
+  }
+}
+
+.menu a.normal {
+  padding: .25rem .5rem;
+  font-weight: 700;
+  cursor: pointer;
+  height: 100%;
+  display: block;
+  min-width: 4rem;
+}

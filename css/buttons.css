@@ -1,0 +1,181 @@
+/* Primary Button Styling */
+.btn, button, [type="button"], .index[href*="/comments/add"] {
+  color: var(--button-primary-text-color);
+  background: var(--button-primary-bg);
+  border: var(--button-primary-border);
+  font-size: var(--font-size);
+  font-weight: bold;
+  border-radius: var(--actionbr);
+  padding: var(--button-padding);
+  cursor: pointer;
+
+  &:hover {
+    color: var(--button-primary-text-hover-color);
+    background-color: var(--button-primary-hover-bg);
+  }
+}
+/* Add comment */
+p:has(.index[href*="/comments/add"]) {
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto;
+  height: auto;
+}
+/* Secondary button styling */
+#resultsarea button, .tvdb_button, .fl_token_button input[type="submit"], .tag-content>a, input[type="submit"][value]:not([id], [class]), .button2, input[type="reset"]{
+  font-size: var(--font-size);
+  font-weight: bold;
+  color: var(--button-secondary-text-color);
+  background: var(--button-secondary-bg);
+  border: var(--button-secondary-border);
+  cursor: pointer;
+  border-radius: var(--actionbr);
+  padding: var(--button-padding);
+  display: inline-block;
+  &:hover {
+    color: var(--button-secondary-text-hover-color);
+    background-color: var(--button-secondary-hover-bg);
+  }
+}
+.tag {
+  padding: 1px .5rem;
+  border: var(--general-border);
+  border-radius: var(--large-br);
+  margin: 0 0 0 4px;
+  text-transform: lowercase;
+  font-size: .75rem;
+  font-weight: 700;
+  font-variant: small-caps;
+  vertical-align: middle;
+  display: inline-block;
+  background: var(--crust);
+  line-height: normal;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.tag[class*="exclusive"] {
+  color: var(--mauve);
+}
+.tag.new {
+  color: var(--red);
+}
+.tag.internal {
+  color: var(--yellow);
+}
+[class*="half_freeleech"] {
+  color: var(--sapphire);
+}
+.tag_completed {
+  color: var(--peach);
+}
+.tag_incomplete {
+  color: var(--red)
+}
+.tag_seeding {
+  color: var(--green-seeding);
+}
+h1.fl, span.tag.freeleech, span.tag.tag_leeching {
+  color: var(--lavender);
+}
+#torrent-list td > a[href*="/film/info"] {
+  vertical-align: middle;
+  margin: 0 1em 0 0;
+  padding: 1px 4px;
+  background-color: var(--base);
+  box-sizing: border-box;
+  color: var(--yellow);
+  font-size: var(--font-size-tag);
+  text-transform: lowercase;
+  font-variant: small-caps;
+  border-radius: var(--br);
+  border: var(--general-border);
+  &:hover {
+    background-color: var(--mantle)
+  }
+}
+#torrent-list :is(.tvdb_button, button[onclick^="hide"]) {
+  /* background-color: var(--base); */
+  padding: .25rem .5rem;
+  text-transform: lowercase;
+  font-variant: small-caps;
+}
+a.js-download:not(.index) {
+  display: inline-block;
+  background: var(--button-primary-bg);
+  mask: url("../img/download.svg") center no-repeat;
+  mask-size: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
+  vertical-align: middle;
+  &:hover {
+    background: var(--button-primary-hover-bg)
+  }
+}
+a[id^="rss"] {
+  display: inline-block;
+  background: var(--button-primary-bg);
+  mask: url("../img/rss1.svg") center no-repeat;
+  mask-size: 18px;
+  width: 1.25rem;
+  height: 1.25rem;
+  vertical-align: middle;
+  &:hover {
+    background: var(--button-primary-hover-bg);
+  }
+}
+.js-bookmarkadd {
+  display: inline-block;
+  background: var(--button-primary-bg);
+  mask: url("../img/bookmark1.svg") center no-repeat;
+  mask-size: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
+  vertical-align: middle;
+  margin-left: -1px;
+  &:hover {
+    background: var(--button-primary-hover-bg);
+  }
+}
+a.js-wishlistadd:not([id^="rss"]), a[title="Add this film to your wishlist"], a[title="Add to wishlist"], a[title="Add to wishlist"][onclick*="delWishlist"], img.info__wishlist {
+  display: inline-block;
+  background: var(--button-primary-bg);
+  mask: url("../img/wishlist.svg") center no-repeat;
+  mask-size: 22px;
+  width: 1.25rem;
+  height: 1.25rem;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  &:hover {
+    background: var(--button-primary-hover-bg);
+  }
+}
+a[href*="javascript:unignoreshow"], a[onclick*="delWishlist"], a[onclick*="removeFromWishlist"], a[title="Remove from wishlist"], a[title="Remove this film from your wishlist"] {
+  background: var(--yellow);
+  display: inline-block;
+  mask: url("../img/wishlisted.svg") center no-repeat;
+  mask-size: 22px;
+  width: 1.25rem;
+  height: 1.25rem;
+  vertical-align: middle;
+  cursor: pointer;
+  &:hover {
+    background: var(--button-primary-hover-bg);
+  }
+}
+a.js-bookmarkdel, a[href*="javascript:delBookmark"] {
+  background: var(--bookmark-blue);
+  display: inline-block;
+  mask: url("../img/bookmarked.svg") center no-repeat;
+  mask-size: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-left: -1px;
+  &:hover {
+    background: var(--button-primary-hover-bg);
+  }
+}
+.minicon {
+  display: none;
+}

@@ -1,0 +1,69 @@
+:root {
+  /* Accent Colors */
+  --rosewater: #f5e0dc;
+  --flamingo: #f2cdcd;
+  --pink: #f5c2e7;
+  --mauve: #cba6f7;
+  --red: #ff6675;
+  --maroon: #eba0ac;
+  --peach: #fab387;
+  --yellow: #f9e2af;
+  --green: #a1e87d;
+  --green-seeding: hsl(135, 80.4%, 66%);
+  --teal: #73daca;
+  --sky: #89dceb;
+  --sapphire: #74c7ec;
+  --blue: var(--link-color);
+  --lavender: #b4befe;
+  --bookmark-blue: hsl(212, 97.7%, 65.5%);
+
+  /* Background / Foreground Colors */
+  --text: hsl(240, 5.9%, 90%);
+  --text-muted-color: #9191a1;
+  --subtext1: #bac2de;
+  --subtext0: #a6adc8;
+  --overlay2: #9399b2;
+  --overlay1: #7f849c;
+  --overlay0: #6c7086;
+  --surface2: #585b70;
+  --surface1: #45475a;
+  --surface0: #414358; /* mantle - table border */
+  --base: #1f202e; /* base background (layer 0) */
+  --mantle: hsl(240, 17.6%, 20%); /* base + layer 1 */
+  --crust: var(--header); /* base + layer 2 */ 
+  --header: hsl(240, 13.7%, 10%);
+  --link-color: hsl(240, 100%, 92%);
+  --link-hover-color: hsl(240, 100%, 80%);
+  --input-placeholder-text-color: hsl(240, 16.6%, 63.3%);
+  --input-border: 1px solid #414358;
+  --input-bg: hsl(235, 18.2%, 12.9%);
+  --input-text-color: hsl(240, 100%, 92%);
+  --table-border: var(--general-border);
+  --general-border: 1px solid #414358;
+
+  --button-primary-bg: hsl(230.2, 90.2%, 80%);
+  --button-primary-hover-bg: hsl(235.2, 89.5%, 70%);
+  --button-primary-text-color: hsl(240, 9.7%, 12.2%);
+  --button-primary-text-hover-color: hsl(240, 12%, 4.9%);
+  --button-primary-border: 1px solid transparent;
+  --button-secondary-bg: hsl(240, 13.7%, 10%);
+  --button-secondary-hover-bg: hsl(230.2, 90.2%, 80%);
+  --button-secondary-text-color: hsl(232.5, 10.5%, 85.1%);
+  --button-secondary-text-hover-color: hsl(240, 9.7%, 12.2%);
+  --button-secondary-border: 1px solid #414358;
+  --details-th-text-color: hsl(240, 12.8%, 61.8%);
+
+  --font-size: 0.8125rem;
+  --font-size-tag: .75rem;
+  --font-size-news: .875rem;
+  --font-size-about: .875rem;
+  --font-size-small: .625rem;
+  --font-size-large: 1rem;
+  --font-size-larger: 1.25rem;
+  --mono-font-stack: ui-monospace,'Cascadia Code','Source Code Pro',Menlo,Consolas,'DejaVu Sans Mono',monospace;
+  --sans-font-stack: system-ui, sans-serif;
+  --actionbr: .5rem; /* Select, Button, Search */
+  --br: .25rem;
+  --large-br: .5rem;
+  --button-padding: .375rem .75rem;
+}

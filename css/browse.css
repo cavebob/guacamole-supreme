@@ -1,0 +1,74 @@
+.browse_td_name_cell .browse_imdb_poster {
+  position: absolute;
+  top: -125px;
+  left: -17.5rem;
+  right: auto;
+  z-index: 100;
+  display: none;
+  filter: drop-shadow(0px 0px 20px hsl(0, 0%, 0%));
+  background-color: var(--crust);
+  border-radius: var(--large-br);
+  border: var(--general-border);
+  overflow: clip;
+}
+.browse_td_name_cell .browse_imdb_poster img {
+  display: inline-block;
+  width: 190px;
+  height: auto;
+  margin: 0;
+  transition: all .25s ease;
+}
+@media screen and (max-width: 1500px) {
+  .browse_td_name_cell .browse_imdb_poster {
+    left: auto;
+    right: -12rem;
+  }
+}
+.has_hover {
+  position: relative;
+}
+
+/*  */
+#torrent-list a.fl::after,
+#torrent-list a[title^="25%"]::after,
+#torrent-list a[title^="50%"]::after {
+  font-family: var(--mono-font-stack);
+  text-transform: lowercase;
+  font-variant: small-caps;
+  float: right;
+  font-size: .625rem;
+  width: 2rem;
+  text-align: center;
+  pointer-events: none
+}
+#torrent-list a.fl::after {
+  content: "FREE";
+  color: var(--lavender);
+  
+}
+#torrent-list a[title^="25%"]::after,
+#torrent-list a[title^="50%"]::after {
+  color: var(--sapphire);
+  font-size: .625rem;
+  font-weight: 300;
+  text-align: end;
+  filter: brightness(90%);
+}
+#torrent-list a[title^="50%"]::after {
+  content: "50%";
+}
+#torrent-list a[title^="25%"]::after {
+  content: "75%";
+}
+.right {
+  text-align: right;
+}
+.center {
+  text-align: center;
+}
+.left {
+  text-align: left;
+}
+.browse_td_name_cell text {
+  font-size: 0;
+}
