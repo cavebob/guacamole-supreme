@@ -5,7 +5,10 @@ table, td, tr, th, button {
   border: 0;
   border-collapse: collapse;
 }
-td[style]:not(.tablesorter td, #sidebar-container, .lottery_table td) {
+td[style]:not(.tablesorter td, #sidebar-container, .lottery_table td, #profilesettings td, 
+/* user profile page */
+.bottom:not([id]) > .main[border="0"][cellspacing="0"][cellpadding="0"] .embedded > table td,
+form[action="dox.php"] td[style="border:black solid 1px;"]) {
   border: none !important;
 }
 #header[style] {
@@ -56,6 +59,6 @@ td[style="padding-left: 30px; border-left: 1px solid black; width:53%; vertical-
 .js-tagcontent + td[style="width:30%;"] {
   width: auto !important;
 }
-input[style="height: 25px"]:is([type="submit"], [type="reset"]) {
+input[style="height: 25px"]:is([type="submit"], [type="reset"]), input[style="height: 23px"] {
   height: 2.125rem !important;
 }

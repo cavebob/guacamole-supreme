@@ -73,7 +73,11 @@ input, textarea {
   background: var(--input-bg);
   border: var(--input-border);
   color: var(--input-text-color);
+  border-radius: var(--actionbr);
   padding: .5rem;
+}
+textarea {
+  overflow: clip;
 }
 .footer { 
   user-select: none;
@@ -84,7 +88,7 @@ input, textarea {
 }
 
 h1, h2, h3 {
-  color: var(--lavender);
+  color: var(--heading-color);
 }
 .bottom:has([type="checkbox"] + a), 
 .bottom[style="padding-bottom: 2px;padding-left: 7px"], 
@@ -117,10 +121,26 @@ pre {
 td {
   overflow-wrap: break-word;
 }
+th {
+  color: var(--th-text-color);
+}
 font.small {
   font-size: var(--font-size-small)
+}
+#profilesettings .small {
+  font-size: var(--font-size-profile-small);
 }
 /* Details page - Description td width */
 td:has(>pre) {
   width: 100%;
 } 
+.rowhead, .heading {
+  text-transform: lowercase;
+  font-variant: small-caps;
+  font-weight: bold;
+  color: var(--th-text-color);
+  min-width: max-content;
+}
+p:empty {
+  display: none;
+}

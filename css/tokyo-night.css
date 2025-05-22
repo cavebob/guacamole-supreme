@@ -35,9 +35,9 @@
   --link-color: hsl(240, 100%, 92%);
   --link-hover-color: hsl(240, 100%, 80%);
   --input-placeholder-text-color: hsl(240, 16.6%, 63.3%);
-  --input-border: 1px solid #414358;
   --input-bg: hsl(235, 18.2%, 12.9%);
   --input-text-color: hsl(240, 100%, 92%);
+  --input-border: var(--general-border);
   --table-border: var(--general-border);
   --general-border: 1px solid #414358;
 
@@ -51,10 +51,14 @@
   --button-secondary-text-color: hsl(232.5, 10.5%, 85.1%);
   --button-secondary-text-hover-color: hsl(240, 9.7%, 12.2%);
   --button-secondary-border: 1px solid #414358;
-  --details-th-text-color: hsl(240, 12.8%, 61.8%);
+  --details-th-text-color: var(--heading-color);
+  --th-text-color: var(--heading-color);
+  --heading-color: hsl(240, 12.8%, 61.8%);
+
 
   --font-size: 0.8125rem;
   --font-size-tag: .75rem;
+  --font-size-profile-small: .75rem;
   --font-size-news: .875rem;
   --font-size-about: .875rem;
   --font-size-small: .625rem;

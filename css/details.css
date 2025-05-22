@@ -161,8 +161,9 @@ table#details > tbody > tr {
   &:has(#cast)::before { 
     content: "ACTORS";
     color: var(--details-th-text-color);
-    text-transform: uppercase;
+    text-transform: lowercase;
     font-size: var(--font-size);
+    font-variant: small-caps;
     font-weight: bold;
   }
 }
@@ -234,7 +235,8 @@ td:has(+#plotcell) {
 }
 .contentlayout th {
   color: var(--details-th-text-color);
-  text-transform: uppercase;
+  text-transform: lowercase;
+  font-variant: small-caps;
   font-size: var(--font-size);
 }
 .fourcell th+td {
@@ -324,7 +326,6 @@ td:has(.index) {
   text-align: center;
   font-size: .75rem;
   font-weight: 700;
-  color: var(--heading-color);
   width: 7.5rem;
 }
 a.list-overview:hover .list-overview__text {

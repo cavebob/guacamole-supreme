@@ -83,6 +83,7 @@
 #sitesearch {
   & > ul {
     position: relative;
+    padding: inherit;
   }
   & ul:hover {
     width: 5rem; 

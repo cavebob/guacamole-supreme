@@ -1,23 +1,25 @@
 #tabs {
   display: flex;
   flex-flow: row wrap;
-  width: auto;
+  width: 100%;
   gap: 1rem;
+  justify-content: center;
 }
 .tab {
   background-color: var(--mantle);
-  flex: min(18%, 100%);
+  flex: fit-content;
   font-size: var(--font-size-news);
   font-weight: 700;
   border: var(--table-border);
   border-radius: var(--large-br);
   text-wrap-mode: nowrap;
+  min-width: fit-content;
+  max-width: 18%;
 }
 .tab > a {
   display: inline-block;
   width: 100%;
   padding: var(--button-padding);
-
 }
 .tab:hover {
   background: var(--link-hover-color);
@@ -31,4 +33,38 @@ table:has(.submenu-highlight){
 }
 /* Lists (?) table > href ="lists/my" */
 
-/* Forum (?) */
+/* Forum (?) */ /* :not([id]) prevents #sidebar-container selection */
+.bottom:not([id])  > :is(table:has(a[href$="/forums"]), table:has(.submenu-highlight), table:has(a[href$="/lists/my"])) {
+  width: 100%;
+}
+/* "#tabs" styling */
+.bottom:not([id]) > :is(table:has(a[href$="/forums"]), table:has(.submenu-highlight), table:has(a[href$="/lists/my"])) tr {
+  display: flex;
+  flex-flow: row wrap;
+  width: auto;
+  gap: 1rem;
+  justify-content: center;
+  /* ".tab" styling */
+  & > td {
+    background-color: var(--mantle);
+    flex: fit-content;
+    font-size: var(--font-size-news);
+    font-weight: 700;
+    border: var(--table-border);
+    border-radius: var(--large-br);
+    text-wrap-mode: nowrap;
+    min-width: fit-content;
+    max-width: 15%;
+    &:hover {
+      background: var(--link-hover-color);
+      a {
+      color: var(--mantle)
+      }
+    }
+  }
+}
+.bottom:not([id])  > :is(table:has(a[href$="/forums"]), table:has(.submenu-highlight), table:has(a[href$="/lists/my"])) td a {
+  display: inline-block;
+  width: 100%;
+  padding: var(--button-padding);
+}

@@ -179,3 +179,32 @@ a.js-bookmarkdel, a[href*="javascript:delBookmark"] {
 .minicon {
   display: none;
 }
+img[alt*="Online"] {
+  display: block;
+  box-sizing: border-box;
+  background: var(--green);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  padding-left: 10px;
+}
+img[alt="Offline"] {
+  display: block;
+  box-sizing: border-box;
+  background: var(--red);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  padding-left: 10px;
+}
+img[alt="Send PM"] {
+  background: var(--button-primary-bg);
+  mask: url("/img/message.svg") center no-repeat;
+  mask-size: 20px;
+  height: 1.25rem;
+  width: 1.25rem;
+  align-self: center;
+  padding-left: 1.25rem;
+  display: block;
+  box-sizing: border-box;
+}
