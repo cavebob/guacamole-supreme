@@ -208,3 +208,208 @@ img[alt="Send PM"] {
   display: block;
   box-sizing: border-box;
 }
+/* Ignore Show button Showpage */
+#showignored2 {
+  justify-content: flex-start;
+  display: flex;
+  flex: 45%;
+  font-size: 0;
+  line-height: 0;
+
+  & a[href*="javascript:ignoreShow"] {
+    display: block;
+    position: relative;
+    padding-left: 24px;
+    width: 6rem;
+    height: 2.25rem;
+    color: var(--button-secondary-text-color);
+    background: var(--button-secondary-bg);
+    border: var(--button-secondary-border);
+    border-radius: var(--large-br);
+
+    &::before {
+      position: absolute;
+      font-size: var(--font-size);
+      content: "";
+      top: 8px;
+      left:12px;
+      display: inline-block;
+      background: var(--button-secondary-text-color);
+      mask: url("../img/ignore.svg") center no-repeat;
+      mask-size: 20px;
+      width: 1.25rem;
+      height: 1.25rem;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    &::after {
+      content: "Ignore";
+      position: absolute;
+      top: 16px;
+      font-size: var(--font-size);
+      margin-left: -18px;
+    }
+    &:hover {
+      background-color: var(--button-secondary-hover-bg);
+      &::before {
+        background: var(--button-secondary-text-hover-color)
+      }
+      &::after {
+        color: var(--button-secondary-text-hover-color)
+      }
+    }
+  }
+}
+#showignored {
+  justify-content: flex-start;
+  display: flex;
+  flex: 45%;
+  font-size: 0;
+  line-height: 0;
+
+  & a[href*="javascript:unIgnoreShow"] {
+    display: block;
+    position: relative;
+    padding-left: 24px;
+    width: 6.5rem;
+    height: 2.25rem;
+    color: var(--button-secondary-text-color);
+    background: var(--button-secondary-bg);
+    border: var(--button-secondary-border);
+    border-radius: var(--large-br);
+
+    &::before {
+      position: absolute;
+      font-size: var(--font-size);
+      content: "";
+      top: 7px;
+      left:11px;
+      display: inline-block;
+      background: var(--button-secondary-text-color);
+      mask: url("../img/unignore.svg") center no-repeat;
+      mask-size: 20px;
+      width: 1.25rem;
+      height: 1.25rem;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    &::after {
+      content: "Unignore";
+      position: absolute;
+      top: 17px;
+      font-size: var(--font-size);
+      margin-left: -28px;
+    }
+    &:hover {
+      background-color: var(--button-secondary-hover-bg);
+      &::before {
+        background: var(--button-secondary-text-hover-color)
+      }
+      &::after {
+        color: var(--button-secondary-text-hover-color)
+      }
+    }
+  }
+}
+#showfollowed {
+  justify-content: flex-end;
+  display: flex;
+  flex: 45%;
+  font-size: 0;
+  line-height: 0;
+
+  & a[href*="javascript:unFollowShow"] {
+    display: block;
+    position: relative;
+    padding-left: 24px;
+    width: 6.5rem;
+    height: 2.25rem;
+    color: var(--button-secondary-text-color);
+    background: var(--button-secondary-bg);
+    border: var(--button-secondary-border);
+    border-radius: var(--large-br);
+
+    &::before {
+      position: absolute;
+      font-size: var(--font-size);
+      content: "";
+      top: 7px;
+      left:12px;
+      display: inline-block;
+      background: var(--button-secondary-text-color);
+      mask: url("../img/unfollow.svg") center no-repeat;
+      mask-size: 20px;
+      width: 1.25rem;
+      height: 1.25rem;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    &::after {
+      content: "Unfollow";
+      position: absolute;
+      top: 17px;
+      font-size: var(--font-size);
+      margin-left: -26px;
+    }
+    &:hover {
+      background-color: var(--button-secondary-hover-bg);
+      &::before {
+        background: var(--button-secondary-text-hover-color)
+      }
+      &::after {
+        color: var(--button-secondary-text-hover-color)
+      }
+    }
+  }
+}
+#showfollowed2 {
+  justify-content: flex-end;
+  display: flex;
+  flex: 45%;
+  font-size: 0;
+  line-height: 0;
+
+  & a[href*="javascript:followShow"] {
+    display: block;
+    position: relative;
+    padding-left: 24px;
+    width: 6rem;
+    height: 2.25rem;
+    color: var(--button-secondary-text-color);
+    background: var(--button-secondary-bg);
+    border: var(--button-secondary-border);
+    border-radius: var(--large-br);
+
+    &::before {
+      position: absolute;
+      font-size: var(--font-size);
+      content: "";
+      top: 7px;
+      left:12px;
+      display: inline-block;
+      background: var(--button-secondary-text-color);
+      mask: url("../img/follow.svg") center no-repeat;
+      mask-size: 20px;
+      width: 1.25rem;
+      height: 1.25rem;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    &::after {
+      content: "Follow";
+      position: absolute;
+      top: 17px;
+      font-size: var(--font-size);
+      margin-left: -19px;
+    }
+    &:hover {
+      background-color: var(--button-secondary-hover-bg);
+      &::before {
+        background: var(--button-secondary-text-hover-color)
+      }
+      &::after {
+        color: var(--button-secondary-text-hover-color)
+      }
+    }
+  }
+}

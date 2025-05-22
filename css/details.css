@@ -7,7 +7,7 @@
 }
 #details > tbody {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   gap: 1rem;
 }
 table#details > tbody > tr {
@@ -16,6 +16,7 @@ table#details > tbody > tr {
   border-radius: var(--large-br);
   padding: .5rem .75rem;
   background: var(--mantle);
+  flex: 100%
 }
 #subcell {
   display: inline flex;
@@ -112,6 +113,7 @@ table#details > tbody > tr {
   height: 20rem;
   width: auto;
   border-radius: var(--large-br);
+  filter: var(--poster-shadow);
 }
 .contentlayout > tbody {
   display: flex;

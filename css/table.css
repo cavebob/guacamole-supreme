@@ -25,7 +25,8 @@
 form[method="get"][style="margin-bottom:20px;"] + table[cellpadding="5"]:not([class]),  
 /* forum tables */
 .bottom > table[cellpadding="5"]:not([class], [id]):has(div[class*="locked"]), #latest_posts > table, 
-form[action="dox.php"] > table, table.tableb table[width="500"]) {
+form[action="dox.php"] > table, table.tableb table[width="500"]),
+/* Ignored Shows Page */.bottom:not([id]) > script + h1 + table {
   border: 1px solid var(--surface0);
   margin: 1rem 0;
   overflow: auto;
@@ -89,16 +90,16 @@ table[width="800"] {
 /* Only tables on main bottom */
 :is(#torrent-list, [action="/log"] ~ table:not(.main), table.padding2, [action="dox.php"]+p+table, 
 form[method="get"][style="margin-bottom:20px;"] + table[cellpadding="5"]:not([class]), form[action="dox.php"] > table, 
-table.tableb table[width="500"]) td {
+table.tableb table[width="500"],/* Ignored Shows Page */
+.bottom:not([id]) > script + h1 + table) td {
   border-top: 1px solid var(--surface0);
   background-color: var(--mantle);
 }
-
-
 :is(#torrent-list, [action="/log"] ~ table:not(.main), table.padding2, [action="dox.php"]+p+table, 
 form[method="get"][style="margin-bottom:20px;"] + table[cellpadding="5"]:not([class]),  
 .bottom > table[cellpadding="5"]:not([class], [id]):has(div[class*="locked"]), #latest_posts > table, #profilesettings, 
-form[action="dox.php"] > table, table.tableb table[width="500"]) th {
+form[action="dox.php"] > table, table.tableb table[width="500"],/* Ignored Shows Page */
+.bottom:not([id]) > script + h1 + table) th {
   background-color: var(--mantle);
 }
 /* All classed tables - table heading */
@@ -122,7 +123,8 @@ form[action="dox.php"] > table, table.tableb table[width="500"]) th {
 [action="/log"] ~ table:not(.main), table.padding2, [action="dox.php"]+p+table,
 .label + table:has(a[href*="viewtopic"]), .table_requests, 
 form[method="get"][style="margin-bottom:20px;"] + table[cellpadding="5"]:not([class]), #profilesettings, 
-form[action="dox.php"] > table, table.tableb table[width="500"]) :is(td, th) {
+form[action="dox.php"] > table, table.tableb table[width="500"],/* Ignored Shows Page */
+.bottom:not([id]) > script + h1 + table) :is(td, th) {
   padding: .25rem;
 }
 form[action="dox.php"] > table tr:has(>td[colspan="16"]) {  
@@ -332,4 +334,20 @@ tr.logentry {
 }
 .logentry[style="background-color: white;"] td:last-child {
   color: var(--sapphire);
+}
+/* NFO page */
+.text > pre[style="font-size:13px; font-family: 'Courier New', monospace;"] {
+  background: var(--crust);
+  border: var(--table-border);
+  padding: .5rem 1rem;
+  border-radius: var(--large-br)
+}
+/* Ignored Shows Page */
+.bottom:not([id]) > script + h1 + table {
+  height: 70vh;
+  overflow: scroll;
+  display: flex;
+  overflow-x: clip;
+  overflow-y: scroll;
+  text-align: left;
 }

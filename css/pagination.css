@@ -4,13 +4,13 @@ p:has(a[href*="page="]):not(.sub) {
   background-color: var(--mantle);
   border: var(--general-border);
   border-radius: var(--large-br);
-  width: max-content;
   align-self: center;
   margin: auto; /* requests table centering */
   border-collapse: collapse;
+  flex-flow: row wrap;
+  justify-content: center;
   & :is(b:not(a>b), a) {
     font-size: var(--font-size);
-    /* border: var(--general-border); */
     padding: var(--button-padding);
   }
   /* when pagination is not last child, style >b+br and >a+br (Next)*/

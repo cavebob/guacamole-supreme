@@ -70,4 +70,5 @@
   --br: .25rem;
   --large-br: .5rem;
   --button-padding: .375rem .75rem;
+  --poster-shadow: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.5));
 }
