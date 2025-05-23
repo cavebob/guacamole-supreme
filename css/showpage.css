@@ -179,3 +179,7 @@ ul.showseasons > li > ul > li > ul {
 	padding: .2rem .5rem;
 	gap: .25rem;
 }
+#showpage ~ * {
+  display: contents;
+  font-size:var(--font-size-small)
+}
