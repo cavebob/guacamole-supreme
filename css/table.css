@@ -25,7 +25,7 @@
 form[method="get"][style="margin-bottom:20px;"] + table[cellpadding="5"]:not([class]),  
 /* forum tables */
 .bottom > table[cellpadding="5"]:not([class], [id]):has(div[class*="locked"]), #latest_posts > table, 
-form[action="dox.php"] > table, table.tableb table[width="500"]),
+form[action="dox.php"] > table, table.tableb table[width="500"], #request-list),
 /* Ignored Shows Page */.bottom:not([id]) > script + h1 + table {
   border: 1px solid var(--surface0);
   margin: 1rem 0;
@@ -91,7 +91,7 @@ table[width="800"] {
 :is(#torrent-list, [action="/log"] ~ table:not(.main), table.padding2, [action="dox.php"]+p+table, 
 form[method="get"][style="margin-bottom:20px;"] + table[cellpadding="5"]:not([class]), form[action="dox.php"] > table, 
 table.tableb table[width="500"],/* Ignored Shows Page */
-.bottom:not([id]) > script + h1 + table) td {
+.bottom:not([id]) > script + h1 + table, #request-list) td {
   border-top: 1px solid var(--surface0);
   background-color: var(--mantle);
 }
@@ -99,7 +99,7 @@ table.tableb table[width="500"],/* Ignored Shows Page */
 form[method="get"][style="margin-bottom:20px;"] + table[cellpadding="5"]:not([class]),  
 .bottom > table[cellpadding="5"]:not([class], [id]):has(div[class*="locked"]), #latest_posts > table, #profilesettings, 
 form[action="dox.php"] > table, table.tableb table[width="500"],/* Ignored Shows Page */
-.bottom:not([id]) > script + h1 + table) th {
+.bottom:not([id]) > script + h1 + table, #request-list) th {
   background-color: var(--mantle);
 }
 /* All classed tables - table heading */
@@ -108,7 +108,7 @@ form[action="dox.php"] > table, table.tableb table[width="500"],/* Ignored Shows
 .label + table:has(a[href*="viewtopic"]), .table_requests, 
 form[method="get"][style="margin-bottom:20px;"] + table[cellpadding="5"]:not([class]),  
 .bottom > table[cellpadding="5"]:not([class], [id]):has(div[class*="locked"]), #latest_posts > table, #profilesettings, 
-form[action="dox.php"] > table, table.tableb table[width="500"]) th {
+form[action="dox.php"] > table, table.tableb table[width="500"], #request-list) th {
   line-height: 2rem;
   white-space: nowrap;
   &:first-child {
@@ -124,7 +124,7 @@ form[action="dox.php"] > table, table.tableb table[width="500"]) th {
 .label + table:has(a[href*="viewtopic"]), .table_requests, 
 form[method="get"][style="margin-bottom:20px;"] + table[cellpadding="5"]:not([class]), #profilesettings, 
 form[action="dox.php"] > table, table.tableb table[width="500"],/* Ignored Shows Page */
-.bottom:not([id]) > script + h1 + table) :is(td, th) {
+.bottom:not([id]) > script + h1 + table, #request-list) :is(td, th) {
   padding: .25rem;
 }
 form[action="dox.php"] > table tr:has(>td[colspan="16"]) {  

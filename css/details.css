@@ -114,6 +114,7 @@ table#details > tbody > tr {
   width: auto;
   border-radius: var(--large-br);
   filter: var(--poster-shadow);
+  margin-left: .25rem;
 }
 .contentlayout > tbody {
   display: flex;
@@ -192,8 +193,9 @@ table#details > tbody > tr {
           grid-area: img;
           object-fit: contain;
           & img {
-            /* height: 100px; */
-            /* width: auto; */
+            min-height: 80px;
+            object-fit: cover;
+            max-width: 60px;
             border-radius: var(--br);
             image-rendering: crisp-edges;
           }

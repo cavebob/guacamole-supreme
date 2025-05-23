@@ -66,3 +66,6 @@ input[style="height: 25px; width: 100px"] {
   height: 2.125rem !important;
   width: auto !important;
 }
+div[style="width: 900px; text-align: left"]:has(.film-info) {
+  width: auto !important;
+}

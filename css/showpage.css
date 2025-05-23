@@ -11,35 +11,7 @@ tr:has(#showbanner) {
     }
   }
 }
-.showlinks {
-  flex: 100%;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  gap: 1.5rem;
-  & [href*="imdb.com"] {
-    background: url("../img/imdb.svg") center no-repeat;
-    width: 2.5rem;
-    height: 1.25rem;
-    filter: brightness(80%);
-    font-size: 0;
-    display: block;
-    &:hover {
-      filter: brightness(1);
-    }
-  }
-  & a[href*="tvdb.com/?tab=series"] {
-    background: url("../img/tvdb.svg") center no-repeat;
-    width: 2.5rem;
-    height: 1.25rem;
-    filter: brightness(80%);
-    font-size: 0;
-    display: block;
-    &:hover {
-      filter: brightness(1);
-    }
-  }
-}
+
 #showbanner {
   display: block;
   border-radius: var(--large-br);
@@ -66,7 +38,7 @@ a:has(>#showbanner) {
   & .contentelement:first-child {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background: var(--crust);
+    background: var(--mantle);
     flex: 100%;
     border-bottom: var(--table-border);
     &>.contentcontent {
@@ -85,7 +57,6 @@ a:has(>#showbanner) {
 
 }
 #overview > .contentcontent {
-  
   background: var(--mantle);
   border: var(--table-border);
   border-radius: var(--large-br);
@@ -93,7 +64,6 @@ a:has(>#showbanner) {
   flex: 100%; 
   margin: 0 1rem;
   padding: .5rem;
-
 }
 #overview ~ .contentelement {
   flex: 48%;
@@ -131,7 +101,6 @@ h2 +.contentcontent {
   border: var(--table-border);
   padding: .5rem;
   border-radius: var(--large-br);
-  
   background: var(--mantle);
 }
 .showseasons {

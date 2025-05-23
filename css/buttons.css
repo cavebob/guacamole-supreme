@@ -76,7 +76,7 @@ p:has(.index[href*="/comments/add"]) {
 h1.fl, span.tag.freeleech, span.tag.tag_leeching {
   color: var(--lavender);
 }
-#torrent-list td > a[href*="/film/info"] {
+#torrent-list td:not(.catcell) > a[href*="/film/info"] {
   vertical-align: middle;
   margin: 0 1em 0 0;
   padding: 1px 4px;
@@ -149,6 +149,10 @@ a.js-wishlistadd:not([id^="rss"]), a[title="Add this film to your wishlist"], a[
     background: var(--button-primary-hover-bg);
   }
 }
+/* Wishlist icon on Filminfo page */
+.film-info a[onclick] > img { 
+  display: none;
+}
 a[href*="javascript:unignoreshow"], a[onclick*="delWishlist"], a[onclick*="removeFromWishlist"], a[title="Remove from wishlist"], a[title="Remove this film from your wishlist"] {
   background: var(--yellow);
   display: inline-block;
@@ -207,6 +211,36 @@ img[alt="Send PM"] {
   padding-left: 1.25rem;
   display: block;
   box-sizing: border-box;
+}
+
+.showlinks {
+  flex: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap: 1.5rem;
+  & [href*="imdb.com"] {
+    background: url("../img/imdb.svg") center no-repeat;
+    width: 2.5rem;
+    height: 1.25rem;
+    filter: brightness(80%);
+    font-size: 0;
+    display: block;
+    &:hover {
+      filter: brightness(1);
+    }
+  }
+  & a[href*="tvdb.com/?tab=series"] {
+    background: url("../img/tvdb.svg") center no-repeat;
+    width: 2.5rem;
+    height: 1.25rem;
+    filter: brightness(80%);
+    font-size: 0;
+    display: block;
+    &:hover {
+      filter: brightness(1);
+    }
+  }
 }
 /* Ignore Show button Showpage */
 #showignored2 {
