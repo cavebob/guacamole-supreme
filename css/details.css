@@ -26,27 +26,6 @@ table#details > tbody > tr {
   filter: brightness(80%);
   }
 }
-/* #subcell img:not(img~span) {
-  position: relative;
-  anchor-name: --subicon;
-
-  pointer-events: none;
-} */
-/* #subcell img:hover ~ span {
-  position: fixed;
-  font-size: var(--font-size);
-  position-anchor: --subicon;
-  margin:0;
-  bottom: -2rem;
-  z-index: 1000;
-  background-color: var(--base);
-  border: 1px solid var(--surface0);
-  padding: 0.125rem .5rem;
-  border-radius: var(--actionbr);
-} */
-/* #subcell div:has(img:hover) {
-  z-index: 1000;
-} */
 #details td {
   overflow-wrap: break-word;
   text-align: left
@@ -298,9 +277,6 @@ td:has(.index) {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  border: 1px solid var(--inner-table-border-color);
-  border-radius: var(--inner-table-border-radius);
-  box-shadow: var(--bs);
   overflow: hidden;
   height: 14.25rem;
   position: relative;

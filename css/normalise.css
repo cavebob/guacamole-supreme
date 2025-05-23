@@ -69,3 +69,8 @@ input[style="height: 25px; width: 100px"] {
 div[style="width: 900px; text-align: left"]:has(.film-info) {
   width: auto !important;
 }
+/* Friends page - Blocked users list */
+td[style="padding: 10px;background-color: #ECE9D8"] {
+  padding: .5rem !important;
+  background-color: inherit !important;
+}

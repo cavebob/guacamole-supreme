@@ -35,6 +35,7 @@ p:has(.index[href*="/comments/add"]) {
   &:hover {
     color: var(--button-secondary-text-hover-color);
     background-color: var(--button-secondary-hover-bg);
+    border-color: transparent;
   }
 }
 .tag {
@@ -90,6 +91,19 @@ h1.fl, span.tag.freeleech, span.tag.tag_leeching {
   border: var(--general-border);
   &:hover {
     background-color: var(--mantle)
+  }
+}
+#sitesearchsubmit.searchicon {
+  border: 0;
+  display: inline-block;
+  background: var(--button-primary-bg);
+  mask: url("../img/search.svg") center no-repeat;
+  mask-size: 18px;
+  width: 2.25rem;
+  height: auto;
+  cursor: pointer;
+  &:hover {
+    background: var(--button-primary-hover-bg);
   }
 }
 #torrent-list :is(.tvdb_button, button[onclick^="hide"]) {
@@ -445,5 +459,108 @@ img[alt="Send PM"] {
         color: var(--button-secondary-text-hover-color)
       }
     }
+  }
+}
+img[alt="Read"] {
+	background: var(--button-primary-bg);
+	mask: url("../img/message.svg") center no-repeat;
+  mask-size: 20px;
+	height: 1.25rem;
+	width: 1.25rem;
+	align-self: center;
+	padding-left: 1.25rem;
+	filter: grayscale(50%);
+	display: block;
+	box-sizing: border-box;
+}
+a[href*="action=add&type=friend"]{
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  width: 2rem;
+  height: 2rem;
+  color: var(--button-secondary-text-color);
+  background: var(--button-secondary-bg);
+  border: var(--button-secondary-border);
+  border-radius: var(--large-br);
+  font-size: 0;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 7.5px;
+    left:6px;
+    background: var(--button-secondary-text-color);
+    mask: url("../img/addfriend1.svg") center no-repeat;
+    mask-size: 22px;
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  &:hover {
+    background-color: var(--button-secondary-hover-bg);
+    border-color: transparent;
+    &::before {
+      background: var(--button-secondary-text-hover-color);
+    }
+  }
+}
+a[href*="action=delete&type=friend"], a[href*="action=delete&type=befriend"] {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  width: 2rem;
+  height: 2rem;
+  color: var(--button-secondary-text-color);
+  background: var(--button-secondary-bg);
+  border: var(--button-secondary-border);
+  border-radius: var(--large-br);
+  font-size: 0;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 7.5px;
+    left:6px;
+    background: var(--button-secondary-text-color);
+    mask: url("../img/removefriend.svg") center no-repeat;
+    mask-size: 22px;
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  &:hover {
+    background-color: var(--button-secondary-hover-bg);
+    border-color: transparent;
+    &::before {
+      background: var(--button-secondary-text-hover-color);
+    }
+  }
+}
+p:has(> a[href*="action=delete&type=friend"], > a[href*="action=add&type=friend"]) {
+  font-size: 0;
+}
+.buddylist {
+	background: var(--button-primary-bg);
+	mask: url("../img/friends.svg") center no-repeat;
+  mask-size: 24px;
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: var(--input-box-border-radius);
+	transition: all .25s ease;
+  margin: 0 .25rem;
+
+  &:hover {
+    background: var(--button-primary-hover-bg);
+  }
+}
+.mytorrents {
+	background: var(--button-primary-bg);
+	mask: url("../img/mytorrents.svg") center no-repeat;
+  mask-size: 25px;
+	width: 1.5rem;
+	height: 1.5625rem;
+  margin: 0 .25rem;
+  margin-top: 5px;
+	transition: all .25s ease;
+  
+  &:hover {
+    background: var(--button-primary-hover-bg);
   }
 }

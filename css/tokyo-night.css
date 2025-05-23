@@ -41,7 +41,7 @@
   --table-border: var(--general-border);
   --general-border: 1px solid #414358;
 
-  --button-primary-bg: hsl(230.2, 90.2%, 80%);
+  --button-primary-bg: #9eadfa;
   --button-primary-hover-bg: hsl(235.2, 89.5%, 70%);
   --button-primary-text-color: hsl(240, 9.7%, 12.2%);
   --button-primary-text-hover-color: hsl(240, 12%, 4.9%);
