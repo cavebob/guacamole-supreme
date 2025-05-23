@@ -18,7 +18,7 @@ tr:has(#showbanner) {
   justify-content: center;
   gap: 1.5rem;
   & [href*="imdb.com"] {
-    background: url("/img/imdb.svg") center no-repeat;
+    background: url("../img/imdb.svg") center no-repeat;
     width: 2.5rem;
     height: 1.25rem;
     filter: brightness(80%);
@@ -29,7 +29,7 @@ tr:has(#showbanner) {
     }
   }
   & a[href*="tvdb.com/?tab=series"] {
-    background: url("/img/tvdb.svg") center no-repeat;
+    background: url("../img/tvdb.svg") center no-repeat;
     width: 2.5rem;
     height: 1.25rem;
     filter: brightness(80%);
@@ -178,4 +178,8 @@ ul.showseasons > li > ul > li > ul {
 	flex-flow: column wrap;
 	padding: .2rem .5rem;
 	gap: .25rem;
+}
+#showpage ~ * {
+  display: contents;
+  font-size:var(--font-size-small)
 }
