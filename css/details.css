@@ -199,7 +199,7 @@ table#details > tbody > tr {
 }
 a:has(.imdb) {
   display: block;
-  background: url("../img/IMDb.svg") left no-repeat;
+  background: url("../img/imdb.svg") left no-repeat;
   background-size: contain;
   width: 2.5rem;
   height: 1.5rem;

@@ -564,3 +564,17 @@ p:has(> a[href*="action=delete&type=friend"], > a[href*="action=add&type=friend"
     background: var(--button-primary-hover-bg);
   }
 }
+a[href*="imdb.com/name/nm"]:not(#cast a)  {
+  display: inline-block;
+  background: url("../img/imdb.svg") left no-repeat;
+  background-size: auto;
+  background-size: contain;
+	height: 16px;
+	width: 32px;
+	border-radius: 2px;
+  margin-left: .25rem;
+  vertical-align: middle;
+  & img[src*="imdb.png"] {
+    display: none;
+  }
+}

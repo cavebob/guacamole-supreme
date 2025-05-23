@@ -44,7 +44,7 @@
   height: 2rem;
   width: 100%;
   background: var(--lavender);
-  mask: url(../img/logo.svg) left no-repeat;
+  mask: url(../img/logo-eqiva.svg) left no-repeat;
   mask-size: contain;
 }
 

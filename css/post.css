@@ -1,5 +1,6 @@
 .std-content {
   max-width: 64rem;
+  margin-top: 1rem;
 }
 .readpost, 
 html body table.main tbody tr td.bottom table.main:last-of-type > tbody:first-child > tr:first-child > td:first-child > table:first-child > tbody:first-child > tr:first-child > td:first-child > table.main,
