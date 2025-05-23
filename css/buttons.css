@@ -279,7 +279,7 @@ img[alt="Send PM"] {
       position: absolute;
       font-size: var(--font-size);
       content: "";
-      top: 8px;
+      top: 7px;
       left:12px;
       display: inline-block;
       background: var(--button-secondary-text-color);
@@ -293,7 +293,7 @@ img[alt="Send PM"] {
     &::after {
       content: "Ignore";
       position: absolute;
-      top: 16px;
+      top: 17px;
       font-size: var(--font-size);
       margin-left: -18px;
     }
