@@ -1,0 +1,102 @@
+.std-content {
+  max-width: 64rem;
+}
+.readpost, 
+html body table.main tbody tr td.bottom table.main:last-of-type > tbody:first-child > tr:first-child > td:first-child > table:first-child > tbody:first-child > tr:first-child > td:first-child > table.main,
+td.bottom > table[width="800"] + table.main + h2 + table[width="100%"] > tbody > tr > td > p.sub + table.main {
+	border-radius: 0 0 var(--large-br) var(--large-br);
+	background-color: var(--mantle);
+	margin-bottom: .7rem;
+	border: var(--table-border);
+	overflow: hidden;
+	min-height: 150px;
+	min-width: 48rem;
+	max-width: 64rem;
+  border-collapse: separate
+}
+.std-content > tbody:first-child > tr:first-child > td > table:nth-child(3n-1), 
+.std-content > tbody:first-child > tr:first-child > td > table:nth-last-child(2), 
+html body table.main tbody tr td.bottom table.main:last-of-type > tbody:first-child > tr:first-child > td:first-child > table:first-child > tbody:first-child > tr:first-child > td:first-child > p.sub, td.bottom > table[width="800"] + table.main + h2 + table[width="100%"] > tbody > tr > td > p.sub, td.comment > p.sub, 
+td[style="border: 1px black dashed"] > p.sub {
+	border-radius: var(--large-br) var(--large-br) 0 0;
+	background-color: var(--crust);
+	height: 2rem;
+	display: flex;
+	align-items: center;
+	z-index: 1;
+  border-collapse: separate;
+	border: var(--table-border);
+	border-bottom: 0;
+	gap: 0 .2rem;
+	padding: 0 1rem;
+	margin: 0 !important;
+	position: relative;
+	z-index: 1;
+}
+.std-content > tbody:first-child > tr:first-child > td > table:nth-child(3n-1), 
+.std-content > tbody:first-child > tr:first-child > td > table:nth-last-child(2) {
+  &:has(+ .main) {
+  border-color: var(--unreadpost-border-color);
+  }
+}
+
+.std-content > tbody > tr > td > table.main {
+	border-radius: 0 0 var(--large-br) var(--large-br);
+  border-collapse: separate;
+	background-color: var(--unreadpost-bg-color);
+	margin-bottom: .5rem;
+	border: var(--unreadpost-border);
+	overflow: hidden;
+	min-height: 150px;
+	min-width: 48rem;
+}
+p.sub > a[href*="/details.php?id="] {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+p.sub {
+	white-space: nowrap;
+	box-sizing: border-box;
+	max-width: 64rem;
+}
+table.main > tbody > tr > td.text {
+	overflow-wrap: break-word;
+	word-break: break-word;
+	object-fit: contain;
+}
+table.main > tbody > tr > td.text, td.comment {
+	padding: .8rem;
+	box-sizing: border-box;
+}
+.std-content > tbody > tr > td > table > tbody:first-child > tr:first-child > td:first-child > p[style="margin-left: 5px;"] {
+	margin-left: 0 !important;
+	font-family: var(--mono-font-stack);
+	margin: auto;
+	padding: .2rem 0;
+	text-align: right;
+	font-size: .6275rem;
+	letter-spacing: -.8px;
+  line-height: normal;
+}
+hr, td[style="border: 1px black dashed"] {
+	border: var(--table-border) !important;
+	padding: .5rem;
+	border-radius: var(--large-br);
+	background-color: var(--base);
+	max-width: 90vw;
+}
+body td.comment > p.sub, td[style="border: 1px black dashed"] > p.sub {
+	width: max-content;
+	padding: 0 .5rem;
+	height: 1.75rem;
+	margin: 0 0 -1px 3px !important;
+	overflow: auto;
+	border-radius: var(--large-br) var(--large-br) 0 0;
+  & +.main {
+    border-collapse: separate;
+  }
+}
+.main:has(>tbody>tr>td[style="border: 1px black dashed"]) {
+  border-collapse: separate;
+}

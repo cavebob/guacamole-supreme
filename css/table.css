@@ -136,7 +136,7 @@ form[method="get"][style="margin-bottom:20px;"] + table[cellpadding="5"]:not([cl
 
 /* latest comments */
 .embedded > table[width="100%"][cellpadding="10"]:has(.sub) {
-
+  max-width: 64rem;
 }
 /* bonus page */
 table.tableb, table.tableb table[width="500"] {

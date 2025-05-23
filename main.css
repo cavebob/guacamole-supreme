@@ -1,6 +1,5 @@
 @import url(css/tokyo-night.css);
 @import url(css/normalise.css);
-
 @import url(css/base.css);
 @import url(css/pagination.css);
 @import url(css/header.css);
@@ -16,5 +15,6 @@
 @import url(css/showpage.css);
 @import url(css/filminfo.css);
 @import url(css/forum.css);
+@import url(css/post.css);
 @import url(css/media-queries.css);
 

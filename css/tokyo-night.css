@@ -54,8 +54,9 @@
   --details-th-text-color: var(--heading-color);
   --th-text-color: var(--heading-color);
   --heading-color: hsl(240, 12.8%, 61.8%);
-
-
+  --unreadpost-bg-color: var(--surface0);
+  --unreadpost-border: 1px solid var(--unreadpost-border-color);
+  --unreadpost-border-color: var(--overlay0);
   --font-size: 0.8125rem;
   --font-size-tag: .75rem;
   --font-size-profile-small: .75rem;
