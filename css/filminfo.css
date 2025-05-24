@@ -1,13 +1,13 @@
 .film-info > .contentlayout {
   background: var(--mantle);
   border: var(--table-border);
-  border-radius: var(--large-br);
+  border-radius: var(--main-br);
   padding: .5rem .75rem;
 }
 .contentlayout img[style="max-height:350px;border:0px;"] {
   height: 20rem;
   width: auto;
-  border-radius: var(--large-br);
+  border-radius: var(--main-br);
   filter: var(--poster-shadow);
   margin-left: .25rem;
 }
@@ -17,7 +17,7 @@
   color: var(--yellow);
   background: var(--mantle);
   border: var(--table-border);
-  border-radius: var(--large-br);
+  border-radius: var(--main-br);
   padding: .5rem .75rem;
   & ~ div[style="font-size: 24px;"] {
     color: var(--heading-color);
@@ -27,7 +27,7 @@
   display: block;
   background: var(--mantle);
   border: var(--table-border);
-  border-radius: var(--large-br);
+  border-radius: var(--main-br);
   padding: .5rem .75rem;
   margin-top: 1rem;
 }

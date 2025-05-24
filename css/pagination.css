@@ -3,7 +3,7 @@ p:has(a[href*="page="]):not(.sub) {
   display: flex;
   background-color: var(--mantle);
   border: var(--general-border);
-  border-radius: var(--large-br);
+  border-radius: var(--main-br);
   align-self: center;
   margin: auto; /* requests table centering */
   border-collapse: collapse;
@@ -16,22 +16,22 @@ p:has(a[href*="page="]):not(.sub) {
   /* when pagination is not last child, style >b+br and >a+br (Next)*/
   & :where(:not(:last-child) > :is(b, a):has(+ br) ) {
     order: 1;
-    border-top-right-radius: var(--large-br);
-    border-bottom-right-radius: var(--large-br);
+    border-top-right-radius: var(--main-br);
+    border-bottom-right-radius: var(--main-br);
   }
   /* when pagination is last child, style >br+b and >br+a (Prev)*/
   &:where(p:last-child) > :is(br+b, br+a) {
     order: -1;
-    border-top-left-radius: var(--large-br);
-    border-bottom-left-radius: var(--large-br);
+    border-top-left-radius: var(--main-br);
+    border-bottom-left-radius: var(--main-br);
   }
   &:not(:last-child)>:first-child {
-    border-top-left-radius: var(--large-br);
-    border-bottom-left-radius: var(--large-br);
+    border-top-left-radius: var(--main-br);
+    border-bottom-left-radius: var(--main-br);
   }
   &:where(p:last-child) >:last-child {
-    border-top-right-radius: var(--large-br);
-    border-bottom-right-radius: var(--large-br);
+    border-top-right-radius: var(--main-br);
+    border-bottom-right-radius: var(--main-br);
   }
   a:hover{
     background-color: var(--)

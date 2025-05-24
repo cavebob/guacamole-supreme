@@ -11,7 +11,7 @@
   font-size: var(--font-size-news);
   font-weight: 700;
   border: var(--table-border);
-  border-radius: var(--large-br);
+  border-radius: var(--main-br);
   text-wrap-mode: nowrap;
   min-width: fit-content;
   max-width: 18%;
@@ -51,7 +51,7 @@ table:has(.submenu-highlight){
     font-size: var(--font-size-news);
     font-weight: 700;
     border: var(--table-border);
-    border-radius: var(--large-br);
+    border-radius: var(--main-br);
     text-wrap-mode: nowrap;
     min-width: fit-content;
     max-width: 15%;

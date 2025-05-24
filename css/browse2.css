@@ -1,6 +1,6 @@
 .banner_container .statposter_views {
 	padding: .125rem .375rem;
-	border-radius: var(--large-br);
+	border-radius: var(--main-br);
   border: var(--recommendation-blur-button-border);
 	background-color: var(--recommendation-blur-bg-color);
 	color: var(--subtext1);
@@ -54,7 +54,7 @@ div.statbox {
 	width: 100%;
 	margin: 0;
 	background: var(--mantle);
-	border-radius: var(--large-br);
+	border-radius: var(--main-br);
 	border: var(--table-border);
 	overflow: hidden;
 }
@@ -72,7 +72,7 @@ div.banner_container {
 	flex: 1 1 45%;
 }
 .statbox img {
-  border-radius: var(--large-br);
+  border-radius: var(--main-br);
   filter: var(--poster-shadow);
   border: 0;
   margin: 0;

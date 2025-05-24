@@ -3,7 +3,7 @@
 }
 .rc.js-rc {
 	background: var(--mantle);
-	border-radius: var(--large-br);
+	border-radius: var(--main-br);
 	border: var(--table-border);
 	overflow: hidden;
 }
@@ -19,7 +19,7 @@
 	padding: 10px;
   overflow:clip;
   margin-bottom: .5rem;
-  border-radius: var(--large-br);
+  border-radius: var(--main-br);
 }
 img.rc__film__poster {
 	border-radius: .5rem;
@@ -37,7 +37,7 @@ a.rc__overlay {
 	height: auto;
 	background-color: var(--recommendation-blur-bg-color);
 	box-sizing: border-box;
-	border-radius: var(--large-br);
+	border-radius: var(--main-br);
 	overflow: hidden;
 	border: var(--table-border);
 	border: 1px solid var(--surface2);
@@ -55,7 +55,7 @@ div.rc__film:hover .rc__overlay {
 	opacity: 1;
 }
 .rc__film:hover img.rc__film__poster {
-	border-radius: var(--large-br);
+	border-radius: var(--main-br);
 	transform: scale(1.07);
 	transition: transform 0.25s ease;
 }
@@ -92,7 +92,7 @@ div.rc__plot {
 div.rc__downloads {
 	position: initial;
 	padding: .125rem .375rem;
-	border-radius: var(--large-br);
+	border-radius: var(--main-br);
   border: var(--recommendation-blur-button-border);
 	background-color: var(--recommendation-blur-bg-color);
 	color: var(--subtext1);
@@ -115,7 +115,7 @@ div.rc__rating {
 	align-self: flex-end;
 	color: var(--yellow);
   padding: .125rem .375rem;
-	border-radius: var(--large-br);
+	border-radius: var(--main-br);
   border: var(--recommendation-blur-button-border);
 	background-color: var(--recommendation-blur-bg-color);
   backdrop-filter: blur(6px);

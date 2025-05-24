@@ -5,7 +5,7 @@
 .readpost, 
 html body table.main tbody tr td.bottom table.main:last-of-type > tbody:first-child > tr:first-child > td:first-child > table:first-child > tbody:first-child > tr:first-child > td:first-child > table.main,
 td.bottom > table[width="800"] + table.main + h2 + table[width="100%"] > tbody > tr > td > p.sub + table.main {
-	border-radius: 0 0 var(--large-br) var(--large-br);
+	border-radius: 0 0 var(--main-br) var(--main-br);
 	background-color: var(--mantle);
 	margin-bottom: .7rem;
 	border: var(--table-border);
@@ -19,7 +19,7 @@ td.bottom > table[width="800"] + table.main + h2 + table[width="100%"] > tbody >
 .std-content > tbody:first-child > tr:first-child > td > table:nth-last-child(2), 
 html body table.main tbody tr td.bottom table.main:last-of-type > tbody:first-child > tr:first-child > td:first-child > table:first-child > tbody:first-child > tr:first-child > td:first-child > p.sub, td.bottom > table[width="800"] + table.main + h2 + table[width="100%"] > tbody > tr > td > p.sub, td.comment > p.sub, 
 td[style="border: 1px black dashed"] > p.sub {
-	border-radius: var(--large-br) var(--large-br) 0 0;
+	border-radius: var(--main-br) var(--main-br) 0 0;
 	background-color: var(--crust);
 	height: 2.25rem;
 	display: flex;
@@ -43,7 +43,7 @@ td[style="border: 1px black dashed"] > p.sub {
 }
 
 .std-content > tbody > tr > td > table.main {
-	border-radius: 0 0 var(--large-br) var(--large-br);
+	border-radius: 0 0 var(--main-br) var(--main-br);
   border-collapse: separate;
 	background-color: var(--unreadpost-bg-color);
 	margin-bottom: .5rem;
@@ -84,7 +84,7 @@ table.main > tbody > tr > td.text, td.comment {
 hr, td[style="border: 1px black dashed"] {
 	border: var(--table-border) !important;
 	padding: .5rem;
-	border-radius: var(--large-br);
+	border-radius: var(--main-br);
 	background-color: var(--quote-bg-color);
 	max-width: 90vw;
 }
@@ -94,7 +94,7 @@ body td.comment > p.sub, td[style="border: 1px black dashed"] > p.sub {
 	height: 1.75rem;
 	margin: 0 0 -1px 3px !important;
 	overflow: auto;
-	border-radius: var(--large-br) var(--large-br) 0 0;
+	border-radius: var(--main-br) var(--main-br) 0 0;
   & +.main {
     border-collapse: separate;
   }
@@ -124,7 +124,7 @@ a[name]:not([href]), p.sub > a[name]:target {
 	border: var(--table-border);
 	background: var(--quote-bg-color);
 	max-width: 100%;
-	border-radius: var(--large-br);
+	border-radius: var(--main-br);
 }
 .spoiler {
 	filter: blur(4px);
@@ -137,4 +137,12 @@ a[name]:not([href]), p.sub > a[name]:target {
 	backdrop-filter: none;
 	transform: scale(1);
 	transition: filter,backdrop-filter .25s ease;
+}
+.previewbox {
+  border: var(--table-border);
+  border-radius: var(--main-br);
+}
+td.comment img, td.text img {
+	filter: var(--poster-shadow);
+	border-radius: var(--small-br);
 }

@@ -61,7 +61,7 @@
   display: flex;
   flex-flow: row nowrap;
   margin: auto 1rem;
-  border-radius: var(--actionbr);
+  border-radius: var(--main-br);
   /* overflow: clip; */
   background: var(--surface0)
 }
@@ -99,7 +99,7 @@
   }
   & ul:not(:hover) li.selected {
     display: flex;
-    border-radius:  var(--actionbr) 0 0 var(--actionbr) ;
+    border-radius:  var(--main-br) 0 0 var(--main-br) ;
     position: relative;
     z-index: 200;
     justify-content: center;
@@ -117,15 +117,15 @@
       color: var(--crust)
     }
     &:nth-child(1) { top: 0; 
-      border-top-left-radius: var(--actionbr)   }
+      border-top-left-radius: var(--main-br)   }
     &:nth-child(2) { top: 100%; }
     &:nth-child(3) { top: 200%; }
     &:nth-child(4) { top: 300%; }
     &:nth-child(5) { top: 400%; }
     &:nth-child(6) { top: 500%; }
     &:nth-child(7) { top: 600%; 
-      border-bottom-left-radius: var(--actionbr); 
-      border-bottom-right-radius: var(--actionbr)  }
+      border-bottom-left-radius: var(--main-br); 
+      border-bottom-right-radius: var(--main-br)  }
   }
 }
 #sitesearchinput {

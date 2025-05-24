@@ -6,7 +6,7 @@
 	display: block;
   background-color: var(--mantle);
   border: var(--table-border);
-	border-radius: var(--large-br);
+	border-radius: var(--main-br);
   margin: 1rem 0;
 }
 /* "browse2.css" override */
@@ -21,7 +21,7 @@
 }
 #searchbox #searchcriteria {
   border: var(--table-border);
-	border-radius: var(--large-br);
+	border-radius: var(--main-br);
   padding: var(--button-padding);
   background-color: var(--mantle);
 }
@@ -241,7 +241,7 @@ td.searchgenres {
 	max-height: 400px;
 	font-size: var(--font-size);
 	border: 1px solid var(--highlighted-input-border-focus-color);
-	border-radius: var(--large-br);
+	border-radius: var(--main-br);
 	gap: .25rem;
 }
 .chosen-search-input:active .chosen-container .chosen-results li {
@@ -266,7 +266,7 @@ td.searchgenres {
 	padding: .25rem .5rem;
 	border: var(--general-border);
 	max-width: 100%;
-	border-radius:var(--large-br);
+	border-radius:var(--main-br);
 	background-color: var(--button-secondary-bg);
 }
 .chosen-container-multi .chosen-choices li {
@@ -292,8 +292,8 @@ li.search-choice span {
   height: 30px;
   background: var(--button-secondary-bg);
   border-right: var(--general-border);
-  border-top-left-radius: var(--large-br);
-  border-bottom-left-radius: var(--large-br);
+  border-top-left-radius: var(--main-br);
+  border-bottom-left-radius: var(--main-br);
   cursor: pointer; 
   &::before {
     content: "x";
@@ -318,7 +318,7 @@ li.search-choice span {
   justify-self: end;
   height: var(--input-box-height);
   text-align: center;
-  border-radius: var(--large-br);
+  border-radius: var(--main-br);
   margin-top: 0!important
 }
 /* ################################### */
@@ -328,7 +328,7 @@ div.chosen-container\ chosen-container-single {
   display: none!important
 }
 div.chosen-container.chosen-container-multi.chosen.chosen-with-drop.chosen-container-active {
-  border-radius: var(--large-br)
+  border-radius: var(--main-br)
 }
 .chosen-container * {
   box-sizing: border-box
@@ -537,7 +537,7 @@ div.chosen-container .search-choice {
   background-color: var(--input-bg);
   background-image: none;
   cursor: text;
-  border-radius: var(--large-br);
+  border-radius: var(--main-br);
   max-width: 650px;
   box-sizing: border-box;
   padding: .125rem .25rem;
@@ -546,7 +546,7 @@ div.chosen-container .search-choice {
   border: 1px solid var(--lavender);
   background: var(--crust);
   box-shadow: none;
-  border-radius: var(--large-br)
+  border-radius: var(--main-br)
 }
 .chosen-container-multi .chosen-choices li.search-choice {
   position: relative;
@@ -557,7 +557,7 @@ div.chosen-container .search-choice {
   background-clip: border-box;
   box-shadow: none;
   cursor: default;
-  border-radius: var(--large-br);
+  border-radius: var(--main-br);
   background-color: var(--input-bg);
   margin: .25rem;
 }
@@ -574,7 +574,7 @@ div.chosen-container .search-choice {
   max-width: 80vw;
   max-height: 400px;
   font-size: var(--font-size);
-  border-radius: var(--large-br);
+  border-radius: var(--main-br);
   gap: .5rem;
   border: var(--general-border);
   padding: .5rem;
@@ -598,12 +598,12 @@ li.active-result {
   list-style: none;
   overflow-wrap: break-word;
   border: var(--general-border);
-  border-radius: var(--large-br);
+  border-radius: var(--main-br);
   flex: 1 1 auto;
   background: var(--crust);
 }
 .chosen-container .chosen-results li.highlighted {
-  border-radius: var(--large-br);
+  border-radius: var(--main-br);
   background-color: var(--button-secondary-hover-bg);
   color: var(--button-secondary-text-hover-color);
   border: var(--button-secondary-border);

@@ -5,7 +5,7 @@
   border: var(--button-primary-border);
   font-size: var(--font-size);
   font-weight: bold;
-  border-radius: var(--actionbr);
+  border-radius: var(--main-br);
   padding: var(--button-padding);
   cursor: pointer;
 
@@ -29,7 +29,7 @@ p:has(.index[href*="/comments/add"]) {
   background: var(--button-secondary-bg);
   border: var(--button-secondary-border);
   cursor: pointer;
-  border-radius: var(--actionbr);
+  border-radius: var(--main-br);
   padding: var(--button-padding);
   display: inline-block;
   &:hover {
@@ -41,7 +41,7 @@ p:has(.index[href*="/comments/add"]) {
 .tag {
   padding: 1px .5rem;
   border: var(--general-border);
-  border-radius: var(--large-br);
+  border-radius: var(--main-br);
   margin: 0 0 0 4px;
   text-transform: lowercase;
   font-size: .75rem;
@@ -87,7 +87,7 @@ h1.fl, span.tag.freeleech, span.tag.tag_leeching {
   font-size: var(--font-size-tag);
   text-transform: lowercase;
   font-variant: small-caps;
-  border-radius: var(--br);
+  border-radius: var(--small-br);
   border: var(--general-border);
   &:hover {
     background-color: var(--mantle)
@@ -118,7 +118,7 @@ h1.fl, span.tag.freeleech, span.tag.tag_leeching {
     color: var(--button-secondary-text-color);
     background: var(--button-secondary-bg);
     border: var(--button-secondary-border);
-    border-radius: var(--large-br);
+    border-radius: var(--main-br);
     font-size: 0 !important;
     &::before {
       position: absolute;
@@ -183,7 +183,7 @@ a[href*="show.php?id"] > .tvdb_button {
   color: var(--button-secondary-text-color);
   background: var(--button-secondary-bg);
   border: var(--button-secondary-border);
-  border-radius: var(--large-br);
+  border-radius: var(--main-br);
   font-size: 0 !important;
   &::before {
     position: absolute;
@@ -365,7 +365,7 @@ img[alt="Send PM"] {
     color: var(--button-secondary-text-color);
     background: var(--button-secondary-bg);
     border: var(--button-secondary-border);
-    border-radius: var(--large-br);
+    border-radius: var(--main-br);
 
     &::before {
       position: absolute;
@@ -416,7 +416,7 @@ img[alt="Send PM"] {
     color: var(--button-secondary-text-color);
     background: var(--button-secondary-bg);
     border: var(--button-secondary-border);
-    border-radius: var(--large-br);
+    border-radius: var(--main-br);
 
     &::before {
       position: absolute;
@@ -467,7 +467,7 @@ img[alt="Send PM"] {
     color: var(--button-secondary-text-color);
     background: var(--button-secondary-bg);
     border: var(--button-secondary-border);
-    border-radius: var(--large-br);
+    border-radius: var(--main-br);
 
     &::before {
       position: absolute;
@@ -518,7 +518,7 @@ img[alt="Send PM"] {
     color: var(--button-secondary-text-color);
     background: var(--button-secondary-bg);
     border: var(--button-secondary-border);
-    border-radius: var(--large-br);
+    border-radius: var(--main-br);
 
     &::before {
       position: absolute;
@@ -574,7 +574,7 @@ a[href*="action=add&type=friend"]{
   color: var(--button-secondary-text-color);
   background: var(--button-secondary-bg);
   border: var(--button-secondary-border);
-  border-radius: var(--large-br);
+  border-radius: var(--main-br);
   font-size: 0;
   &::before {
     position: absolute;
@@ -604,7 +604,7 @@ a[href*="action=delete&type=friend"], a[href*="action=delete&type=befriend"] {
   color: var(--button-secondary-text-color);
   background: var(--button-secondary-bg);
   border: var(--button-secondary-border);
-  border-radius: var(--large-br);
+  border-radius: var(--main-br);
   font-size: 0;
   &::before {
     position: absolute;
@@ -679,7 +679,7 @@ button.rc__actions-ignore, button.rc__actions-wishlist, .show-ignore.button  {
   color: var(--button-secondary-text-color);
   border: var(--recommendation-blur-button-border);
 	background-color: var(--recommendation-blur-bg-color);
-  border-radius: var(--large-br);
+  border-radius: var(--main-br);
   line-height: normal;
 }
 .show-ignore.button {
@@ -723,6 +723,16 @@ a[href="#top"]  {
     background: var(--button-primary-hover-bg);
   }
 }
+img[src*="starbig.gif"][alt=Donor] {
+  display: inline-block;
+  box-sizing: border-box;
+  mask: url("../img/star.svg") no-repeat;
+  background-color: var(--peach);
+  mask-size: 24px;
+  width: 24px;
+  height: 24px;
+  padding-left: 24px
+}
 img[src*="disabledbig.gif"] {
 	display: inline-block;
 	box-sizing: border-box;
@@ -732,6 +742,34 @@ img[src*="disabledbig.gif"] {
 	mask: url("../img/disabled.svg") center no-repeat;
 	background: var(--red);
 	margin-bottom: -1px;
+}
+img[src*="disabled.gif"] {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 11px;
+  height: 11px;
+  padding-left: 11px;
+	mask: url("../img/disabled.svg") center no-repeat;
+  background: var(--red);
+  margin-bottom: -1px;
+}
+img[src*="warned.gif"][alt=Warned] {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 13px;
+  height: 13px;
+  padding-left: 13px;
+  mask: url("../img/warning.svg") center no-repeat;
+  background: var(--red);
+}
+img[src*="warnedbig.gif"][alt=Warned] {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 16px;
+  height: 16px;
+  padding-left: 16px;
+  mask: url("../img/warning.svg") center no-repeat;
+  background: var(--red);
 }
 .label_showhide {
   color: var(--subtext0);
@@ -746,7 +784,7 @@ img[src*="disabledbig.gif"] {
 	background: var(--button-secondary-bg);
 	box-sizing: border-box;
 	display: inline-block;
-	border-radius: var(--large-br);
+	border-radius: var(--main-br);
 	border: var(--button-secondary-border);
 	color: var(--button-secondary-text-color);
 	font-weight: 700;

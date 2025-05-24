@@ -21,7 +21,7 @@ div.film-list-sorters {
 .grid.info_row {
 	max-width: 46rem;
 	border: var(--table-border);
-	border-radius: var(--large-br);
+	border-radius: var(--main-br);
 	display: grid;
 	grid-template-areas: "img text" "img cast";
 	grid-template-columns: 182px auto;
@@ -115,8 +115,8 @@ a.info__title {
     margin-top: -8px;
     width: 64px;
     font-weight: 700;
-    border-bottom-left-radius: var(--large-br);
-    border-bottom-right-radius: var(--large-br);
+    border-bottom-left-radius: var(--main-br);
+    border-bottom-right-radius: var(--main-br);
     text-align: center;
     border: var(--table-border);
     backdrop-filter: blur(20px);
@@ -141,8 +141,8 @@ a.info__title {
   }
   .cast td[class=""] {
     border: var(--table-border);
-    border-top-left-radius: var(--large-br);
-    border-top-right-radius: var(--large-br);
+    border-top-left-radius: var(--main-br);
+    border-top-right-radius: var(--main-br);
     overflow: clip;
     box-sizing: border-box;
     width: 64px;
@@ -157,7 +157,7 @@ a.info__title {
     line-height: 1rem;
   }
   .info__imdb {
-    border-radius: var(--br)
+    border-radius: var(--small-br)
 
   }
 }

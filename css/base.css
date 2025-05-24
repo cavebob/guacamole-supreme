@@ -46,7 +46,7 @@ select, input {
   background: var(--input-bg);
   font-size: var(--font-size);
   color: var(--lavender);
-  border-radius: var(--actionbr);
+  border-radius: var(--main-br);
   padding: .5rem;
 }
 select, input[type="submit"], [type="button"], input[type="reset"] {
@@ -62,7 +62,7 @@ input[type="radio"], input[type="checkbox"] {
 }
 input[type="text"] {
   max-width: 100%;
-  width: 100%;
+  width: auto;
 }
 input::placeholder, 
 textarea::placeholder {
@@ -72,7 +72,7 @@ input, textarea {
   background: var(--input-bg);
   border: var(--input-border);
   color: var(--input-text-color);
-  border-radius: var(--actionbr);
+  border-radius: var(--main-br);
   padding: .5rem;
 }
 textarea {

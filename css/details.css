@@ -1,6 +1,6 @@
 #details, .torrent-title + table[width="930"]:has([id^="l"].label), .lottery_table2:has([id^="l"].label) {
   display: block;
-	border-radius: var(--large-br);
+	border-radius: var(--main-br);
   margin: 1rem 0;
 }
 /* offer details page */ 
@@ -20,7 +20,7 @@
 :is(table#details, .torrent-title + table[width="930"]:has([id^="l"].label), .lottery_table2:has([id^="l"].label)) > tbody > tr {
   display: flex;
   border: 1px solid var(--surface0);
-  border-radius: var(--large-br);
+  border-radius: var(--main-br);
   padding: .5rem .75rem;
   background: var(--mantle);
   flex: 100%
@@ -101,7 +101,7 @@ div[style="width: 930px; margin: 0px auto;"]:has(a[name="votes"], a[name="startc
 #details .contentlayout img[style="max-height:350px;border:0px;"] {
   height: 20rem;
   width: auto;
-  border-radius: var(--large-br);
+  border-radius: var(--main-br);
   filter: var(--poster-shadow);
   margin-left: .25rem;
 }
@@ -172,7 +172,7 @@ div[style="width: 930px; margin: 0px auto;"]:has(a[name="votes"], a[name="startc
         display: grid;
         align-items: center;
         border: var(--table-border);
-        border-radius: var(--actionbr);
+        border-radius: var(--main-br);
         overflow: clip;
         grid-template-areas: 
           "img name"
@@ -185,7 +185,7 @@ div[style="width: 930px; margin: 0px auto;"]:has(a[name="votes"], a[name="startc
             min-height: 80px;
             object-fit: cover;
             max-width: 60px;
-            border-radius: var(--br);
+            border-radius: var(--small-br);
             image-rendering: crisp-edges;
           }
         }
@@ -278,7 +278,7 @@ td:has(.index) {
   box-sizing: border-box;
 }
 .grid__50 {
-  border-radius: var(--large-br);
+  border-radius: var(--main-br);
   border: var(--general-border);
   overflow: clip;
 }
@@ -340,7 +340,7 @@ a.list-overview:hover .list-overview__text {
   font-weight: 700;
   border: var(--table-border);
   padding: var(--button-padding);
-  border-radius: var(--large-br);
+  border-radius: var(--main-br);
   background: var(--base)
 }
 .js-tagcontent + td:has(#tagassociate) {

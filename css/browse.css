@@ -7,7 +7,7 @@
   display: none;
   filter: drop-shadow(0px 0px 20px hsl(0, 0%, 0%));
   background-color: var(--crust);
-  border-radius: var(--large-br);
+  border-radius: var(--main-br);
   border: var(--general-border);
   overflow: clip;
 }
@@ -71,4 +71,20 @@
 }
 .browse_td_name_cell text {
   font-size: 0;
+}
+#torrent-list td.center:last-child {
+	text-align: right;
+}
+#table_details_leechers td em, #table_details_seeders td em, #torrent-list tbody tr td.center > em:only-child {
+	color: var(--text-muted-color);
+}
+td:has(>a[href*="#snatches"]) {
+  font-size: 0;
+  &>a {
+    font-size: var(--font-size);
+    vertical-align: middle;
+  }
+  & br {
+    display: none;
+  }
 }

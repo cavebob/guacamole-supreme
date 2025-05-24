@@ -21,7 +21,7 @@
   width: max-content;
   display: block;
   height: 2rem;
-  border-radius: var(--actionbr);
+  border-radius: var(--main-br);
 
   &:hover {
     background-color: var(--lavender);

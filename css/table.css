@@ -32,15 +32,15 @@ form[action="dox.php"] > table, table.tableb table[width="500"], #request-list, 
   border: 1px solid var(--surface0);
   margin: 1rem 0;
   overflow: auto;
-  border-radius: var(--large-br);
+  border-radius: var(--main-br);
   border-spacing: 0;
   border-collapse: separate;
   & tr:last-child {
     > td:first-child  {
-      border-bottom-left-radius: var(--large-br);
+      border-bottom-left-radius: var(--main-br);
     }
     > td:last-child  {
-      border-bottom-right-radius: var(--large-br);
+      border-bottom-right-radius: var(--main-br);
     }
   }
   & :is(td:first-child, th:first-child) {
@@ -94,10 +94,10 @@ form[action="dox.php"] > table, table.tableb table[width="500"], #request-list, 
   line-height: 2rem;
   white-space: nowrap;
   &:first-child {
-    border-top-left-radius: var(--large-br)
+    border-top-left-radius: var(--main-br)
   }
   &:last-child {
-    border-top-right-radius: var(--large-br)
+    border-top-right-radius: var(--main-br)
   }
 }
 /* All classed tables - th & td padding */ 
@@ -123,7 +123,7 @@ form[action="dox.php"] td[style="border:black solid 1px;"] {
   border-collapse: initial;
   background-color: var(--mantle);
   border: 1px solid var(--surface0);
-  border-radius: var(--large-br);
+  border-radius: var(--main-br);
 }
 :is(#torrent-list, .tablesorter, .lottery_table, .row-seclog table, .table_requests) td{
   background-color: var(--base);
@@ -191,15 +191,15 @@ form[action="/forums/search"] > table:only-child,
 .bottom:not([id]) > .main[border="0"][cellspacing="0"][cellpadding="0"] .embedded > table[width="100%"][cellpadding="5"]) {
   border: 1px solid var(--surface0);
   overflow: auto;
-  border-radius: var(--large-br);
+  border-radius: var(--main-br);
   border-spacing: 0;
   border-collapse: separate;
   & tr:last-child {
     > td:first-child  {
-      border-bottom-left-radius: var(--large-br);
+      border-bottom-left-radius: var(--main-br);
     }
     > td:last-child  {
-      border-bottom-right-radius: var(--large-br);
+      border-bottom-right-radius: var(--main-br);
     }
   }
   & :is(td:first-child, th:first-child) {
@@ -253,7 +253,7 @@ table[width="800"], table[width="750"] {
   display: flex;
   flex-flow: column wrap;
   background: var(--mantle);
-  border-radius: var(--large-br);
+  border-radius: var(--main-br);
   border: var(--table-border); 
   margin: .5em auto 1rem;
   & td {
@@ -286,7 +286,7 @@ font[size="+3"]:has([href$="/support/contactstaff"]) + h2 + table table[width="7
     display: flex;
     flex-flow: column wrap;
     background: var(--mantle);
-    border-radius: var(--large-br);
+    border-radius: var(--main-br);
     border: var(--table-border); 
     margin: auto;
 
@@ -330,7 +330,7 @@ font[size="+3"]:has([href$="/support/contactstaff"]) {
   flex-flow: row nowrap;
   background-color: var(--crust);
   border: 1px solid var(--surface0);
-  border-radius: var(--large-br);
+  border-radius: var(--main-br);
   overflow: clip;
   padding: .5rem;
   & > b {
@@ -404,7 +404,7 @@ tr.logentry {
   background: var(--crust);
   border: var(--table-border);
   padding: .5rem 1rem;
-  border-radius: var(--large-br)
+  border-radius: var(--main-br)
 }
 /* Ignored Shows Page */
 .bottom:not([id]) > script + h1 + table:not(.tablesorter) {
@@ -419,7 +419,7 @@ tr.logentry {
 td.bottom:has(>.main[height="75px"]) {
   padding: 0!important;
   flex: 47%;
-  border-radius: var(--large-br);
+  border-radius: var(--main-br);
   border: var(--table-border); 
   border-collapse: seperate;
   overflow: clip;

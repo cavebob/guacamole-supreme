@@ -36,8 +36,8 @@
   --font-size-larger: 1.25rem;
   --mono-font-stack: ui-monospace,'Cascadia Code','Source Code Pro',Menlo,Consolas,'DejaVu Sans Mono',monospace;
   --sans-font-stack: system-ui, sans-serif;
-  --actionbr: .5rem; /* Select, Button, Search */
+  --main-br: .5rem; /* Select, Button, Search */
   --br: .25rem;
-  --large-br: 1rem;
+  --main-br: 1rem;
   --button-padding: .375rem .75rem;
 }

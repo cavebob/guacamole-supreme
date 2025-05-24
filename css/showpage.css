@@ -14,7 +14,7 @@ tr:has(#showbanner) {
 
 #showbanner {
   display: block;
-  border-radius: var(--large-br);
+  border-radius: var(--main-br);
   filter: var(--poster-shadow);
   object-fit: contain;
   max-width: 100%;
@@ -32,7 +32,7 @@ a:has(>#showbanner) {
   justify-content: center;
   max-width: 64rem;
   border: var(--table-border);
-  border-radius: var(--large-br);
+  border-radius: var(--main-br);
   box-sizing: border-box;
   overflow: clip;
   gap: 1rem;
@@ -60,7 +60,7 @@ a:has(>#showbanner) {
 #overview > .contentcontent {
   background: var(--mantle);
   border: var(--table-border);
-  border-radius: var(--large-br);
+  border-radius: var(--main-br);
   text-align: left;
   flex: 100%; 
   margin: 0 1rem;
@@ -101,7 +101,7 @@ a:has(>#showbanner) {
 h2 +.contentcontent {
   border: var(--table-border);
   padding: .5rem;
-  border-radius: var(--large-br);
+  border-radius: var(--main-br);
   background: var(--mantle);
 }
 .showseasons {
@@ -114,7 +114,7 @@ h2 +.contentcontent {
   gap: 1rem;
   &>li {
     border: var(--table-border);
-    border-radius: var(--large-br);
+    border-radius: var(--main-br);
     flex: 48%;
     background: var(--mantle);
 
