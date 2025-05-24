@@ -200,3 +200,8 @@ td[id^="codec"].catcell,
 .category8 {
   background: no-repeat center /41px url("./img/types/video-question.svg");
 }
+
+/* Temporary for testing */
+.catcell + [id^="codec"] > [class^="medium"] {
+  height: 0;
+}
