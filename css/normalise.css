@@ -8,7 +8,7 @@ table, td, tr, th, button {
 td[style]:not(.tablesorter td, #sidebar-container, .lottery_table td, #profilesettings td, 
 /* user profile page */
 .bottom:not([id]) > .main[border="0"][cellspacing="0"][cellpadding="0"] .embedded > table td,
-form[action="dox.php"] td[style="border:black solid 1px;"]) {
+form[action="dox.php"] td[style="border:black solid 1px;"], p.sub+.main td) {
   border: none !important;
 }
 #header[style] {
