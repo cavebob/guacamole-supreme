@@ -407,7 +407,7 @@ tr.logentry {
   border-radius: var(--large-br)
 }
 /* Ignored Shows Page */
-.bottom:not([id]) > script + h1 + table {
+.bottom:not([id]) > script + h1 + table:not(.tablesorter) {
   height: 70vh;
   overflow: scroll;
   display: flex;
