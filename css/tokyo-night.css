@@ -27,7 +27,7 @@
   --overlay0: #6c7086;
   --surface2: #585b70;
   --surface1: #45475a;
-  --surface0: hsl(235, 15%, 30%); /* mantle - table border */
+  --surface0: #414358; /* mantle - table border */
   --quote-bg-color: #323245; 
   --base: #1f202e; /* base background (layer 0) */
   --mantle: hsl(240, 17.6%, 20%); /* base + layer 1 */
@@ -40,7 +40,7 @@
   --input-text-color: hsl(240, 100%, 92%);
   --input-border: var(--general-border);
   --table-border: var(--general-border);
-  --general-border: 1px solid #414358;
+  --general-border: 1px solid var(--surface0);
 
   --button-primary-bg: #9eadfa;
   --button-primary-hover-bg: hsl(235.2, 89.5%, 70%);
