@@ -17,6 +17,7 @@ tr:has(#showbanner) {
   border-radius: var(--large-br);
   filter: var(--poster-shadow);
   object-fit: contain;
+  max-width: 100%;
 }
 #showpage img.minicon, #showpage img[src*="/download.gif"] {
   display: none;

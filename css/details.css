@@ -1,16 +1,23 @@
-#details {
+#details, .torrent-title + table[width="930"]:has(.hideablecontent), .lottery_table2:has(.hideablecontent) {
   display: block;
-  /* background-color: var(--mantle); */
 	border-radius: var(--large-br);
   margin: 1rem 0;
-  /* padding: var(--button-padding) */
 }
-#details > tbody {
+/* offer details page */ 
+.torrent-title + table[width="930"]:has(.hideablecontent) {
+
+}
+/* requests detail page */
+.lottery_table2:has(.hideablecontent) {
+  width: auto !important;
+  margin: 1rem 0 !important;
+}
+:is(#details, .torrent-title + table[width="930"]:has(.hideablecontent), .lottery_table2:has(.hideablecontent)) > tbody {
   display: flex;
   flex-flow: row wrap;
   gap: 1rem;
 }
-table#details > tbody > tr {
+:is(table#details, .torrent-title + table[width="930"]:has(.hideablecontent), .lottery_table2:has(.hideablecontent)) > tbody > tr {
   display: flex;
   border: 1px solid var(--surface0);
   border-radius: var(--large-br);
@@ -26,7 +33,7 @@ table#details > tbody > tr {
   filter: brightness(80%);
   }
 }
-#details td {
+:is(#details, .torrent-title + table[width="930"]:has(.hideablecontent), .lottery_table2:has(.hideablecontent)) td {
   overflow-wrap: break-word;
   text-align: left
 }
