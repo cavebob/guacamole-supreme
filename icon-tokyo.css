@@ -1,0 +1,202 @@
+:root {
+  /* Accent Colors */
+  --rosewater: #f5e0dc;
+  --flamingo: hsl(0, 59%, 88%);
+  --pink: #f5c2e7;
+  --mauve: #cba6f7;
+  --red: #ff6675;
+  --maroon: #eba0ac;
+  --peach: #fab387;
+  --yellow: #f9e2af;
+  --green: #a1e87d;
+  --green-seeding: hsl(135, 80.4%, 66%);
+  --teal: #73daca;
+  --sky: #89dceb;
+  --sapphire: #74c7ec;
+  --blue: hsl(240, 100%, 92%);
+  --lavender: #b4befe;
+  --bookmark-blue: hsl(212, 97.7%, 65.5%);
+
+  --bluray: var(--sapphire);
+  --encode: var(--yellow);
+  --capture: var(--maroon);
+  --remux: var(--teal);
+  --webdl: var(--lavender);
+  --audio: var(--flamingo);
+  --codec: var(--blue);
+  --surface0: #414358;
+  --crust: hsl(240, 13.7%, 10%);
+  --general-border: 1px solid var(--surface0);
+}
+.category1,
+.category2,
+.category3,
+.category4,
+.category5,
+.category6,
+.category7,
+.category8 {
+    height: 42px;
+    width: 42px;
+}
+.medium1,
+.medium2,
+.medium3,
+.medium4,
+.medium5,
+.medium6 {
+    display: flex;
+    flex-flow: row wrap;
+    box-sizing: border-box;
+    align-content: center;
+}
+.catcell {
+    padding: 0;
+    border-width: 0 0 1px 1px;
+    height: 42px;
+    width: 42px
+} 
+#details [id^="codec"] {
+  text-indent: 0rem !important;
+}
+#details [id^="codec"] > img {
+    display: none;
+}
+[id^="codec"]:has([class^="medium"])::before {
+  font-size: .75rem
+}
+[id^="codec"]:has([class^="medium"])::after {
+  font-size: .6875rem;
+}
+[id^="codec"]:has([class^="medium"])::before,
+[id^="codec"]:has([class^="medium"])::after {
+    z-index: 2;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    height: 21px;
+    box-sizing: content-box;
+    white-space: nowrap;
+    align-items: center;
+    text-transform: uppercase;
+    font-variant: small-caps;
+}
+[id^="codec"]:has([class^="medium"])::before {
+    border-radius: .25rem .25rem 0 0;
+}
+[id^="codec"]:not(#codec0):has([class^="medium"])::after {
+    border-radius: 0 0 0.25rem 0.25rem;
+    border-top: 0 !important;
+}
+#codec0 {
+  height: 42px;
+}
+#codec0:has([class^="medium0"])::after {
+  content: "Audio";
+  border: 1px solid hsla(0, 58%, 88%, 0.5);
+  color: var(--flamingo);
+  background-color: hsla(0, 59%, 18%, .2);
+  border-radius: .25rem;
+  text-transform: lowercase;
+  font-variant: small-caps;
+}
+#codec1:has([class^="medium"])::after {
+    content: "H264";
+    border: var(--general-border);
+    color: var(--codec);
+    background-color: var(--crust);
+}
+#codec2:has([class^="medium"])::after {
+    content: "MPEG2";
+    border: var(--general-border);
+    color: var(--codec);
+    background-color: var(--crust);
+}
+#codec3:has([class^="medium"])::after {
+    content: "VC-1";
+    border: var(--general-border);
+    color: var(--codec);
+    background-color: var(--crust);
+}
+#codec4:has([class^="medium"])::after {
+    content: "XVID";
+    border: var(--general-border);
+    color: var(--codec);
+    background-color: var(--crust);
+}
+#codec5:has([class^="medium"])::after{
+    content: "HEVC";
+    border: var(--general-border);
+    color: var(--codec);
+    background-color: var(--crust);
+}
+#codec6:has([class^="medium"])::after {
+    content: "VP9";
+    border: var(--general-border);
+    color: var(--codec);
+    background-color: var(--crust);
+}
+[id^="codec"]:has(.medium1)::before {
+    content: "Blu-Ray";
+    border: 1px solid hsla(199, 76%, 59%, 0.5);
+    color: var(--bluray);
+    background-color: hsla(199, 26%, 39%, 0.1);
+    font-variant: all-small-caps;
+}
+[id^="codec"]:has(.medium3)::before {
+    content: "Encode";
+    border: 1px solid hsla(41, 56%, 73%, 0.5);
+    color: var(--encode);
+    background-color: hsla(41, 26%, 60%, 0.1);
+    font-variant: all-small-caps;
+}
+[id^="codec"]:has(.medium4)::before {
+    content: "Capture";
+    border: 1px solid hsla(350, 65%, 77%, 0.5);
+    color: var(--capture);
+    background-color: hsla(350, 25%, 10%, 0.1);
+    font-variant: all-small-caps;
+}
+[id^="codec"]:has(.medium5)::before {
+    content: "Remux";
+    border: 1px solid hsla(171, 38%, 45%, 0.5);
+    color: var(--remux);
+    background-color: hsla(171, 18%, 25%, 0.1);
+    font-variant: all-small-caps;
+}
+[id^="codec"]:has(.medium6)::before {
+    content: "WEB-DL";
+    border: 1px solid hsla(232, 57%, 65%, 0.5);
+    color: var(--webdl);
+    background-color: hsla(232, 10%, 20%, 0.1);
+    font-variant: all-small-caps;
+}
+td[id^="codec"].catcell,
+.catcell {
+    box-sizing: border-box;
+    padding: 0 2px !important;
+}
+.category1 {
+  background: no-repeat center /37px url("./img/types/film.svg");
+}
+.category2 {
+  background: no-repeat center /40px url("./img/types/icon-tv-24x24-4.svg");
+}
+.category3 {
+  background: no-repeat center /40px url("./img/types/video.svg");
+}
+.category4 {
+  background: no-repeat center /36px url("./img/types/music.svg");
+}
+.category5 {
+  background: no-repeat center /40px url("./img/types/volleyball.svg");
+}
+.category6 {
+  background: no-repeat center /40px url("./img/types/microphone.svg");
+}
+.category7 {
+  background: no-repeat center /40px url("./img/types/18-plus.svg");
+}
+.category8 {
+  background: no-repeat center /41px url("./img/types/video-question.svg");
+}

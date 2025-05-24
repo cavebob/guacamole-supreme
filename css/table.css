@@ -185,7 +185,7 @@ Upload form: form[action="/upload/upload"] > table
 , form[action] > table:only-of-type ,
  form[action] > div > table:only-of-type,
 */
-:is(#profilesettings, form[action] > table:only-of-type, form[action] > div > table:only-of-type,
+:is(#profilesettings, form[action] > table:only-of-type:not(#searchbox), form[action] > div > table:only-of-type,
 form[action="/forums/search"] > table:only-child,
 /* User profile table */
 .bottom:not([id]) > .main[border="0"][cellspacing="0"][cellpadding="0"] .embedded > table[width="100%"][cellpadding="5"]) {
@@ -209,14 +209,14 @@ form[action="/forums/search"] > table:only-child,
     padding: .5rem .5rem;
   }
 }
-:is(#profilesettings,  form[action] > table:only-of-type, form[action] > div > table:only-of-type,
+:is(#profilesettings,  form[action] > table:only-of-type:not(#searchbox), form[action] > div > table:only-of-type,
 form[action="/forums/search"] > table:only-child,
 /* User profile table */
 .bottom:not([id]) > .main[border="0"][cellspacing="0"][cellpadding="0"] .embedded > table[width="100%"][cellpadding="5"]) tr td {
   border-bottom: 1px solid var(--surface0);
   background-color: var(--mantle);
 }
-:is(#profilesettings,  form[action] > table:only-of-type, form[action] > div > table:only-of-type,
+:is(#profilesettings,  form[action] > table:only-of-type:not(#searchbox), form[action] > div > table:only-of-type,
 form[action="/forums/search"] > table:only-child,
 /* User profile table */
 .bottom:not([id]) > .main[border="0"][cellspacing="0"][cellpadding="0"] .embedded > table[width="100%"][cellpadding="5"]) tr:last-child td {
