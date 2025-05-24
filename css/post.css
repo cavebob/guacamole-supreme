@@ -101,3 +101,11 @@ body td.comment > p.sub, td[style="border: 1px black dashed"] > p.sub {
 .main:has(>tbody>tr>td[style="border: 1px black dashed"]) {
   border-collapse: separate;
 }
+p.sig {
+  border-top: 2px solid var(--surface1);
+  margin-top: .8rem;
+}
+a[name]:not([href]), p.sub > a[name]:target {
+  pointer-events: none;
+  scroll-margin-top: 10rem;
+}

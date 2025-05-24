@@ -22,7 +22,7 @@ p:has(.index[href*="/comments/add"]) {
   height: auto;
 }
 /* Secondary button styling */
-#resultsarea button, .tvdb_button, .fl_token_button input[type="submit"], .tag-content>a, input[type="submit"][value]:not([id], [class]), .button2, input[type="reset"]{
+#resultsarea button:not(.tvdb_button, button[onclick^="hide"]), .tvdb_button, .fl_token_button input[type="submit"], .tag-content>a, input[type="submit"][value]:not([id], [class]), .button2, input[type="reset"]{
   font-size: var(--font-size);
   font-weight: bold;
   color: var(--button-secondary-text-color);
@@ -106,11 +106,103 @@ h1.fl, span.tag.freeleech, span.tag.tag_leeching {
     background: var(--button-primary-hover-bg);
   }
 }
+.browse_td_name_cell {
+  position: relative;
+  & > .tvdb_button {
+    position: absolute; 
+    right: 38px;
+    bottom: 2px;
+    vertical-align: middle;
+    width: 2rem;
+    height: 2rem;
+    color: var(--button-secondary-text-color);
+    background: var(--button-secondary-bg);
+    border: var(--button-secondary-border);
+    border-radius: var(--large-br);
+    font-size: 0 !important;
+    &::before {
+      position: absolute;
+      content: "";
+      top: 6px;
+      left:5px;
+      background: var(--button-secondary-text-color);
+      mask: url("../img/ignore.svg") center no-repeat;
+      mask-size: 18px;
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+    &:hover {
+      background-color: var(--button-secondary-hover-bg);
+      border-color: transparent;
+      &::before {
+        background: var(--button-secondary-text-hover-color);
+      }
+    }
+  }
+  & button[onclick^="hide"] {
+    color: var(--button-secondary-text-color);
+    background: var(--button-secondary-bg);
+    border: var(--button-secondary-border);
+    height: 2rem;
+    position: absolute;
+    right: 4px;
+    bottom: 2px;
+    &:has(+.tvdb_button) {
+      right: 72px;
+    }
+    &:hover {
+      color: var(--button-secondary-text-hover-color);
+      background: var(--button-secondary-hover-bg);
+      border-color: transparent;
+    }
+  }
+  & :is(.tvdb_button, button[onclick^="hide"], a[href*="show.php?id"]) {
+    display: none;
+  }
+
+  &:hover :is(.tvdb_button, button[onclick^="hide"], a[href*="show.php?id"]) {
+    display: block;
+  }
+}
+
 #torrent-list :is(.tvdb_button, button[onclick^="hide"]) {
-  /* background-color: var(--base); */
   padding: .25rem .5rem;
   text-transform: lowercase;
   font-variant: small-caps;
+}
+a[href*="show.php?id"] {
+  position: absolute;
+  right: 4px;
+  bottom: 2px;
+}
+a[href*="show.php?id"] > .tvdb_button {
+  position: relative;
+  vertical-align: middle;
+  width: 2rem;
+  height: 2rem;
+  color: var(--button-secondary-text-color);
+  background: var(--button-secondary-bg);
+  border: var(--button-secondary-border);
+  border-radius: var(--large-br);
+  font-size: 0 !important;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 5px;
+    left:5px;
+    background: var(--button-secondary-text-color);
+    mask: url("../img/about.svg") center no-repeat;
+    mask-size: 20px;
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  &:hover {
+    background-color: var(--button-secondary-hover-bg);
+    border-color: transparent;
+    &::before {
+      background: var(--button-secondary-text-hover-color);
+    }
+  }
 }
 a.js-download:not(.index) {
   display: inline-block;
@@ -592,4 +684,22 @@ button.rc__actions-ignore, button.rc__actions-wishlist, .show-ignore.button  {
 }
 .show-ignore.button {
   line-height: normal;
+}
+img[src*="/icon_latest_reply.gif"][alt="Last post"] {
+	display: inline-block;
+	box-sizing: border-box;
+	mask: url("../img/jumptoend.svg") center no-repeat;
+  mask-size: 20px;
+  background: var(--button-primary-bg);
+	width: 1.25rem;
+	height: 1.25rem;
+	padding-left: 20px;
+	margin-bottom: -2px;
+	vertical-align: bottom;
+  &:hover {
+    background: var(--button-primary-hover-bg);
+  }
+}
+img[src*="multipage.gif"] {
+  display: none;
 }
