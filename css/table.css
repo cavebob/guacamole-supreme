@@ -225,7 +225,24 @@ form[action="/forums/search"] > table:only-child,
 #profilesettings span {
   display: block;
 }
-table[width="800"] {
+form table[width="100%"] > tbody > tr > td.embedded:not(.smiley_table) {
+  border-bottom: 0 !important;
+  padding: .25rem 0 0 0 !important;
+  & table:not(.smiley_table) tr {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+  & tr > .embedded:has(input, a[href*="MoreTags"]) {
+    padding: .125rem !important;
+    & input {
+      padding: .125rem .5rem !important;
+      min-width: 34px;
+      max-height: 34px;
+    }
+  }
+}
+table[width="800"], table[width="750"] {
   width: auto;
 }
 

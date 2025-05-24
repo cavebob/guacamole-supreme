@@ -63,7 +63,7 @@ td[style="padding-left: 30px; border-left: 1px solid black; width:53%; vertical-
 .js-tagcontent + td[style="width:30%;"] {
   width: auto !important;
 }
-input[style="height: 25px"]:is([type="submit"], [type="reset"]), input[style="height: 23px"] {
+input[style="height: 25px"]:is([type="submit"], [type="reset"]), input[style="height: 23px"], input[style="border: 0px; height: 19px"] {
   height: 2.125rem !important;
 }
 input[style="height: 25px; width: 100px"] {
@@ -81,4 +81,7 @@ td[style="padding: 10px;background-color: #ECE9D8"] {
 div[style="width: 930px; margin: 0px auto;"] {
   width: auto !important;
   margin: auto !important;
+}
+form td[style="padding: 0px"] {
+  padding: .25rem !important;
 }
