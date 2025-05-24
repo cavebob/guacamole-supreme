@@ -1,7 +1,6 @@
-.rc.js-rc, .rc.js-rc * {
+.rc, .rc * {
   box-sizing: initial;
 }
-
 .rc.js-rc {
 	background: var(--mantle);
 	border-radius: var(--large-br);
@@ -36,11 +35,12 @@ a.rc__overlay {
 	align-items: stretch;
 	padding: 0.4rem;
 	height: auto;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: var(--recommendation-blur-bg-color);
 	box-sizing: border-box;
 	border-radius: var(--large-br);
 	overflow: hidden;
-	border: 1px solid var(--surface0);
+	border: var(--table-border);
+	border: 1px solid var(--surface2);
 	filter: var(--poster-shadow);
 	top: 0px;
 	left: 0px;
@@ -51,7 +51,7 @@ a.rc__overlay {
 }
 div.rc__film:hover .rc__overlay {
 	display: flex;
-	backdrop-filter: blur(15px);
+	backdrop-filter: blur(6px);
 	opacity: 1;
 }
 .rc__film:hover img.rc__film__poster {
@@ -59,13 +59,7 @@ div.rc__film:hover .rc__overlay {
 	transform: scale(1.07);
 	transition: transform 0.25s ease;
 }
-a.rc__overlay {
-	box-sizing: border-box;
-	border-radius: var(--large-br);
-	overflow: hidden;
-	border: var(--table-border);
-  border-color: var(--surface2);
-}
+
 /* Header */
 .rc__header {
 	padding: 1rem 0;
@@ -99,16 +93,15 @@ div.rc__downloads {
 	position: initial;
 	padding: .125rem .375rem;
 	border-radius: var(--large-br);
-	border: var(--general-border);
-  border-color: hsla(0, 0%, 100%, 0.137);
-	background-color: hsla(236, 19%, 15%, 0.66);
+  border: var(--recommendation-blur-button-border);
+	background-color: var(--recommendation-blur-bg-color);
 	color: var(--subtext1);
   font-size: var(--font-size);
 	opacity: 1;
 	order: 2;
 	height: auto;
 	align-self: flex-end;
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(6px);
 }
 div.rc__rating::before {
 	content: 'IMDb: ';
@@ -123,8 +116,7 @@ div.rc__rating {
 	color: var(--yellow);
   padding: .125rem .375rem;
 	border-radius: var(--large-br);
-	border: var(--general-border);
-  border-color: hsla(0, 0%, 100%, 0.137);
-	background-color: hsla(236, 19%, 15%, 0.66);
-  backdrop-filter: blur(15px);
+  border: var(--recommendation-blur-button-border);
+	background-color: var(--recommendation-blur-bg-color);
+  backdrop-filter: blur(6px);
 }

@@ -1,5 +1,5 @@
 /* Primary Button Styling */
-.btn, button, [type="button"], .index[href*="/comments/add"] {
+.btn, button, [type="button"], .index[href*="/comments/add"], .button {
   color: var(--button-primary-text-color);
   background: var(--button-primary-bg);
   border: var(--button-primary-border);
@@ -578,10 +578,18 @@ a[href*="imdb.com/name/nm"]:not(#cast a)  {
     display: none;
   }
 }
-button.rc__actions-ignore, button.rc__actions-wishlist {
+button.rc__actions-ignore, button.rc__actions-wishlist, .show-ignore.button  {
 	text-transform: lowercase;
   font-variant: small-caps;
 	font-size: var(--font-size-tag);
 	position: initial;
-  padding: .25rem .75rem;
+  backdrop-filter: blur(6px);
+  color: var(--button-secondary-text-color);
+  border: var(--recommendation-blur-button-border);
+	background-color: var(--recommendation-blur-bg-color);
+  border-radius: var(--large-br);
+  line-height: normal;
+}
+.show-ignore.button {
+  line-height: normal;
 }
