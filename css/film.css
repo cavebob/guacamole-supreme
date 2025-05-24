@@ -1,3 +1,7 @@
+.rc.js-rc, .rc.js-rc * {
+  box-sizing: initial;
+}
+
 .rc.js-rc {
 	background: var(--mantle);
 	border-radius: var(--large-br);

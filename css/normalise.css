@@ -31,7 +31,7 @@ a {
 [width="737"], [width="930"]  {
   width: auto;
 }
-*:not(.rc.js-rc, .rc.js-rc *) {
+* {
   margin: 0;
   box-sizing: border-box;
 }
