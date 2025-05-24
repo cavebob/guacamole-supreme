@@ -33,6 +33,7 @@ td[style="border: 1px black dashed"] > p.sub {
 	margin: 0 !important;
 	position: relative;
 	z-index: 0;
+  color: var(--subtext0);
 }
 .std-content > tbody:first-child > tr:first-child > td > table:nth-child(3n-1), 
 .std-content > tbody:first-child > tr:first-child > td > table:nth-last-child(2) {
@@ -108,4 +109,32 @@ p.sig {
 a[name]:not([href]), p.sub > a[name]:target {
   pointer-events: none;
   scroll-margin-top: 10rem;
+}
+.js-watchtopic {
+	display: flex;
+	right: 10px !important;
+	height: 100%;
+	align-items: center;
+}
+.std-content > tbody > tr > td > table.main > tbody:first-child > tr:nth-child(2), table.readpost > tbody:first-child > tr:nth-child(2){
+  display: none;
+}
+.div_showhide {
+	padding: .5rem;
+	border: var(--table-border);
+	background: var(--quote-bg-color);
+	max-width: 100%;
+	border-radius: var(--large-br);
+}
+.spoiler {
+	filter: blur(4px);
+	transition: all .25s ease;
+	position: relative;
+	overflow: hidden;
+}
+.spoiler:active, .spoiler:focus, .spoiler:hover, .spoiler:hover a[href*="img"], .spoiler:hover a[href*="img"] img, .spoiler:hover a[href*="img"]::after {
+	filter: none;
+	backdrop-filter: none;
+	transform: scale(1);
+	transition: filter,backdrop-filter .25s ease;
 }

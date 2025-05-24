@@ -1,0 +1,43 @@
+.unlocked {
+	width: 36px;
+	height: 36px;
+	mask: url("../img/unlocked.svg") center no-repeat;
+  background-color: var(--lavender);
+  filter: brightness(.7)
+}
+.unlockednew {
+	width: 36px;
+	height: 36px;
+	mask: url("../img/unlocked.svg") center no-repeat;
+  mask-size: 36px;
+  background-color: var(--button-primary-hover-bg);
+}
+.locked {
+	width: 36px;
+	height: 36px;
+	mask: url("../img/locked.svg") center no-repeat;
+  mask-size: 36px;
+  background-color: var(--lavender);
+  filter: brightness(.7)
+}
+.lockednew {
+	width: 36px;
+	height: 36px;
+	mask: url("../img/locked.svg") center no-repeat;
+  mask-size: 36px;
+  background-color: var(--button-primary-hover-bg);
+}
+.embedded:has(>.hasposted)::after {
+	content: url("../img/hasposted.png");
+	display: inline-block;
+	height: 12px;
+	width: 12px;
+	scale: 1;
+	top: 26px;
+	left: 18px;
+	position: absolute;
+	filter: brightness(10%) invert(.9) hue-rotate(125deg);
+}
+tr:has(td > .hasposted) {
+  position: relative;
+}

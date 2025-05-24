@@ -170,7 +170,7 @@ h1.fl, span.tag.freeleech, span.tag.tag_leeching {
   text-transform: lowercase;
   font-variant: small-caps;
 }
-a[href*="show.php?id"] {
+a[href*="show.php?id"]:has(>.tvdb_button) {
   position: absolute;
   right: 4px;
   bottom: 2px;
@@ -702,4 +702,55 @@ img[src*="/icon_latest_reply.gif"][alt="Last post"] {
 }
 img[src*="multipage.gif"] {
   display: none;
+}
+img[src*="/top.gif"][alt="Top"] {
+	right: 0;
+	filter: brightness(90%) grayscale(.5);
+	display: inline-block;
+	box-sizing: border-box;
+	width: 1.25rem;
+	height: 1.25rem;
+	padding-left: 20px;
+  margin-top: 6px;
+  margin-left: 4px;
+	mask: url("../img/totop.svg") center no-repeat;
+  mask-size: 24px;
+	background: var(--button-primary-bg);
+}
+a[href="#top"]  {
+  display:block;
+  &:hover > img[src*="/top.gif"][alt="Top"] {
+    background: var(--button-primary-hover-bg);
+  }
+}
+img[src*="disabledbig.gif"] {
+	display: inline-block;
+	box-sizing: border-box;
+	width: 16px;
+	height: 16px;
+	padding-left: 16px;
+	mask: url("../img/disabled.svg") center no-repeat;
+	background: var(--red);
+	margin-bottom: -1px;
+}
+.label_showhide {
+  color: var(--subtext0);
+}
+.label_showhide span:hover {
+	background: var(--button-secondary-hover-bg);
+	color: var(--button-secondary-text-hover-color);
+	filter: brightness(1);
+}
+.label_showhide span {
+	padding: 0 .25rem .15rem .25rem;
+	background: var(--button-secondary-bg);
+	box-sizing: border-box;
+	display: inline-block;
+	border-radius: var(--large-br);
+	border: var(--button-secondary-border);
+	color: var(--button-secondary-text-color);
+	font-weight: 700;
+	font-variant: small-caps;
+	font-size: 110%;
+	margin-bottom: 1px;
 }
