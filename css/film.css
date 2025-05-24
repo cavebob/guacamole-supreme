@@ -4,42 +4,123 @@
 	border: var(--table-border);
 	overflow: hidden;
 }
+.rc__container.js-rc-container {
+	background: var(--mantle);
+}
+.rc__film {
+	position: relative;
+	display: inline-block;
+	height: 300px;
+	width: 200px;
+	vertical-align: top;
+	padding: 10px;
+  overflow:clip;
+  margin-bottom: .5rem;
+  border-radius: var(--large-br);
+}
+img.rc__film__poster {
+	border-radius: .5rem;
+	object-fit: fill;
+  filter: var(--poster-shadow);
+}
+a.rc__overlay {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	max-height: 320px;
+	max-width: 220px;
+	align-items: stretch;
+	padding: 0.4rem;
+	height: auto;
+	background-color: rgba(0, 0, 0, 0.5);
+	box-sizing: border-box;
+	border-radius: var(--large-br);
+	overflow: hidden;
+	border: 1px solid var(--surface0);
+	filter: var(--poster-shadow);
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	opacity: 0;
+	transition: opacity 0.3s cubic-bezier(.17,.84,.44,1);
+}
+div.rc__film:hover .rc__overlay {
+	display: flex;
+	backdrop-filter: blur(15px);
+	opacity: 1;
+}
+.rc__film:hover img.rc__film__poster {
+	border-radius: var(--large-br);
+	transform: scale(1.07);
+	transition: transform 0.25s ease;
+}
+a.rc__overlay {
+	box-sizing: border-box;
+	border-radius: var(--large-br);
+	overflow: hidden;
+	border: var(--table-border);
+  border-color: var(--surface2);
+}
+/* Header */
 .rc__header {
 	padding: 1rem 0;
 	color: var(--heading-color);
 	background: var(--mantle);
 	border-bottom: var(--table-border);
 }
-img.rc__film__poster {
-	border-radius: .5rem;
-	object-fit: fill;
-	box-shadow: var(--bs);
-}
-div.rc__film:hover .rc__overlay {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-evenly;
-	max-height: 300px;
-	max-width: 200px;
-	align-items: stretch;
-	padding: .4rem;
-	height: auto;
-	backdrop-filter: blur(15px);
-}
-a.rc__overlay {
-	background-color: rgba(10,10,18,.63);
-	box-sizing: border-box;
-	border-radius: .5rem;
-	overflow: hidden;
-	border: 1px solid var(--highlighted-border-hover-color);
-	box-shadow: inset 0 0 5px 3px #00000044;
-}
+/* Show more */
 .rc__toggle.js-rc-toggle {
 	background: var(--mantle);
-	filter: brightness(110%);
-	font-size: 0.6875rem;
-	color: var(--link-text-color);
+	filter: brightness(100%);
+	font-size: var(--font-size);
+	color: var(--link-color);
 	font-weight: 700;
 	text-transform: uppercase;
 	border-top: var(--table-border);
+  &:hover {
+    color: var(--link-hover-color);
+  }
+}
+div.rc__plot {
+	position: initial;
+	align-self: stretch;
+	font-size: var(--font-size);
+	width: 100%;
+	height: 70%;
+	padding: .5rem;
+	overflow: scroll;
+}
+div.rc__downloads {
+	position: initial;
+	padding: .125rem .375rem;
+	border-radius: var(--large-br);
+	border: var(--general-border);
+  border-color: hsla(0, 0%, 100%, 0.137);
+	background-color: hsla(236, 19%, 15%, 0.66);
+	color: var(--subtext1);
+  font-size: var(--font-size);
+	opacity: 1;
+	order: 2;
+	height: auto;
+	align-self: flex-end;
+  backdrop-filter: blur(15px);
+}
+div.rc__rating::before {
+	content: 'IMDb: ';
+}
+div.rc__rating {
+  box-sizing: border-box;
+	position: initial;
+	order: 3;
+	font-size: var(--font-size);
+	height: auto;
+	align-self: flex-end;
+	color: var(--yellow);
+  padding: .125rem .375rem;
+	border-radius: var(--large-br);
+	border: var(--general-border);
+  border-color: hsla(0, 0%, 100%, 0.137);
+	background-color: hsla(236, 19%, 15%, 0.66);
+  backdrop-filter: blur(15px);
 }

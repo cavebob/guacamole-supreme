@@ -578,3 +578,11 @@ a[href*="imdb.com/name/nm"]:not(#cast a)  {
     display: none;
   }
 }
+button.rc__actions-ignore, button.rc__actions-wishlist {
+	text-transform: lowercase;
+  font-variant: small-caps;
+	font-size: var(--font-size-tag);
+	position: initial;
+  height: 2rem;
+  padding: .25rem .75rem;
+}
