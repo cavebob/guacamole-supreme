@@ -27,7 +27,8 @@
   --overlay0: #6c7086;
   --surface2: #585b70;
   --surface1: #45475a;
-  --surface0: #414358; /* mantle - table border */
+  --surface0: hsl(235, 15%, 30%); /* mantle - table border */
+  --quote-bg-color: #323245; 
   --base: #1f202e; /* base background (layer 0) */
   --mantle: hsl(240, 17.6%, 20%); /* base + layer 1 */
   --crust: var(--header); /* base + layer 2 */ 
@@ -51,12 +52,15 @@
   --button-secondary-text-color: hsl(232.5, 10.5%, 85.1%);
   --button-secondary-text-hover-color: hsl(240, 9.7%, 12.2%);
   --button-secondary-border: 1px solid #414358;
+
   --details-th-text-color: var(--heading-color);
   --th-text-color: var(--heading-color);
   --heading-color: hsl(240, 12.8%, 61.8%);
-  --unreadpost-bg-color: var(--surface0);
+
+  --unreadpost-bg-color: hsl(237, 15.6%, 25.1%);
   --unreadpost-border: 1px solid var(--unreadpost-border-color);
   --unreadpost-border-color: var(--overlay0);
+
   --font-size: 0.8125rem;
   --font-size-tag: .75rem;
   --font-size-profile-small: .75rem;
@@ -67,11 +71,15 @@
   --font-size-larger: 1.25rem;
   --mono-font-stack: ui-monospace,'Cascadia Code','Source Code Pro',Menlo,Consolas,'DejaVu Sans Mono',monospace;
   --sans-font-stack: system-ui, sans-serif;
+
   --actionbr: .5rem; /* Select, Button, Search */
   --br: .25rem;
   --large-br: .5rem;
   --button-padding: .375rem .75rem;
+
   --poster-shadow: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.5));
+  
   --recommendation-blur-button-border: 1px solid hsla(0, 0%, 100%, 0.137);
   --recommendation-blur-bg-color: hsla(236, 19%, 15%, 0.66);
+  
 }

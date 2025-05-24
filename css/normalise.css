@@ -66,6 +66,9 @@ td[style="padding-left: 30px; border-left: 1px solid black; width:53%; vertical-
 input[style="height: 25px"]:is([type="submit"], [type="reset"]), input[style="height: 23px"], input[style="border: 0px; height: 19px"] {
   height: 2.125rem !important;
 }
+input[style="border: 0px; height: 19px"] {
+  border: var(--input-border) !important;
+}
 input[style="height: 25px; width: 100px"] {
   height: 2.125rem !important;
   width: auto !important;
