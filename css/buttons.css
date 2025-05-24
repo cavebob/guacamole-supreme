@@ -555,9 +555,9 @@ p:has(> a[href*="action=delete&type=friend"], > a[href*="action=add&type=friend"
 	mask: url("../img/mytorrents.svg") center no-repeat;
   mask-size: 25px;
 	width: 1.5rem;
-	height: 1.5625rem;
+	height: 1.625rem;
   margin: 0 .25rem;
-  margin-top: 5px;
+  margin-top: 7px;
 	transition: all .25s ease;
   
   &:hover {
