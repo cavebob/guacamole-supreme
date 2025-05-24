@@ -172,7 +172,21 @@ form[action="inbox.php"] > table:has(#inboxbody) {
 .bottom:not([id]) > table[width="660"] {
   width: auto;
 }
-:is(#profilesettings, 
+/*
+Search form: form[action="/forums/search"] > table:only-child
+Subtitles form: form[action="?"] > table:has([value="Upload file"])
+Message(reply): form[name="message][action="takemessage.php"] > table 
+Lottery/Requests add: form[action*"/add"] > div > .lottery_table2
+Offer add: form[action="/offers/takeadd"] > div > table
+Edit Upload form: form[name="editupload"][action="takeedit.php"] > table
+Edit upload delete form: form[action="delete.php"] > table
+Forum reply form: form[action="forum/post"] > .message
+Upload form: form[action="/upload/upload"] > table
+, form[action] > table:only-of-type ,
+ form[action] > div > table:only-of-type,
+*/
+:is(#profilesettings, form[action] > table:only-of-type, form[action] > div > table:only-of-type,
+form[action="/forums/search"] > table:only-child,
 /* User profile table */
 .bottom:not([id]) > .main[border="0"][cellspacing="0"][cellpadding="0"] .embedded > table[width="100%"][cellpadding="5"]) {
   border: 1px solid var(--surface0);
@@ -195,13 +209,15 @@ form[action="inbox.php"] > table:has(#inboxbody) {
     padding: .5rem .5rem;
   }
 }
-:is(#profilesettings, 
+:is(#profilesettings,  form[action] > table:only-of-type, form[action] > div > table:only-of-type,
+form[action="/forums/search"] > table:only-child,
 /* User profile table */
 .bottom:not([id]) > .main[border="0"][cellspacing="0"][cellpadding="0"] .embedded > table[width="100%"][cellpadding="5"]) tr td {
   border-bottom: 1px solid var(--surface0);
   background-color: var(--mantle);
 }
-:is(#profilesettings, 
+:is(#profilesettings,  form[action] > table:only-of-type, form[action] > div > table:only-of-type,
+form[action="/forums/search"] > table:only-child,
 /* User profile table */
 .bottom:not([id]) > .main[border="0"][cellspacing="0"][cellpadding="0"] .embedded > table[width="100%"][cellpadding="5"]) tr:last-child td {
   border-bottom: none;
