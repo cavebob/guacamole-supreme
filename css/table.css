@@ -48,7 +48,7 @@ form[action="dox.php"] > table, table.tableb table[width="500"], #request-list, 
   }
 }
 /* Only tables on main bottom */
-:is(#torrent-list, [action="/log"] ~ table:not(.main), table.padding2, [action="dox.php"]+p+table, 
+:is([action="/log"] ~ table:not(.main), table.padding2, [action="dox.php"]+p+table, 
 form[method="get"][style="margin-bottom:20px;"] + table[cellpadding="5"]:not([class]), form[action="dox.php"] > table, 
 table.tableb table[width="500"],/* Ignored Shows Page */
 .bottom:not([id]) > script + h1 + table, #request-list, form[action="inbox.php"] > table:has(#inboxbody), 
@@ -125,7 +125,7 @@ form[action="dox.php"] td[style="border:black solid 1px;"] {
   border: 1px solid var(--surface0);
   border-radius: var(--large-br);
 }
-:is(.tablesorter, .lottery_table, .row-seclog table, .table_requests) td{
+:is(#torrent-list, .tablesorter, .lottery_table, .row-seclog table, .table_requests) td{
   background-color: var(--base);
   border-top: 1px solid var(--surface0);
 }
