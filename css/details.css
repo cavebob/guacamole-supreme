@@ -1,23 +1,23 @@
-#details, .torrent-title + table[width="930"]:has(.hideablecontent), .lottery_table2:has(.hideablecontent) {
+#details, .torrent-title + table[width="930"]:has([id^="l"].label), .lottery_table2:has([id^="l"].label) {
   display: block;
 	border-radius: var(--large-br);
   margin: 1rem 0;
 }
 /* offer details page */ 
-.torrent-title + table[width="930"]:has(.hideablecontent) {
+.torrent-title + table[width="930"]:has([id^="l"].labelt) {
 
 }
 /* requests detail page */
-.lottery_table2:has(.hideablecontent) {
+.lottery_table2:has([id^="l"].label) {
   width: auto !important;
   margin: 1rem 0 !important;
 }
-:is(#details, .torrent-title + table[width="930"]:has(.hideablecontent), .lottery_table2:has(.hideablecontent)) > tbody {
+:is(#details, .torrent-title + table[width="930"]:has([id^="l"].label), .lottery_table2:has([id^="l"].label)) > tbody {
   display: flex;
   flex-flow: row wrap;
   gap: 1rem;
 }
-:is(table#details, .torrent-title + table[width="930"]:has(.hideablecontent), .lottery_table2:has(.hideablecontent)) > tbody > tr {
+:is(table#details, .torrent-title + table[width="930"]:has([id^="l"].label), .lottery_table2:has([id^="l"].label)) > tbody > tr {
   display: flex;
   border: 1px solid var(--surface0);
   border-radius: var(--large-br);
@@ -33,7 +33,7 @@
   filter: brightness(80%);
   }
 }
-:is(#details, .torrent-title + table[width="930"]:has(.hideablecontent), .lottery_table2:has(.hideablecontent)) td {
+:is(#details, .torrent-title + table[width="930"]:has([id^="l"].label), .lottery_table2:has([id^="l"].label)) td {
   overflow-wrap: break-word;
   text-align: left
 }
