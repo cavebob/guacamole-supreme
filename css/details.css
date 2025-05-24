@@ -37,6 +37,9 @@
   overflow-wrap: break-word;
   text-align: left
 }
+div[style="width: 930px; margin: 0px auto;"]:has(a[name="votes"], a[name="startcomments"]) {
+	width: 100% !important;
+}
 .label {
   font-weight: bold;
   text-align: left;

@@ -56,12 +56,21 @@ table.tableb table[width="500"],/* Ignored Shows Page */
   background-color: var(--mantle);
 }
 :is(#torrent-list, [action="/log"] ~ table:not(.main), table.padding2, [action="dox.php"]+p+table, 
-form[method="get"][style="margin-bottom:20px;"] + table[cellpadding="5"]:not([class]),  
-.bottom > table[cellpadding="5"]:not([class], [id]):has(div[class*="locked"]), #latest_posts > table, #profilesettings, 
+form[method="get"][style="margin-bottom:20px;"] + table[cellpadding="5"]:not([class]), #profilesettings, 
 form[action="dox.php"] > table, table.tableb table[width="500"],/* Ignored Shows Page */
 .bottom:not([id]) > script + h1 + table, #request-list, form[action="inbox.php"] > table:has(#inboxbody), 
 .bottom:not([id]) > table[width="660"]) th {
   background-color: var(--mantle);
+}
+/* Forum pages table heading */
+:is(.bottom > table[cellpadding="5"]:not([class], [id]):has(div[class*="locked"]), #latest_posts > table) {
+  background-color: var(--crust);
+  & th {
+    text-indent: .5rem;
+    &[align="right"] {
+      text-align: center;
+    }
+  }
 }
 /* All classed tables - table heading */
 :is(#torrent-list, .tablesorter, .lottery_table, .row-seclog, 
