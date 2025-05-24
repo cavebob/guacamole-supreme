@@ -792,3 +792,19 @@ img[src*="warnedbig.gif"][alt=Warned] {
 	font-size: 110%;
 	margin-bottom: 1px;
 }
+#details a[href*="/sendmessageanon.php?id"] {
+	content: "";
+	background: var(--button-primary-bg);
+	mask: url("../img/unlocked.svg") center no-repeat;
+  mask-size: 24px;
+	height: 1.25rem;
+	width: 1.5rem;
+	align-self: center;
+	padding-left: 1rem;
+	filter: grayscale(40%);
+	display: inline-flex;
+	box-sizing: border-box;
+  &:hover {
+    background: var(--button-primary-hover-bg);
+  }
+}

@@ -348,3 +348,14 @@ a.list-overview:hover .list-overview__text {
   flex-flow: row nowrap;
   gap: .25rem
 }
+td > i:has(+ [href*="sendmessageanon"]) {
+  color: var(--subtext0);
+}
+#subcell img {
+  height: 18px;
+  width: 30px;
+  object-fit: none;
+  margin: 2px;
+  border-radius: var(--small-br);
+  filter: brightness(90%);
+}
