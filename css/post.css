@@ -120,6 +120,7 @@ a[name]:not([href]), p.sub > a[name]:target {
   display: none;
 }
 .div_showhide {
+  display: none;
 	padding: .5rem;
 	border: var(--table-border);
 	background: var(--quote-bg-color);

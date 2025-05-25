@@ -36,7 +36,7 @@ p[id^="news"] {
 }
 #news + h2 {
   order: 1;
-  flex: 74%;
+  flex: 70%;
   background: var(--mantle);
   border-radius: 1rem 1rem 0 0;
   padding: 1rem;
@@ -55,7 +55,7 @@ p[id^="news"] {
 #news ~ table:first-of-type {
   display: flex;
   order: 3;
-  flex: 74%;
+  flex: 70%;
   background: var(--mantle);
   border-radius: 0 0 1rem 1rem;
   padding: 1rem;
@@ -71,9 +71,10 @@ p[id^="news"] {
   flex-direction: column;
   background: var(--mantle);  
   border-radius: 0 0 1rem 1rem;
-  padding: 1rem;
+  padding: .5rem;
   border: var(--table-border);
   border-top: 0;
+  align-items: center;
   /* & :is(tbody,tr,td:not(.interiortable td)) {
     display: contents
   } */
