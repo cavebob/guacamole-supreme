@@ -205,3 +205,6 @@ td[id^="codec"].catcell,
 .catcell + [id^="codec"] > [class^="medium"] {
   height: 0;
 }
+[id^="codec"] > img[src="/pic/blank2.gif"] {
+  height: 0;
+}

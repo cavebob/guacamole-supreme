@@ -518,7 +518,7 @@ table[width="750"] p.sub + .main {
   margin-bottom: .5rem;
 }
 /* Help page table */
-.embedded > h2 + table:has(td>p>a) {
+.embedded > h2:first-child + table:has(td>p>a) {
   border-radius: var(--main-br);
   border: var(--table-border); 
   background-color: var(--mantle);
@@ -590,4 +590,10 @@ table[width="750"] p.sub + .main {
   & .js-list-entry-edit, .js-list-entry-delete {
     display: none;
   }
+}
+br:has(+.tablesorter) {
+  display: none;
+}
+.center_comments > table {
+	margin: auto;
 }

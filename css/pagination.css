@@ -37,3 +37,5 @@ p:has(a[href*="page="]):not(.sub) {
     background-color: var(--)
   }
 }
+/* requests comments pagination */
+/* .center_comments > p */
