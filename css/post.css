@@ -128,7 +128,7 @@ a[name]:not([href]), p.sub > a[name]:target {
 	transform: scale(1);
 	transition: filter,backdrop-filter .25s ease;
 }
-.previewbox {
+.previewbox:not(:empty) {
   border: var(--table-border);
   border-radius: var(--main-br);
 }
