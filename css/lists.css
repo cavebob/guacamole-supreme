@@ -173,3 +173,17 @@ div.item-description {
   border-radius: var(--main-br);
   font-style: italic;
 }
+#list-container {
+  & h1#list-title {
+    font-size: var(--larger);
+    flex: 100%;
+  }
+  & .list-description {
+    margin: auto;
+    border: var(--table-border);
+    padding: 10px;
+    text-align: left;
+    background-color: var(--mantle);
+    border-radius: var(--main-br);
+  }
+}
