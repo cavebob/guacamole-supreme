@@ -869,3 +869,6 @@ img.poll, img[src$="bar.gif"] {
 .pollleft, .pollright, img[src$="bar_left.gif"], img[src$="bar_right.gif"] {
   display: none;
 }
+#profilesettings :is(input[type="radio"], input[type="checkbox"]) {
+  margin-left: .25rem;
+}

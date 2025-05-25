@@ -8,7 +8,7 @@
   flex-flow: row nowrap;
   gap: 1rem;
 }
-.bottom[valign="top"]:not(#sidebar-container) {
+.bottom[valign="top"]:not(#sidebar-container,:has(>input[name="notifyquotecomment"])) {
   display: flex;
   flex-flow: column nowrap;
   flex: 9999;
@@ -195,6 +195,7 @@ form[action="/forums/search"] > table:only-child,
   border-spacing: 0;
   border-collapse: separate;
   margin: auto;
+  overflow: clip;
   & tr:last-child {
     > td:first-child  {
       border-bottom-left-radius: var(--main-br);
