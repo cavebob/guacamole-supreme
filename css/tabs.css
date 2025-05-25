@@ -32,13 +32,16 @@ table:has(.submenu-highlight){
 
 }
 /* Lists (?) table > href ="lists/my" */
-
+/* Help page */
+/* table:has(td[width="12%"] > b > a[href*="/staff.php"]) */
 /* Forum (?) */ /* :not([id]) prevents #sidebar-container selection */
-.bottom:not([id])  > :is(table:has(a[href$="/forums"]), table:has(.submenu-highlight), table:has(a[href$="/lists/my"])) {
+.bottom:not([id])  > :is(table:has(b > a[href$="/forums"]), table:has(.submenu-highlight), 
+table:has(a[href$="/lists/my"]), table:has(td[width="12%"] > b > a[href*="/staff.php"]) ) {
   width: 100%;
 }
 /* "#tabs" styling */
-.bottom:not([id]) > :is(table:has(a[href$="/forums"]), table:has(.submenu-highlight), table:has(a[href$="/lists/my"])) tr {
+.bottom:not([id]) > :is(table:has(b > a[href$="/forums"]), table:has(.submenu-highlight), 
+table:has(a[href$="/lists/my"]), table:has(td[width="12%"] > b > a[href*="/staff.php"]) ) tr {
   display: flex;
   flex-flow: row wrap;
   width: auto;
@@ -63,7 +66,8 @@ table:has(.submenu-highlight){
     }
   }
 }
-.bottom:not([id])  > :is(table:has(a[href$="/forums"]), table:has(.submenu-highlight), table:has(a[href$="/lists/my"])) td a {
+.bottom:not([id])  > :is(table:has(b > a[href$="/forums"]), table:has(.submenu-highlight), 
+table:has(a[href$="/lists/my"]), table:has(td[width="12%"] > b > a[href*="/staff.php"]) ) td a {
   display: inline-block;
   width: 100%;
   padding: var(--button-padding);

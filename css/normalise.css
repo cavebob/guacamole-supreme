@@ -91,3 +91,6 @@ form td[style="padding: 0px"] {
 td[style="padding-left: 30px; border-left: 1px solid black; width:27%;"] {
   padding: .25rem !important;
 }
+#list-add-container {
+  width: auto !important;
+}
