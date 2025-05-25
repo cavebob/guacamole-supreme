@@ -2,7 +2,6 @@
 .bottom > .small {
   font-size: var(--font-size-small);
   color: var(--subtext0);
-  margin-bottom: 1rem;
 }
 .embedded:has(#news) {
   display: flex;
