@@ -18,7 +18,8 @@
 	mask: url("../img/locked.svg") center no-repeat;
   mask-size: 36px;
   background-color: var(--lavender);
-  filter: brightness(.7)
+  filter: brightness(.7);
+  margin-bottom: 7px;
 }
 .lockednew {
 	width: 36px;
@@ -39,9 +40,9 @@
   background-color: var(--lavender);
   border-radius: 3px;
 	scale: 1;
-	bottom: 18%;
 	position: absolute;
-  left: 6% ;
+  bottom: 8px;
+  left: 26px;
 }
 .embedded:has(>.unlocked.hasposted)::after {
   filter: brightness(90%);
