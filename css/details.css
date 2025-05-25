@@ -1,7 +1,6 @@
 #details, .torrent-title + table[width="930"]:has([id^="l"].label), .lottery_table2:has([id^="l"].label) {
   display: block;
 	border-radius: var(--main-br);
-  margin: 1rem 0;
 }
 /* offer details page */ 
 .torrent-title + table[width="930"]:has([id^="l"].labelt) {
@@ -358,4 +357,8 @@ td > i:has(+ [href*="sendmessageanon"]) {
   margin: 2px;
   border-radius: var(--small-br);
   filter: brightness(90%);
+}
+.js-source-data, .bottom > p:has(>a[name="startcomments"]) {
+	margin-top: -.5rem;
+	margin-bottom: -.5rem;
 }

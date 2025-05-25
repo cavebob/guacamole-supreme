@@ -155,3 +155,6 @@ p:empty {
 span.small {
   color: var(--subtext0);
 }
+.js-source-data {
+  box-sizing: content-box;
+}

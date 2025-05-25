@@ -515,7 +515,7 @@ table[width="750"] p.sub + .main {
   }
 }
 .bottom  > :is(h1, h2, h3) {
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
 }
 /* Help page table */
 .embedded > h2 + table:has(td>p>a) {
