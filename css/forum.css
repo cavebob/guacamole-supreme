@@ -27,6 +27,10 @@
   mask-size: 36px;
   background-color: var(--button-primary-hover-bg);
 }
+.embedded:has(>[class*="locked"]){
+  height: 42px;
+  width: 42px; 
+}
 .embedded:has(>.hasposted)::after {
 	content: "";
 	display: inline-block;
