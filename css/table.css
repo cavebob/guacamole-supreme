@@ -531,7 +531,7 @@ table[width="750"] p.sub + .main {
 	text-wrap: balance;
   margin-bottom: .5rem;
 }
-#list-add {
+#list-add:not(:has(.form-input)) {
   border-radius: var(--main-br);
   border: var(--table-border); 
   background-color: var(--mantle);
@@ -559,5 +559,34 @@ table[width="750"] p.sub + .main {
   }
   .list-add-description table {
     border: none !important;
+  }
+}
+.list-edit-row.js-hidden {
+  display: none;
+}
+  #list-items {
+  display: flex;
+  flex-flow: column wrap;
+  gap: .5rem;
+}
+.list-entry-row:has(.list-show-row.js-hidden) {
+  display: flex;
+  background: var(--quote-bg-color);
+  flex-flow: row wrap;
+  gap: .5rem;
+  border-radius: var(--main-br);
+  border: var(--table-border); 
+  margin: .5rem auto;
+  padding: .75rem .75rem;
+}
+.list-show-row.js-hidden {
+  flex: 100%;
+  order: -1;
+  display: flex;
+  flex-flow: row wrap;
+  gap: .5rem;
+  align-items: center;
+  & .js-list-entry-edit, .js-list-entry-delete {
+    display: none;
   }
 }
