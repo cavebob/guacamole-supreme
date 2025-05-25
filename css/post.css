@@ -11,7 +11,7 @@ td.bottom > table[width="800"] + table.main + h2 + table[width="100%"] > tbody >
 	border: var(--table-border);
 	overflow: hidden;
 	min-height: 150px;
-	min-width: 48rem;
+	min-width: 100%;
 	max-width: 64rem;
   border-collapse: separate
 }
@@ -21,18 +21,11 @@ html body table.main tbody tr td.bottom table.main:last-of-type > tbody:first-ch
 td[style="border: 1px black dashed"] > p.sub {
 	border-radius: var(--main-br) var(--main-br) 0 0;
 	background-color: var(--crust);
-	height: 2.25rem;
-	display: flex;
-	align-items: center;
-	z-index: 1;
-  border-collapse: separate;
+  padding: 0.5rem 1rem;
+	display: block;
 	border: var(--table-border);
 	border-bottom: 0;
-	gap: 0 .2rem;
-	padding: 0 1rem;
 	margin: 0 !important;
-	/* position: relative; */
-	z-index: 0;
   color: var(--subtext0);
 }
 .std-content > tbody:first-child > tr:first-child > td > table:nth-child(3n-1), 
@@ -50,15 +43,11 @@ td[style="border: 1px black dashed"] > p.sub {
 	border: var(--unreadpost-border);
 	overflow: hidden;
 	min-height: 150px;
-	min-width: 48rem;
-}
-p.sub > a[href*="/details.php?id="] {
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
+	min-width: 100%;
 }
 p.sub {
-	white-space: nowrap;
+  overflow: hidden;
+	text-overflow: ellipsis;
 	box-sizing: border-box;
 	max-width: 64rem;
 }

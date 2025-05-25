@@ -744,7 +744,7 @@ img[src*="/top.gif"][alt="Top"] {
 	width: 1.25rem;
 	height: 1.25rem;
 	padding-left: 20px;
-  margin-top: 6px;
+  margin-bottom: -6px;
   margin-left: 4px;
 	mask: url("../img/totop.svg") center no-repeat;
   mask-size: 24px;
