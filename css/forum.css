@@ -27,6 +27,7 @@
 	mask: url("../img/locked.svg") center no-repeat;
   mask-size: 36px;
   background-color: var(--button-primary-hover-bg);
+  margin-bottom: 7px;
 }
 .embedded:has(>[class*="locked"]){
   height: 42px;
