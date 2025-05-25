@@ -105,3 +105,35 @@ h2.stattitle {
 	flex: 100%;
 	padding: 1rem 0;
 }
+
+.tv-todownload {
+	display: flex;
+  background: var(--mantle);
+	border-radius: var(--main-br);
+	border: var(--table-border);
+  gap: 1rem;
+  padding: 1rem;
+  & #tv-show-list {
+    display: flex;
+    flex-flow: row wrap;
+    gap:.5rem;
+    flex: min-content;
+    max-width: 760px;
+    overflow: scroll;
+  }
+  & .show-header {
+    border-radius: var(--main-br);
+    overflow: clip;
+    position: relative;
+  }
+  .show-unfollow {
+    backdrop-filter: blur(6px);
+    color: var(--button-secondary-text-color);
+    border: var(--recommendation-blur-button-border);
+    background-color: var(--recommendation-blur-bg-color);
+    margin: .25rem;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+  }
+}
