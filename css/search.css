@@ -180,14 +180,6 @@ td.searchgenres {
 	align-content: center;
 	gap: .3rem;
 }
-
-
-
-
-
-
-
-
 #moresearch5 > td:first-child {
 	box-sizing: border-box;
 	display: flex;
@@ -195,117 +187,6 @@ td.searchgenres {
 	align-items: center;
 	gap: .3rem;
 }
-/* div.chosen-container.chosen-container-multi.chosen {
-	position: relative;
-	display: inline-block;
-	vertical-align: middle;
-	-webkit-user-select: none;
-	user-select: none;
-	max-width: 625px;
-	width: 100% !important;
-  background-color:var(--crust);
-}
-.chosen-container-multi .chosen-choices {
-  overflow: hidden;
-  position: relative;
-  margin: 0;
-  cursor: text;
-  max-width: 650px;
-  box-sizing: border-box;
-}
-.chosen-container-multi .chosen-choices li.search-field input[type="text"] {
-  margin: 0;
-  box-shadow: none;
-  color: var(--link-text-color);
-  width: 100% !important;
-}
-.chosen-container .chosen-drop {
-	position: absolute;
-	z-index: 1010;
-	width: auto;
-	border-top: 0;
-
-	overflow: clip;
-	filter: drop-shadow(0 .6rem .5rem black);
-}
-.chosen-container .chosen-results {
-  padding: .5rem;
-	display: flex;
-	flex-flow: row wrap;
-	color: var(--mauve);
-	background-color: var(--surface0);
-	position: relative;
-	overflow-x: scroll;
-	overflow-y: auto;
-	max-width: 30vw;
-	max-height: 400px;
-	font-size: var(--font-size);
-	border: 1px solid var(--highlighted-input-border-focus-color);
-	border-radius: var(--main-br);
-	gap: .25rem;
-}
-.chosen-search-input:active .chosen-container .chosen-results li {
-	display: none; 
-
-}
-.chosen-search-input:active .chosen-container .chosen-results li {
-	display: flex;
-	margin: 0;
-	padding: 3px 8px;
-	list-style: none;
-	line-height: 1rem;
-	overflow-wrap: break-word;
-	border: 1px solid pink;
-	flex: 1 1 auto;
-	margin: 1px;
-} */
-/* Picked choices styling from the dropdown */
-/* .chosen-container-multi .chosen-choices li.search-choice {
-	position: relative;
-	margin: 2px;
-	padding: .25rem .5rem;
-	border: var(--general-border);
-	max-width: 100%;
-	border-radius:var(--main-br);
-	background-color: var(--button-secondary-bg);
-}
-.chosen-container-multi .chosen-choices li {
-	float: left;
-	list-style: none;
-}
-.search-choice {
-	display: flex;
-	flex-flow: row nowrap;
-}
-li.search-choice span {
-  margin-left:1.875rem;
-} */
-/* Close 'button' area on chosen selection */
-/* .chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
-  position: absolute;
-  font-size: 1rem;
-  color: var(--button-secondary-text-color);
-  left: 0;
-  display: block;
-  width: 2rem;
-  top: 0;
-  height: 30px;
-  background: var(--button-secondary-bg);
-  border-right: var(--general-border);
-  border-top-left-radius: var(--main-br);
-  border-bottom-left-radius: var(--main-br);
-  cursor: pointer; 
-  &::before {
-    content: "x";
-    font-variant: smallcaps;
-    padding-top: 3px;
-    display: block;
-  }
-  &:hover {
-    color: var(--button-secondary-text-hover-color);
-    background: var(--button-secondary-hover-bg);
-  }
-} */
 /* ###################" */
 #moresearch5 > td:first-child > select[name="tagsearchtype"] {
 	align-self: center;
@@ -320,6 +201,127 @@ li.search-choice span {
   text-align: center;
   border-radius: var(--main-br);
   margin-top: 0!important
+}
+
+div > div.dhtmlxcalendar_yahoolike {
+	background: var(--crust);
+	border: var(--table-border);
+	font-family: var(--mono-font-stack);
+	font-size: var(--font-size);
+	width: auto;
+	height: auto;
+	padding: .3rem;
+	z-index: 99;
+	border-radius: var(--main-br);
+	filter: drop-shadow(0 0 2rem black);
+	transform: scale(2);
+	transform-origin: 0 0;
+}
+.dhtmlxcalendar_yahoolike table.entbox {
+	margin: auto;
+	width: 100%;
+	height: 100%;
+}
+.entbox > tbody {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	justify-content: space-around;
+	align-items: center;
+	width: auto;
+	height: auto;
+}
+.dhtmlxcalendar.dhtmlxcalendar_yahoolike tr, div.dhtmlxcalendar.dhtmlxcalendar_yahoolike div, div.dhtmlxcalendar.dhtmlxcalendar_yahoolike table, div.dhtmlxcalendar.dhtmlxcalendar_yahoolike tbody, div.dhtmlxcalendar.dhtmlxcalendar_yahoolike td, div.dhtmlxcalendar_yahoolike .dxcaldays td, div.dhtmlxcalendar_yahoolike .dxcaldays_ie td, div.dhtmlxcalendar_yahoolike .dxcaldlabel td {
+	box-sizing: border-box;
+	background: var(--crust);
+	font-family: var(--mono-font-stack);
+	font-size: var(--font-size);
+	text-align: center;
+}
+div.dhtmlxcalendar_yahoolike .dxcaldays td, div.dhtmlxcalendar_yahoolike .dxcaldays_ie td, div.dhtmlxcalendar_yahoolike .dxcaldlabel td {
+	vertical-align: middle;
+	width: 20px;
+	height: 20px;
+	color: var(--subtext0);
+}
+.daynames, .dxcalmonth > tbody > tr {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+tr:has(.month_btn_right) {
+  gap: .125rem; 
+}
+div.dhtmlxcalendar_yahoolike .dxcaldays td, div.dhtmlxcalendar_yahoolike .dxcaldays tr, div.dhtmlxcalendar_yahoolike .dxcaldays_ie td {
+	border: var(--table-border);
+	background-color: inherit;
+	text-align: center;
+	cursor: pointer;
+}
+div.dhtmlxcalendar_yahoolike .dxcaldays > tbody > tr > td.hover, 
+div.dhtmlxcalendar_yahoolike .dxcaldays > tbody > tr > td.selected {
+	background-color: var(--button-primary-bg);
+	color: var(--button-primary-text-color) !important;
+	opacity: 1;
+	font-weight: 500;
+	box-sizing: border-box;
+}
+.dhtmlxcalendar_yahoolike .dxcalmonth :is(td.month_btn_left, td.month_btn_right) {
+	background-image: none !important;
+  background-color: var(--button-secondary-bg);
+  color: var(--button-secondary-text-color);
+  border: var(--button-secondary-border);
+  border-radius: var(--main-br);
+	width: 1.5rem !important;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--button-secondary-hover-bg);
+    color: var(--button-secondary-text-hover-color);
+  }
+}
+div.dhtmlxcalendar_yahoolike div.planeMonth, div.dhtmlxcalendar_yahoolike div.planeYear {
+	height: auto;
+	overflow: auto;
+	font-size: var(--font-size);
+	font-weight: 700;
+	width: 70px;
+	padding: .25rem;
+	color: var(--link-color);
+}
+div.dhtmlxcalendar_yahoolike div.planeMonth:hover, div.dhtmlxcalendar_yahoolike div.planeYear:hover {
+	background-color: var(--button-secondary-hover-bg);
+	color: var(--button-secondary-text-hover-color);
+	opacity: 1;
+	font-weight: 500;
+	box-sizing: border-box;
+	border-radius: var(--main-br);
+}
+td.month_btn_left span, td.month_btn_right span {
+	visibility: visible !important;
+}
+div.dhtmlxcalendar select.dhtmlxRichSelector {
+	font-family: var(--mono-font-stack);
+	position: absolute;
+	font-size: .6875rem;
+	min-height: 17rem;
+  min-width: 3rem;
+	color: var(--link-color);
+	background: var(--surface0);
+	z-index: 100;
+	border: 0;
+  padding: 0;
+	overflow: visible;
+  & option {
+    padding: .25rem .5rem;
+  }
+  & option:hover {
+    background-color: var(--lavender);
+    color: var(--crust);
+  }
+}
+.dhtmlxcalendar .entbox textarea.dhtmlxRichSelector {
+  display: none;
 }
 /* ################################### */
 /* ## Can of worms I'm not touching ## */

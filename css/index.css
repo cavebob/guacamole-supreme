@@ -99,3 +99,17 @@ p[id^="news"] {
 .rowhead {
   text-align: left;
 }
+.poll nobr {
+  white-space: normal;
+}
+.poll nobr {
+  /* white-space: normal; */
+  /* display: inline-block; */
+  white-space: wrap;
+}
+.embedded:has(nobr) {
+  width: 100%;
+}
+.embedded:has(> img.poll) {
+  min-width: max-content;
+}

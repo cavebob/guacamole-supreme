@@ -194,6 +194,7 @@ form[action="/forums/search"] > table:only-child,
   border-radius: var(--main-br);
   border-spacing: 0;
   border-collapse: separate;
+  margin: auto;
   & tr:last-child {
     > td:first-child  {
       border-bottom-left-radius: var(--main-br);
@@ -488,4 +489,30 @@ tr:has(>td.bottom>.main[height="75px"]) {
 /* break long unbreakable string */
 .main[border="0"][cellspacing="0"][cellpadding="0"] .embedded > table[width="100%"][cellpadding="5"] td {
   word-break: break-word;
+}
+/* Poll table list */
+table[width="750"] p.sub + .main {
+  display: block;
+  border-radius: var(--main-br);
+  border: var(--table-border); 
+  overflow: clip;
+  background-color: var(--mantle);
+  & td[bgcolor="#ECE9D8"] {
+    background-color: var(--surface0);
+    border-radius: var(--main-br);
+    &:first-child {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    &:last-child {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  }
+  & td {
+    padding: .25rem;
+  }
+}
+.bottom  > :is(h1, h2, h3) {
+  margin-bottom: 1rem;
 }

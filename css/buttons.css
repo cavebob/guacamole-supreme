@@ -307,7 +307,7 @@ img[alt="Offline"] {
   border-radius: 50%;
   padding-left: 10px;
 }
-img[alt="Send PM"] {
+/* img[alt="Send PM"] {
   background: var(--button-primary-bg);
   mask: url("/img/message.svg") center no-repeat;
   mask-size: 20px;
@@ -317,7 +317,7 @@ img[alt="Send PM"] {
   padding-left: 1.25rem;
   display: block;
   box-sizing: border-box;
-}
+} */
 
 .showlinks {
   flex: 100%;
@@ -565,6 +565,39 @@ img[alt="Read"] {
 	display: block;
 	box-sizing: border-box;
 }
+td > a[href*="sendmessage.php"] {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  width: 2rem;
+  height: 2rem;
+  color: var(--button-primary-text-color);
+  background: var(--button-primary-bg);
+  border: 1px solid transparent;
+  border-radius: var(--main-br);
+  font-size: 0;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 6px;
+    left:4.5px;
+    background: var(--button-primary-text-color);
+    mask: url("../img/send.svg") center no-repeat;
+    mask-size: 20px;
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+  &:hover {
+    background-color: var(--button-primary-hover-bg);
+    border-color: transparent;
+    &::before {
+      background: var(--button-secondary-text-hover-color);
+    }
+  }
+  & img {
+    height: 0px;
+  }
+}
 a[href*="action=add&type=friend"]{
   display: inline-block;
   position: relative;
@@ -723,6 +756,16 @@ a[href="#top"]  {
     background: var(--button-primary-hover-bg);
   }
 }
+img[src*="star.gif"][alt=Donor], .donor {
+  display: inline-block;
+  box-sizing: border-box;
+  mask: url("../img/star.svg") no-repeat;
+  background-color: var(--peach);
+  mask-size: 12px;
+  width: 12px;
+  height: 12px;
+  padding-left: 11px
+}
 img[src*="starbig.gif"][alt=Donor] {
   display: inline-block;
   box-sizing: border-box;
@@ -807,4 +850,22 @@ img[src*="warnedbig.gif"][alt=Warned] {
   &:hover {
     background: var(--button-primary-hover-bg);
   }
+}
+img[src*="/flag/"] {
+  height: 18px;
+  width: 30px;
+  object-fit: none;
+  margin: 2px;
+  border-radius: var(--small-br);
+  filter: brightness(90%);
+}
+img.poll, img[src$="bar.gif"] {
+	border-radius: .25rem;
+	height: .5rem;
+	min-width: 1px;
+	background: var(--lavender);
+  padding-top: 8px;
+}
+.pollleft, .pollright, img[src$="bar_left.gif"], img[src$="bar_right.gif"] {
+  display: none;
 }

@@ -28,15 +28,22 @@
   background-color: var(--button-primary-hover-bg);
 }
 .embedded:has(>.hasposted)::after {
-	content: url("../img/hasposted.png");
+	content: "";
 	display: inline-block;
-	height: 12px;
-	width: 12px;
+	height: 9px;
+	width: 9px;
+  background-color: var(--lavender);
+  border-radius: 3px;
 	scale: 1;
-	top: 26px;
-	left: 18px;
+	bottom: 18%;
 	position: absolute;
-	filter: brightness(10%) invert(.9) hue-rotate(125deg);
+  left: 6% ;
+}
+.embedded:has(>.unlocked.hasposted)::after {
+  filter: brightness(90%);
+}
+.embedded:has(>.locked.hasposted)::after {
+  filter: brightness(90%);
 }
 tr:has(td > .hasposted) {
   position: relative;

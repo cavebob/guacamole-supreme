@@ -6,14 +6,12 @@
   background: var(--header);
   z-index: 2;
 }
-
 #header tr {
   display: flex;
 
   flex-flow: row wrap;
   justify-content: space-between;
 }
-
 #header .embedded {
   display: flex;
   flex-flow: row wrap;
@@ -23,8 +21,6 @@
     border-bottom: 1px solid var(--surface0)
    }
 }
-
-
 /* ######################### */ 
 /* Index, Logo | 1st Child Header */
 /* ######################### */ 
@@ -33,12 +29,10 @@
   flex: 1;
   
 }
-
 #header .embedded > a {
   padding: 1rem;
   flex: 100%;
 }
-
 #header #logo {
   display: flex;
   height: 2rem;
@@ -47,7 +41,6 @@
   mask: url(../img/logo-eqiva.svg) left no-repeat;
   mask-size: contain;
 }
-
 /* ######################### */ 
 /* SEARCH | 2nd Child Header */
 /* ######################### */ 
@@ -62,11 +55,9 @@
   flex-flow: row nowrap;
   margin: auto 1rem;
   border-radius: var(--main-br);
-  /* overflow: clip; */
   background: var(--surface0)
 }
 #sitesearch:has(#sitesearchinput:focus-visible) {
-  /* border: 1px solid var(--lavender); */
   outline: 1px solid var(--lavender);
 }
 #sitesearchform {
@@ -134,7 +125,6 @@
 #sitesearchsubmit {
   width: 1rem;
 }
-
 /* ######################### */ 
 /* ######################### */ 
 /* User / Settings | 3rd Child Header */
@@ -146,22 +136,15 @@
   order: 0;
   flex: 100%;
 }
-
 .curuser-stats {
   display: flex;
   align-items: center;
   gap: .25rem;
   height: 2rem;
 }
-
 .donor {
-  background: url("../img/star2.png");
-  height: 10px;
-  width: .6875rem;
-  margin-left: -4px;
-  opacity: 1;
+  margin-left: -5px;
 }
-
 .curuser-stats:nth-child(2) {
   order: 2;
 }

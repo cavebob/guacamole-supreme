@@ -88,3 +88,6 @@ div[style="width: 930px; margin: 0px auto;"] {
 form td[style="padding: 0px"] {
   padding: .25rem !important;
 }
+td[style="padding-left: 30px; border-left: 1px solid black; width:27%;"] {
+  padding: .25rem !important;
+}
