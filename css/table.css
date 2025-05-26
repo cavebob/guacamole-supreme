@@ -587,3 +587,6 @@ br:has(+.tablesorter) {
 .center_comments > table {
 	margin: auto;
 }
+td[id^="codec"]:is(::before,::after) {
+  text-indent: 0rem;
+}
