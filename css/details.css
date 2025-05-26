@@ -3,9 +3,8 @@
 	border-radius: var(--main-br);
 }
 /* offer details page */ 
-.torrent-title + table[width="930"]:has([id^="l"].labelt) {
+/* .torrent-title + table[width="930"]:has([id^="l"].labelt) */
 
-}
 /* requests detail page */
 .lottery_table2:has([id^="l"].label) {
   width: auto !important;

@@ -143,16 +143,13 @@ form[action="dox.php"] td[style="border:black solid 1px;"] {
   margin: 0;
 }
 /* My lists table */
-form[method="get"][style="margin-bottom:20px;"] + table[cellpadding="5"]:not([class]) {
-
-}
+/* form[method="get"][style="margin-bottom:20px;"] + table[cellpadding="5"]:not([class]) */
 /* Forum tables */  /* Prevent double padding from tables nested inside tables */
 :is(.bottom > table[cellpadding="5"]:not([class], [id]):has(div[class*="locked"]), #latest_posts > table, form[action="/forums/search"] ~ table) td:not(.embedded) {
   border-top: 1px solid var(--surface0);
   background-color: var(--mantle);
   padding: .25rem;
 }
-
 
 /* latest comments */
 .embedded > table[width="100%"][cellpadding="10"]:has(.sub) {
@@ -163,11 +160,9 @@ table.tableb, table.tableb table[width="500"] {
   width: auto;
 }
 
-
 /* Inbox page */
-form[action="inbox.php"] > table:has(#inboxbody) {
-  
-}
+/* form[action="inbox.php"] > table:has(#inboxbody) */
+
 /* Inbox PM page */ 
 .bottom:not([id]) > table[width="660"] {
   width: auto;
@@ -350,9 +345,7 @@ font[size="+3"]:has([href$="/support/contactstaff"]) {
 
 
 /* Subtitles search */
-form[action="dox.php"] > table {
-
-}
+/* form[action="dox.php"] > table */
 
 
 #torrent-list a.fl::after,
