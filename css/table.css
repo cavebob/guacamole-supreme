@@ -588,5 +588,5 @@ br:has(+.tablesorter) {
 	margin: auto;
 }
 td[id^="codec"] {
-  text-indent: 0rem;
+  text-indent: 0rem !important;
 }
