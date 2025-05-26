@@ -764,7 +764,6 @@ img[src*="star.gif"][alt=Donor], .donor {
   mask-size: 12px;
   width: 12px;
   height: 12px;
-  padding-left: 11px
 }
 img[src*="starbig.gif"][alt=Donor] {
   display: inline-block;

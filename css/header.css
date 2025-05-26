@@ -27,7 +27,6 @@
 #header .embedded:first-child { 
   order: 1;
   flex: 1;
-  
 }
 #header .embedded > a {
   padding: 1rem;
@@ -41,6 +40,8 @@
   mask: url(../img/logo-eqiva.svg) left no-repeat;
   mask-size: contain;
 }
+
+
 /* ######################### */ 
 /* SEARCH | 2nd Child Header */
 /* ######################### */ 
@@ -207,11 +208,115 @@
   display: flex;
   align-items: center;
   gap: .25rem;
-  height: 2rem;
-}
-.donor {
-  margin-left: -5px;
+  &:first-child {
+    gap: 0rem;
+    &>b:first-child {
+     
+      &>a {
+        display: inline flex;
+        align-items: center;
+        height: 2rem;
+        padding-right: 12px;
+      }
+    }
+    & .donor {
+      margin-left: -12px;
+    }
+  }
 }
 .curuser-stats:nth-child(2) {
   order: 2;
+}
+#header a[href$="/my.php"] {
+	mask: url("../img/setting.svg") center no-repeat;
+  background: var(--button-primary-bg);
+  mask-size: 24px;
+	height: 2rem;
+  width: 2rem;
+	align-self: center;
+  font-size: 0;
+  &:hover {
+    background: var(--button-primary-hover-bg);
+  }
+}
+#header a[href$="/logout.php"] {
+	mask: url("../img/logout.svg") center no-repeat;
+  background: var(--button-primary-bg);
+  mask-size: 24px;
+	height: 2rem;
+  width: 2rem;
+	align-self: center;
+  font-size: 0;
+  &:hover {
+    background: var(--button-primary-hover-bg);
+  }
+}
+#notifications-open {
+  cursor: pointer;
+  font-size: 0;
+  height: 2rem;
+  width: 100%;
+  display: inline-block;
+  color: var(--button-primary-bg);
+  vertical-align: middle;
+  margin-right: .5rem;
+}
+#notifications-open .js-notifications-count {
+  width: auto;
+  height: 2rem;
+  font-size: var(--font-size);
+  display:inline flex;
+  align-items: center;
+  vertical-align: middle;
+  margin: 0 .25rem;
+  font-weight: 500;
+  &:hover {
+    color: var(--button-primary-hover-bg);
+  }
+  &:hover::after{
+    background: var(--button-primary-hover-bg);
+  }
+}
+.js-notifications-count::after {
+  content: '';
+  display: inline-block;
+  width: 1.5rem;
+  height: 2rem;
+  mask: center url('../img/notification.svg');
+  mask-size: 24px;
+  mask-repeat: no-repeat;
+  background: var(--button-primary-bg);
+}
+#header .alert-box:has(.inbox, .inboxnew) {
+  font-size: 0;
+  height: 2rem;
+}
+.inbox, .inboxnew {
+	mask: url("../img/message.svg") center no-repeat;
+  background: var(--button-primary-bg);
+  mask-size: 24px;
+	height: 2rem;
+  width: 2rem;
+	align-self: center;
+  &:hover {
+    background: var(--button-primary-hover-bg);
+  }
+}
+.inboxnew {
+	background: var(--red);
+	border-radius: var(--input-box-border-radius);
+	width: 2rem;
+}
+a.alert-box--news {
+	display: flex;
+	align-items: center;
+	color: var(--red);
+  border: 1px solid var(--red);
+  border-radius: var(--main-br);
+  font-weight: 700;
+	font-size: var(--font-size);
+	height: 2rem;
+	padding: 0 .4rem;
+	order: -1;
+	transition: all .25s ease;
 }

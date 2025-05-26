@@ -115,7 +115,7 @@ h1, h2, h3 {
 [color="#cc0000"], [color="#bb0000"], [color="#aa0000"] {
   color: var(--maroon)
 }
-[color="#880000"] {
+[color="#880000"], [color="#990000"],  [color="#770000"] {
   color: var(--peach)
 }
 pre {
