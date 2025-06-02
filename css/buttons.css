@@ -51,7 +51,8 @@ p:has(.index[href*="/comments/add"]) {
   display: inline-block;
   background: var(--crust);
   line-height: normal;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  user-select: none;
 }
 .tag[class*="exclusive"] {
   color: var(--mauve);
@@ -557,6 +558,18 @@ img[alt="Read"] {
 	background: var(--button-primary-bg);
 	mask: url("../img/message.svg") center no-repeat;
   mask-size: 20px;
+	height: 1.25rem;
+	width: 1.25rem;
+	align-self: center;
+	padding-left: 1.25rem;
+	filter: grayscale(50%);
+	display: block;
+	box-sizing: border-box;
+}
+img[alt="Unread"] {
+	background: var(--red);
+	mask: url("../img/message.svg") center no-repeat;
+	mask-size: 20px;
 	height: 1.25rem;
 	width: 1.25rem;
 	align-self: center;

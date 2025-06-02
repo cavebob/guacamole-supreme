@@ -215,7 +215,7 @@ div:has(>h1+.main+.message) > table.message) {
     padding: .5rem .5rem;
   }
 }
-:is(#profilesettings,  form[action] > table:only-of-type:not(#searchbox), form[action] > div > table:only-of-type,
+:is(#profilesettings,  form[action] > table:only-of-type:not(#searchbox, >tbody#inboxbody), form[action] > div > table:only-of-type,
 form[action="/forums/search"] > table:only-child,
 /* User profile table */
 .bottom:not([id]) > .main[border="0"][cellspacing="0"][cellpadding="0"] .embedded > table[width="100%"][cellpadding="5"], 

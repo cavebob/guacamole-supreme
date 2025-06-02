@@ -24,7 +24,7 @@
 .tab:hover {
   background: var(--link-hover-color);
   & a {
-  color: var(--mantle)
+    color: var(--button-primary-text-color);
   }
 }
 /* Sources without encodes (4 tabs), Offers (3 tabs), Request (7tabs) */
@@ -58,10 +58,13 @@ table:has(a[href$="/lists/my"]), table:has(td[width="12%"] > b > a[href*="/staff
     text-wrap-mode: nowrap;
     min-width: fit-content;
     max-width: 15%;
+    &.submenu-highlight {
+      background-color: var(--button-primary-bg)
+    }
     &:hover {
       background: var(--link-hover-color);
       a {
-      color: var(--mantle)
+        color: var(--button-primary-text-color);
       }
     }
   }
@@ -71,4 +74,10 @@ table:has(a[href$="/lists/my"]), table:has(td[width="12%"] > b > a[href*="/staff
   display: inline-block;
   width: 100%;
   padding: var(--button-padding);
+}
+:is(.tab.selected, .submenu-highlight):not(:hover) {
+  background-color: var(--button-primary-bg);
+  & a {
+  color: var(--button-primary-text-color);
+  }
 }

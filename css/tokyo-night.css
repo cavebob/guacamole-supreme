@@ -13,7 +13,7 @@
   --teal: #73daca;
   --sky: #89dceb;
   --sapphire: #74c7ec;
-  --blue: var(--link-color);
+  --blue: hsl(240, 100%, 92%);
   --lavender: #b4befe;
   --bookmark-blue: hsl(212, 97.7%, 65.5%);
 
@@ -33,7 +33,7 @@
   --mantle: hsl(240, 17.6%, 20%); /* base + layer 1 */
   --crust: var(--header); /* base + layer 2 */ 
   --header: hsl(240, 13.7%, 10%);
-  --link-color: hsl(240, 100%, 92%);
+  --link-color: var(--blue);
   --link-hover-color: hsl(240, 100%, 80%);
   --input-placeholder-text-color: hsl(240, 16.6%, 63.3%);
   --input-bg: hsl(235, 18.2%, 12.9%);
