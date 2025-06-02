@@ -18,17 +18,18 @@
   align-items: center;
   gap: 1rem;
 }
-/* All classed) tables */
+/* All classed tables */
 :is(#torrent-list, .tablesorter, .lottery_table, .row-seclog table, 
 [action="/log"] ~ table:not(.main), table.padding2, [action="dox.php"]+p+table,
 .label + table:has(a[href*="viewtopic"]), .table_requests, 
-form[method="get"][style="margin-bottom:20px;"] + table[cellpadding="5"]:not([class]),  
-/* forum tables */
-.bottom > table[cellpadding="5"]:not([class], [id]):has(div[class*="locked"]), #latest_posts > table, 
+form[method="get"][style="margin-bottom:20px;"] + table[cellpadding="5"]:not([class]), 
+/* forum tables */ .bottom > table[cellpadding="5"]:not([class], [id]):has(div[class*="locked"]), #latest_posts > table, 
 form[action="/forums/search"] ~ table, 
-form[action="dox.php"] > table, table.tableb table[width="500"], #request-list, form[action="inbox.php"] > table:has(#inboxbody), 
+form[action="dox.php"] > table, table.tableb table[width="500"], #request-list, 
+form[action="inbox.php"] > table:has(#inboxbody), 
 .bottom:not([id]) > table[width="660"]),
-/* Ignored Shows Page */.bottom:not([id]) > script + h1 + table {
+/* Ignored Shows Page */.bottom:not([id]) > script + h1 + table,
+table:has(>thead>tr>.colhead[align="left"]) {
   border: 1px solid var(--surface0);
   margin: 1rem 0;
   overflow: auto;
@@ -36,10 +37,10 @@ form[action="dox.php"] > table, table.tableb table[width="500"], #request-list, 
   border-spacing: 0;
   border-collapse: separate;
   & tr:last-child {
-    > td:first-child  {
+    > td:first-child:not(.colhead)  {
       border-bottom-left-radius: var(--main-br);
     }
-    > td:last-child  {
+    > td:last-child:not(.colhead)  {
       border-bottom-right-radius: var(--main-br);
     }
   }
@@ -61,6 +62,9 @@ form[method="get"][style="margin-bottom:20px;"] + table[cellpadding="5"]:not([cl
 form[action="dox.php"] > table, table.tableb table[width="500"],/* Ignored Shows Page */
 .bottom:not([id]) > script + h1 + table, #request-list, form[action="inbox.php"] > table:has(#inboxbody), 
 .bottom:not([id]) > table[width="660"]) th {
+  background-color: var(--mantle);
+}
+table:has(>thead>tr>td.colhead[align="left"]) .colhead {
   background-color: var(--mantle);
 }
 /* Forum pages table heading */
@@ -107,7 +111,7 @@ form[action="dox.php"] > table, table.tableb table[width="500"], #request-list, 
 form[method="get"][style="margin-bottom:20px;"] + table[cellpadding="5"]:not([class]), #profilesettings, 
 form[action="dox.php"] > table, table.tableb table[width="500"],/* Ignored Shows Page */
 .bottom:not([id]) > script + h1 + table, #request-list, form[action="inbox.php"] > table:has(#inboxbody), 
-.bottom:not([id]) > table[width="660"]) :is(td, th) {
+.bottom:not([id]) > table[width="660"], table:has(>thead>tr>td.colhead[align="left"])) :is(td, th) {
   padding: .25rem;
 }
 form[action="dox.php"] > table tr:has(>td[colspan="16"]) {  
@@ -125,7 +129,7 @@ form[action="dox.php"] td[style="border:black solid 1px;"] {
   border: 1px solid var(--surface0);
   border-radius: var(--main-br);
 }
-:is(#torrent-list, .tablesorter, .lottery_table, .row-seclog table, .table_requests) td{
+:is(#torrent-list, .tablesorter, .lottery_table, .row-seclog table, .table_requests, table:has(>thead>tr>td.colhead[align="left"])) td:not(.colhead){
   background-color: var(--base);
   border-top: 1px solid var(--surface0);
 }
@@ -179,6 +183,7 @@ Forum reply form: form[action="forum/post"] > .message
 Upload form: form[action="/upload/upload"] > table
 , form[action] > table:only-of-type ,
  form[action] > div > table:only-of-type,
+Offer vote table: table:has(td.colhead[align="left"])
 */
 :is(#profilesettings, form[action] > table:only-of-type:not(#searchbox), form[action] > div > table:only-of-type,
 form[action="/forums/search"] > table:only-child,
@@ -593,4 +598,9 @@ td[id^="codec"] {
 /* Rules heading info */ 
 h2 > :is([color="#1D3953"],[color="#004E98"]), p > font[color="#004E98"] {
  color: var(--subtext1);
+}
+.colhead {
+  color: var(--th-text-color);
+  line-heigth: 2rem;
+  font-weight: bold;
 }

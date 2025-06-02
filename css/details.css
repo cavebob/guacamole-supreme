@@ -342,7 +342,7 @@ a.list-overview:hover .list-overview__text {
   flex-flow: row nowrap;
   gap: .25rem
 }
-td > i:has(+ [href*="sendmessageanon"]) {
+td > i:has(+ [href*="sendmessageanon"]), table:has(>thead>tr>.colhead) em {
   color: var(--subtext0);
 }
 #subcell img {
