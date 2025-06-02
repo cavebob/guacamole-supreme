@@ -623,3 +623,39 @@ h2 > :is([color="#1D3953"],[color="#004E98"]), p > font[color="#004E98"] {
 .tableb th[width="600"] {
   font-size: var(--font-size-larger);
 }
+/* Donate table */ 
+div.center:is([style="margin: 10px 0px 10px 0px;"], [style="margin: 10px 0px 30px 0px;"]) {
+  display: block;
+  padding: 1rem;
+  background: var(--mantle);
+  border-radius: var(--main-br);
+  border: var(--table-border); 
+  text-align: initial;
+  margin: auto !important;
+  max-width: 64rem;
+  text-wrap-style: balance;
+  & div:has(#btc_address_qr) {
+    text-align: center;
+    & #btc_address_qr {
+      border-radius: var(--main-br);
+    }
+  }
+  & div[style="font-style: italic; margin-top: 15px;"] {
+    text-align: center;
+    color: var(--subtext0)
+  }
+  &:has(.lottery_table) {
+    text-align: center;
+  }
+}
+.bottom:has(#btc_address_qr) {
+  & .lottery_table {
+    overflow: clip;
+    & tr:first-child > td {
+      border-top: 0;
+    }
+  }
+  & h2 {
+    margin-bottom: 0;
+  }
+}
