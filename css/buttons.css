@@ -220,7 +220,7 @@ a.js-download:not(.index, .list-links > a) {
 a[id^="rss"] {
   display: inline-block;
   background: var(--button-primary-bg);
-  mask: url("../img/rss1.svg") center no-repeat;
+  mask: url("../img/rss.svg") center no-repeat;
   mask-size: 18px;
   width: 1.25rem;
   height: 1.25rem;
@@ -232,7 +232,7 @@ a[id^="rss"] {
 .js-bookmarkadd {
   display: inline-block;
   background: var(--button-primary-bg);
-  mask: url("../img/bookmark1.svg") center no-repeat;
+  mask: url("../img/bookmark.svg") center no-repeat;
   mask-size: 20px;
   width: 1.25rem;
   height: 1.25rem;
@@ -760,7 +760,7 @@ img[src*="/top.gif"][alt="Top"] {
   margin-bottom: -6px;
   margin-left: 4px;
 	mask: url("../img/totop.svg") center no-repeat;
-  mask-size: 24px;
+  mask-size: 25px;
 	background: var(--button-primary-bg);
 }
 a[href="#top"]  {

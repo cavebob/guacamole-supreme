@@ -36,6 +36,14 @@ p:has(a[href*="page="]):not(.sub) {
   a:hover{
     background-color: var(--)
   }
+  form[action="dox.php"] ~ &:nth-last-child(2), .lottery_table + & {
+    & :is(b, a):nth-last-child(2) {
+      order: -1
+    }
+    & :is(b, a):nth-last-child(1) {
+      order: 1;
+    }
+  }
 }
 /* requests comments pagination */
 /* .center_comments > p */
