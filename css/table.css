@@ -591,6 +591,6 @@ td[id^="codec"] {
   text-indent: 0rem !important;
 }
 /* Rules heading info */ 
-h2 > :is([color="#1D3953"],[color="#004E98"]) {
+h2 > :is([color="#1D3953"],[color="#004E98"]), p > font[color="#004E98"] {
  color: var(--subtext1);
 }

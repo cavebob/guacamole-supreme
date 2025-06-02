@@ -282,7 +282,7 @@
   display: inline-block;
   width: 1.5rem;
   height: 2rem;
-  mask: center url('../img/notification.svg');
+  mask: center url("../img/notification.svg");
   mask-size: 24px;
   mask-repeat: no-repeat;
   background: var(--button-primary-bg);

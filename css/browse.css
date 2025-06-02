@@ -98,3 +98,6 @@ td:has(>a[href*="#snatches"]) {
     filter: brightness(.85)
   }
 }
+#torrent-list tr[id].featured td {
+  background: var(--featured)
+}

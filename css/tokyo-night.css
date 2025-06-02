@@ -57,6 +57,8 @@
   --th-text-color: var(--heading-color);
   --heading-color: hsl(240, 12.8%, 61.8%);
 
+  --featured: var(--quote-bg-color);
+
   --unreadpost-bg-color: hsl(237, 15.6%, 25.1%);
   --unreadpost-border: 1px solid var(--unreadpost-border-color);
   --unreadpost-border-color: var(--overlay0);

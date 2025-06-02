@@ -158,3 +158,6 @@ span.small {
 .js-source-data {
   box-sizing: content-box;
 }
+b {
+  font-weight: 700
+}
