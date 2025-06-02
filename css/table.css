@@ -188,7 +188,8 @@ Offer vote table: table:has(td.colhead[align="left"])
 :is(#profilesettings, form[action] > table:only-of-type:not(#searchbox), form[action] > div > table:only-of-type,
 form[action="/forums/search"] > table:only-child,
 /* User profile table */
-.bottom:not([id]) > .main[border="0"][cellspacing="0"][cellpadding="0"] .embedded > table[width="100%"][cellpadding="5"]) {
+.bottom:not([id]) > .main[border="0"][cellspacing="0"][cellpadding="0"] .embedded > table[width="100%"][cellpadding="5"],
+div:has(>h1+.main+.message) > table.message) {
   border: 1px solid var(--surface0);
   overflow: auto;
   border-radius: var(--main-br);
@@ -214,20 +215,22 @@ form[action="/forums/search"] > table:only-child,
 :is(#profilesettings,  form[action] > table:only-of-type:not(#searchbox), form[action] > div > table:only-of-type,
 form[action="/forums/search"] > table:only-child,
 /* User profile table */
-.bottom:not([id]) > .main[border="0"][cellspacing="0"][cellpadding="0"] .embedded > table[width="100%"][cellpadding="5"]) tr td {
+.bottom:not([id]) > .main[border="0"][cellspacing="0"][cellpadding="0"] .embedded > table[width="100%"][cellpadding="5"], 
+div:has(>h1+.main+.message) > table.message) tr td {
   border-bottom: 1px solid var(--surface0);
   background-color: var(--mantle);
 }
 :is(#profilesettings,  form[action] > table:only-of-type:not(#searchbox), form[action] > div > table:only-of-type,
 form[action="/forums/search"] > table:only-child,
 /* User profile table */
-.bottom:not([id]) > .main[border="0"][cellspacing="0"][cellpadding="0"] .embedded > table[width="100%"][cellpadding="5"]) tr:last-child td {
+.bottom:not([id]) > .main[border="0"][cellspacing="0"][cellpadding="0"] .embedded > table[width="100%"][cellpadding="5"], div:has(>h1+.main+.message) > table.message) tr:last-child td {
   border-bottom: none;
 }
 #profilesettings span {
   display: block;
 }
-form table[width="100%"] > tbody > tr > td.embedded:not(.smiley_table) {
+form table[width="100%"] > tbody > tr > td.embedded:not(.smiley_table), 
+div:has(>h1+.main+.message) > table.message table:not(.smiley_table) > tbody > tr > td.embedded {
   border-bottom: 0 !important;
   padding: .25rem 0 0 0 !important;
   & table:not(.smiley_table) tr {
