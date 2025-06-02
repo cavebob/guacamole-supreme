@@ -53,3 +53,6 @@
 tr:has(td > .hasposted) {
   position: relative;
 }
+.readpost a, .std-content a, td.comment a[href] {
+	word-break: break-all;
+}
