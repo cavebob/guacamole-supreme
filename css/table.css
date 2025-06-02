@@ -604,6 +604,6 @@ h2 > :is([color="#1D3953"],[color="#004E98"]), p > font[color="#004E98"] {
 }
 .colhead {
   color: var(--th-text-color);
-  line-heigth: 2rem;
+  line-height: 2rem;
   font-weight: bold;
 }
