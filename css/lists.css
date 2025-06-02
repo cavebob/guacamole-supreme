@@ -70,6 +70,7 @@ div.list-links > a {
 	font-size: 1.25rem;
 	padding: .9rem .25rem .75rem .25rem;
 	background: var(--inner-th-bg-color);
+  width: 100%;
 }
 div.movie-rating {
 	display: inline-block;
@@ -94,16 +95,22 @@ div.item > h2 {
 	display: none;
 }
 /* TV List */
+.item.tvdb .item-body{
+  display: grid;
+  grid-template-areas: "image image"
+                 "rank description" 
+                 "rank comment";
+}
 div.item.tvdb {
 	display: flex;
 	min-height: 12rem;
 	height: auto;
-	max-width: 48rem;
-	width: 48rem;
+	max-width: 47.5rem;
+	width: 47.5rem;
 	position: initial;
-  & .item-body {
+  /* & .item-body {
     flex-flow: row wrap;
-  }
+  } */
 }
 
 div.item.tvdb > .item-body > .rank {
@@ -115,7 +122,7 @@ div.item.tvdb > .item-body > .rank {
 	margin-left: 0;
 	flex: 1 0 5%;
 	color: var(--lavender);
-	order: 1;
+	grid-area: rank;
 	background: var(--mantle);
   border-right: var(--table-border);
 	font-family: 'Trebuchet MS','Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif;
@@ -128,7 +135,7 @@ div.item.tvdb > .item-body > .rank {
 	font-size: 1rem;
 	font-weight: 700;  
   border-bottom: var(--table-border);
-
+  grid-area: image;
 }
 .item.tvdb > .item-body > a img.tv-banner {
 	height: 100%;
@@ -159,11 +166,22 @@ div.item {
 }
 .item.tvdb .item-description {
 	padding-left: 0;
+  grid-area: description;
 }
 div.item-description {
 	font-size: .8125rem;
 }
-#list-container .item > .item-body > .comment {
+/* comment styling */
+#list-container .item-body > .comment {
+	position: relative;
+	border: var(--table-border);
+	padding: .25rem .5rem;
+	background-color: var(--quote-bg-color);
+  border-radius: var(--main-br);
+  font-style: italic; 
+}
+
+#list-container .item.imdb > .item-body > .comment {
 	position: absolute;
 	left: 24%;
 	bottom: .5rem;
@@ -173,6 +191,15 @@ div.item-description {
   border-radius: var(--main-br);
   font-style: italic;
 }
+#list-container .item.tvdb > .item-body > .comment {
+	position: relative;
+  grid-area: comment;
+  left: initial;
+  bottom: initial;
+  margin: .5rem;
+  margin-top: 0;
+  width: max-content;
+} 
 #list-container {
   & h1#list-title {
     font-size: var(--larger);
@@ -186,4 +213,45 @@ div.item-description {
     background-color: var(--mantle);
     border-radius: var(--main-br);
   }
+}
+.item.torrent .item-body .comment {
+  position: relative;
+  left: initial;
+  bottom: initial;
+}
+.torrent .item-body {
+  display: grid;
+  grid-template: "rank title"
+                       "rank description"
+                       "rank comment";
+  grid-template-columns: max-content 1fr}
+.item.torrent .item-body .rank {
+  font-size: 1.5rem;
+	text-align: center;
+	font-weight: 400;
+	padding: 1rem 0;
+	min-width: 2.2rem;
+  width: max-content;
+	margin-left: 0;
+	color: var(--lavender);
+	grid-area: rank;
+	background: var(--mantle);
+  border-right: var(--table-border);
+	font-family: 'Trebuchet MS','Lucida Sans Unicode','Lucida Grande','Lucida Sans',Arial,sans-serif;
+  grid-area: rank;
+}
+.torrent .description {
+  display: contents;
+
+  & .item-title {
+    grid-area: title;
+  }
+  & .item-description {
+    grid-area: description;
+  }
+}
+.torrent .comment {
+  margin: .5rem;
+  margin-top: 0;
+  grid-area: comment;
 }

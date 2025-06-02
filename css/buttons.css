@@ -204,7 +204,7 @@ a[href*="show.php?id"] > .tvdb_button {
     }
   }
 }
-a.js-download:not(.index) {
+a.js-download:not(.index, .list-links > a) {
   display: inline-block;
   background: var(--button-primary-bg);
   mask: url("../img/download.svg") center no-repeat;
