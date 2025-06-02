@@ -100,13 +100,22 @@ h1, h2, h3 {
   flex-flow: row wrap;
 }
 /* Ratio text */
-[color="#1900D1"] {
-  color: var(--lavender)
+[color="#1900D1"], [color="blue"], [color="​#0000ff"] {
+  color: var(--bookmark-blue)
 }
-[color="#000000"] {
-  color: var(--text)
+[color="#000000"], [color="​black"] {
+  color: var(--text);
 }
-[color="green"] {
+[color="yellow"], [color="​#ffff00"] {
+  color: var(--yellow);
+}
+[color="orange"], [color="​​#ffa500"] {
+  color: var(--peach);
+}
+[color="pink"], [color="​​#ffc0cb"] {
+  color:var(--pink);
+}
+[color="green"], [color="​​#008000"] {
   color: var(--green)
 }
 [color=darkred], [color="#dd0000"], [color="#ee0000"],[color="#ff0000"], [color="red"] {
@@ -117,6 +126,9 @@ h1, h2, h3 {
 }
 [color="#880000"], [color="#990000"],  [color="#770000"] {
   color: var(--peach)
+}
+[color="purple"] {
+  color: var(--mauve);
 }
 pre {
   white-space: pre-wrap;
