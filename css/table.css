@@ -109,10 +109,13 @@ form[action="dox.php"] > table, table.tableb table[width="500"], #request-list, 
 [action="/log"] ~ table:not(.main), table.padding2, [action="dox.php"]+p+table,
 .label + table:has(a[href*="viewtopic"]), .table_requests, 
 form[method="get"][style="margin-bottom:20px;"] + table[cellpadding="5"]:not([class]), #profilesettings, 
-form[action="dox.php"] > table, table.tableb table[width="500"],/* Ignored Shows Page */
+form[action="dox.php"] > table, /* Ignored Shows Page */
 .bottom:not([id]) > script + h1 + table, #request-list, form[action="inbox.php"] > table:has(#inboxbody), 
 .bottom:not([id]) > table[width="660"], table:has(>thead>tr>td.colhead[align="left"])) :is(td, th) {
   padding: .25rem;
+}
+table.tableb table[width="500"] :is(th, td) {
+  padding: .5rem;
 }
 form[action="dox.php"] > table tr:has(>td[colspan="16"]) {  
   display: none;
@@ -606,4 +609,17 @@ h2 > :is([color="#1D3953"],[color="#004E98"]), p > font[color="#004E98"] {
   color: var(--th-text-color);
   line-height: 2rem;
   font-weight: bold;
+}
+.tableb > tbody > tr[align="left"]{
+  display: block;
+  background: var(--mantle);
+  border-radius: var(--main-br);
+  border: var(--table-border); 
+  margin: auto;
+  &:last-child {
+    margin-top: 1rem;
+  }
+}
+.tableb th[width="600"] {
+  font-size: var(--font-size-larger);
 }
