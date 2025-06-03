@@ -250,8 +250,11 @@ div:has(>h1+.main+.message) > table.message table:not(.smiley_table) > tbody > t
     }
   }
 }
-table[width="800"], table[width="750"] {
+table[width="800"] {
   width: auto;
+}
+table[width="750"]:has([href*="friends"]) {
+  width: fit-content;
 }
 
 /* Links page */
@@ -734,4 +737,19 @@ td.embedded:has(#table_reseed_button_requests) > h1 {
   padding: .5rem;
   border-bottom: var(--table-border);
   background: var(--mantle);
+}
+#twostep_inner {
+	display: flex;
+	flex-flow: column wrap;
+	max-width: fit-content;
+}
+#twostep_secret {
+	font-size: var(--font-size-large);
+	font-weight: bold;
+	text-align: center;
+}
+#twostep_qr {
+	padding: 1rem;
+	background: white;
+	border-radius: var(--main-br);
 }
