@@ -324,6 +324,9 @@ div.dhtmlxcalendar select.dhtmlxRichSelector {
 .dhtmlxcalendar .entbox textarea.dhtmlxRichSelector {
   display: none;
 }
+#searchbox th {
+  display: block;
+}
 /* ################################### */
 /* ## Can of worms I'm not touching ## */
 /* ################################### */
