@@ -530,7 +530,7 @@ table[width="750"] p.sub + .main {
   border: var(--table-border); 
   background-color: var(--mantle);
   margin: .5rem auto;
-  padding: .5rem .75rem;;
+  padding: .5rem .75rem;
   display: block;
 }
 /* Lists create page */
