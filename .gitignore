@@ -1,3 +1,6 @@
 .vscode
+css
+!css/tokyo-night.css
+!css/icon-tokyo.css
 html
 todo.md
