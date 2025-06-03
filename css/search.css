@@ -213,7 +213,7 @@ div > div.dhtmlxcalendar_yahoolike {
 	padding: .3rem;
 	z-index: 99;
 	border-radius: var(--main-br);
-	filter: drop-shadow(0 0 2rem black);
+	filter: drop-shadow(0 0 .25rem black);
 	transform: scale(2);
 	transform-origin: 0 0;
 }
@@ -288,6 +288,7 @@ div.dhtmlxcalendar_yahoolike div.planeMonth, div.dhtmlxcalendar_yahoolike div.pl
 	width: 70px;
 	padding: .25rem;
 	color: var(--link-color);
+  white-space: nowrap;
 }
 div.dhtmlxcalendar_yahoolike div.planeMonth:hover, div.dhtmlxcalendar_yahoolike div.planeYear:hover {
 	background-color: var(--button-secondary-hover-bg);
