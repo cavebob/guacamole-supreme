@@ -101,3 +101,22 @@ td:has(>a[href*="#snatches"]) {
 #torrent-list tr[id].featured td {
   background: var(--featured)
 }
+.search_relevent {
+  border: var(--table-border);
+  border-radius: var(--main-br);
+  padding-top: .5rem;
+  width: fit-content;
+  margin-bottom: 1rem;
+  background: var(--mantle);
+  & a {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    border-top: var(--table-border);
+    padding: 0.25rem .75rem;
+  }
+  & a:first-of-type {
+    margin-top: .5rem;
+    
+  }
+}
