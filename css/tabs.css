@@ -27,10 +27,8 @@
     color: var(--button-primary-text-color);
   }
 }
-/* Sources without encodes (4 tabs), Offers (3 tabs), Request (7tabs) */
-table:has(.submenu-highlight){
-
-}
+/* Sources without encodes (4 tabs), Offers (3 tabs), Request (7tabs) 
+table:has(.submenu-highlight) */ 
 /* Lists (?) table > href ="lists/my" */
 /* Help page */
 /* table:has(td[width="12%"] > b > a[href*="/staff.php"]) */
