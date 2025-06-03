@@ -9,6 +9,7 @@ p:has(a[href*="page="]):not(.sub) {
   border-collapse: collapse;
   flex-flow: row wrap;
   justify-content: center;
+  width: fit-content;
   & :is(b:not(a>b), a) {
     font-size: var(--font-size);
     padding: var(--button-padding);

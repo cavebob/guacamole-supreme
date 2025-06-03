@@ -719,3 +719,19 @@ td.embedded:has(#table_reseed_button_requests) > h1 {
     text-align: right;
   }
 }
+.center_comments .main:has(p.sub) {
+	width: 100%;
+}
+
+/* Center comments and make table 100% width */
+.bottom:has(>.main) :is(>.main:has(p.sub), >.main:has(.std-content), :is(.main:has(.std-content), 
+.main:has(p.sub)) table:not(.lottery_table,:has(+div[style="margin-top:10px;margin-bottom:5px;"]), #details table)) {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+:is(.sources_table, form[action="delete.php"]) th {
+  padding: .5rem;
+  border-bottom: var(--table-border);
+  background: var(--mantle);
+}
