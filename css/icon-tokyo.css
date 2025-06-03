@@ -177,34 +177,34 @@ td[id^="codec"].catcell,
     padding: 0 2px !important;
 }
 .category1 {
-  background: no-repeat center /37px url("/pic/styles/tokyo-night/types/film.svg");
+  background: no-repeat center /37px url("../pic/styles/tokyo-night/types/film.svg");
 }
 .category2 {
-  background: no-repeat center /40px url("/pic/styles/tokyo-night/types/icon-tv-24x24-4.svg");
+  background: no-repeat center /40px url("../pic/styles/tokyo-night/types/icon-tv-24x24-4.svg");
 }
 .category3 {
-  background: no-repeat center /40px url("/pic/styles/tokyo-night/types/video.svg");
+  background: no-repeat center /40px url("../pic/styles/tokyo-night/types/video.svg");
 }
 .category4 {
-  background: no-repeat center /36px url("/pic/styles/tokyo-night/types/music.svg");
+  background: no-repeat center /36px url("../pic/styles/tokyo-night/types/music.svg");
 }
 .category5 {
-  background: no-repeat center /40px url("/pic/styles/tokyo-night/types/volleyball.svg");
+  background: no-repeat center /40px url("../pic/styles/tokyo-night/types/volleyball.svg");
 }
 .category6 {
-  background: no-repeat center /40px url("/pic/styles/tokyo-night/types/microphone.svg");
+  background: no-repeat center /40px url("../pic/styles/tokyo-night/types/microphone.svg");
 }
 .category7 {
-  background: no-repeat center /40px url("/pic/styles/tokyo-night/types/18-plus.svg");
+  background: no-repeat center /40px url("../pic/styles/tokyo-night/types/18-plus.svg");
 }
 .category8 {
-  background: no-repeat center /41px url("/pic/styles/tokyo-night/types/video-question.svg");
+  background: no-repeat center /41px url("../pic/styles/tokyo-night/types/video-question.svg");
 }
 
 /* Temporary for testing */
 .catcell + [id^="codec"] > [class^="medium"] {
   height: 0;
 }
-[id^="codec"] > img[src="/pic/blank2.gif"] {
+[id^="codec"] > img[src="../pic/blank2.gif"] {
   height: 0;
 }
