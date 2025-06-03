@@ -37,7 +37,7 @@
   height: 2rem;
   width: 100%;
   background: var(--lavender);
-  mask: url("/pic/tokyo-night/logo/logo-eqiva.svg") left no-repeat;
+  mask: url("../pic/tokyo-night/logo/logo-eqiva.svg") left no-repeat;
   mask-size: contain;
 }
 
@@ -228,7 +228,7 @@
   order: 2;
 }
 #header a[href$="/my.php"] {
-	mask: url("/pic/tokyo-night/icon/setting.svg") center no-repeat;
+	mask: url("../pic/tokyo-night/icon/setting.svg") center no-repeat;
   background: var(--button-primary-bg);
   mask-size: 24px;
 	height: 2rem;
@@ -240,7 +240,7 @@
   }
 }
 #header a[href$="/logout.php"] {
-	mask: url("/pic/tokyo-night/icon/logout.svg") center no-repeat;
+	mask: url("../pic/tokyo-night/icon/logout.svg") center no-repeat;
   background: var(--button-primary-bg);
   mask-size: 24px;
 	height: 2rem;
@@ -282,7 +282,7 @@
   display: inline-block;
   width: 1.5rem;
   height: 2rem;
-  mask: center url("/pic/tokyo-night/icon/notification.svg");
+  mask: center url("../pic/tokyo-night/icon/notification.svg");
   mask-size: 24px;
   mask-repeat: no-repeat;
   background: var(--button-primary-bg);
@@ -292,7 +292,7 @@
   height: 2rem;
 }
 .inbox, .inboxnew {
-	mask: url("/pic/tokyo-night/icon/message.svg") center no-repeat;
+	mask: url("../pic/tokyo-night/icon/message.svg") center no-repeat;
   background: var(--button-primary-bg);
   mask-size: 24px;
 	height: 2rem;

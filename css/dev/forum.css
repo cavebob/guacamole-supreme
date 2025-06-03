@@ -1,21 +1,21 @@
 .unlocked {
 	width: 36px;
 	height: 36px;
-	mask: url("/pic/tokyo-night/icon/unlocked.svg") center no-repeat;
+	mask: url("../pic/tokyo-night/icon/unlocked.svg") center no-repeat;
   background-color: var(--lavender);
   filter: brightness(.6)
 }
 .unlockednew {
 	width: 36px;
 	height: 36px;
-	mask: url("/pic/tokyo-night/icon/unlocked.svg") center no-repeat;
+	mask: url("../pic/tokyo-night/icon/unlocked.svg") center no-repeat;
   mask-size: 36px;
   background-color: var(--lavender);
 }
 .locked {
 	width: 36px;
 	height: 36px;
-	mask: url("/pic/tokyo-night/icon/locked.svg") center no-repeat;
+	mask: url("../pic/tokyo-night/icon/locked.svg") center no-repeat;
   mask-size: 36px;
   background-color: var(--lavender);
   filter: brightness(.7);
@@ -24,7 +24,7 @@
 .lockednew {
 	width: 36px;
 	height: 36px;
-	mask: url("/pic/tokyo-night/icon/locked.svg") center no-repeat;
+	mask: url("../pic/tokyo-night/icon/locked.svg") center no-repeat;
   mask-size: 36px;
   background-color: var(--lavender);
   margin-bottom: 7px;

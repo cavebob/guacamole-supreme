@@ -56,7 +56,7 @@ div[style="width: 930px; margin: 0px auto;"]:has(a[name="votes"], a[name="startc
   top: -9px;
   left: -13px;
   background: var(--button-primary-bg);
-  mask: url("/pic/tokyo-night/icon/arrowdown.svg") center no-repeat;
+  mask: url("../pic/tokyo-night/icon/arrowdown.svg") center no-repeat;
   mask-size: 22px;
   cursor: pointer;
 }
@@ -65,7 +65,7 @@ div[style="width: 930px; margin: 0px auto;"]:has(a[name="votes"], a[name="startc
   height: 40px;
   width: 40px;
   background: var(--button-primary-bg);
-  mask: url("/pic/tokyo-night/icon/arrowup.svg") center no-repeat;
+  mask: url("../pic/tokyo-night/icon/arrowup.svg") center no-repeat;
   mask-size: 22px;
   cursor: pointer;
   position: absolute;
@@ -203,7 +203,7 @@ div[style="width: 930px; margin: 0px auto;"]:has(a[name="votes"], a[name="startc
 }
 a:has(.imdb) {
   display: block;
-  background: url("/pic/tokyo-night/icon/imdb.svg") left no-repeat;
+  background: url("../pic/tokyo-night/icon/imdb.svg") left no-repeat;
   background-size: contain;
   width: 2.5rem;
   height: 1.5rem;
