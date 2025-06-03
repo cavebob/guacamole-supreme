@@ -107,7 +107,7 @@ h1.fl, span.tag.freeleech, span.tag.tag_leeching {
     background: var(--button-primary-hover-bg);
   }
 }
-.browse_td_name_cell {
+.browse_td_name_cell, #torrent-list td:has(.tvdb_button) {
   position: relative;
   & > .tvdb_button {
     position: absolute; 
