@@ -98,7 +98,7 @@ h1.fl, span.tag.freeleech, span.tag.tag_leeching {
   border: 0;
   display: inline-block;
   background: var(--button-primary-bg);
-  mask: url("../img/search.svg") center no-repeat;
+  mask: url("/pic/tokyo-night/icon/search.svg") center no-repeat;
   mask-size: 18px;
   width: 2.25rem;
   height: auto;
@@ -127,7 +127,7 @@ h1.fl, span.tag.freeleech, span.tag.tag_leeching {
       top: 6px;
       left:5px;
       background: var(--button-secondary-text-color);
-      mask: url("../img/ignore.svg") center no-repeat;
+      mask: url("/pic/tokyo-night/icon/ignore.svg") center no-repeat;
       mask-size: 18px;
       width: 1.25rem;
       height: 1.25rem;
@@ -192,7 +192,7 @@ a[href*="show.php?id"] > .tvdb_button {
     top: 5px;
     left:5px;
     background: var(--button-secondary-text-color);
-    mask: url("../img/about.svg") center no-repeat;
+    mask: url("/pic/tokyo-night/icon/about.svg") center no-repeat;
     mask-size: 20px;
     width: 1.25rem;
     height: 1.25rem;
@@ -208,7 +208,7 @@ a[href*="show.php?id"] > .tvdb_button {
 a.js-download:not(.index, .list-links > a) {
   display: inline-block;
   background: var(--button-primary-bg);
-  mask: url("../img/download.svg") center no-repeat;
+  mask: url("/pic/tokyo-night/icon/download.svg") center no-repeat;
   mask-size: 20px;
   width: 1.25rem;
   height: 1.25rem;
@@ -220,7 +220,7 @@ a.js-download:not(.index, .list-links > a) {
 a[id^="rss"] {
   display: inline-block;
   background: var(--button-primary-bg);
-  mask: url("../img/rss.svg") center no-repeat;
+  mask: url("/pic/tokyo-night/icon/rss.svg") center no-repeat;
   mask-size: 18px;
   width: 1.25rem;
   height: 1.25rem;
@@ -232,7 +232,7 @@ a[id^="rss"] {
 .js-bookmarkadd {
   display: inline-block;
   background: var(--button-primary-bg);
-  mask: url("../img/bookmark.svg") center no-repeat;
+  mask: url("/pic/tokyo-night/icon/bookmark.svg") center no-repeat;
   mask-size: 20px;
   width: 1.25rem;
   height: 1.25rem;
@@ -245,7 +245,7 @@ a[id^="rss"] {
 a.js-wishlistadd:not([id^="rss"]), a[title="Add this film to your wishlist"], a[title="Add to wishlist"], a[title="Add to wishlist"][onclick*="delWishlist"], img.info__wishlist {
   display: inline-block;
   background: var(--button-primary-bg);
-  mask: url("../img/wishlist.svg") center no-repeat;
+  mask: url("/pic/tokyo-night/icon/wishlist.svg") center no-repeat;
   mask-size: 22px;
   width: 1.25rem;
   height: 1.25rem;
@@ -263,7 +263,7 @@ a.js-wishlistadd:not([id^="rss"]), a[title="Add this film to your wishlist"], a[
 a[href*="javascript:unignoreshow"], a[onclick*="delWishlist"], a[onclick*="removeFromWishlist"], a[title="Remove from wishlist"], a[title="Remove this film from your wishlist"] {
   background: var(--yellow);
   display: inline-block;
-  mask: url("../img/wishlisted.svg") center no-repeat;
+  mask: url("/pic/tokyo-night/icon/wishlisted.svg") center no-repeat;
   mask-size: 22px;
   width: 1.25rem;
   height: 1.25rem;
@@ -276,7 +276,7 @@ a[href*="javascript:unignoreshow"], a[onclick*="delWishlist"], a[onclick*="remov
 a.js-bookmarkdel, a[href*="javascript:delBookmark"] {
   background: var(--bookmark-blue);
   display: inline-block;
-  mask: url("../img/bookmarked.svg") center no-repeat;
+  mask: url("/pic/tokyo-night/icon/bookmarked.svg") center no-repeat;
   mask-size: 20px;
   width: 1.25rem;
   height: 1.25rem;
@@ -327,7 +327,7 @@ img[alt="Offline"] {
   justify-content: center;
   gap: 1.5rem;
   & [href*="imdb.com"] {
-    background: url("../img/imdb.svg") center no-repeat;
+    background: url("/pic/tokyo-night/icon/imdb.svg") center no-repeat;
     width: 2.5rem;
     height: 1.25rem;
     filter: brightness(80%);
@@ -338,7 +338,7 @@ img[alt="Offline"] {
     }
   }
   & a[href*="tvdb.com/?tab=series"] {
-    background: url("../img/tvdb.svg") center no-repeat;
+    background: url("/pic/tokyo-night/icon/tvdb.svg") center no-repeat;
     width: 2.5rem;
     height: 1.25rem;
     filter: brightness(80%);
@@ -376,7 +376,7 @@ img[alt="Offline"] {
       left:12px;
       display: inline-block;
       background: var(--button-secondary-text-color);
-      mask: url("../img/ignore.svg") center no-repeat;
+      mask: url("/pic/tokyo-night/icon/ignore.svg") center no-repeat;
       mask-size: 20px;
       width: 1.25rem;
       height: 1.25rem;
@@ -427,7 +427,7 @@ img[alt="Offline"] {
       left:11px;
       display: inline-block;
       background: var(--button-secondary-text-color);
-      mask: url("../img/unignore.svg") center no-repeat;
+      mask: url("/pic/tokyo-night/icon/unignore.svg") center no-repeat;
       mask-size: 20px;
       width: 1.25rem;
       height: 1.25rem;
@@ -478,7 +478,7 @@ img[alt="Offline"] {
       left:12px;
       display: inline-block;
       background: var(--button-secondary-text-color);
-      mask: url("../img/unfollow.svg") center no-repeat;
+      mask: url("/pic/tokyo-night/icon/unfollow.svg") center no-repeat;
       mask-size: 20px;
       width: 1.25rem;
       height: 1.25rem;
@@ -529,7 +529,7 @@ img[alt="Offline"] {
       left:12px;
       display: inline-block;
       background: var(--button-secondary-text-color);
-      mask: url("../img/follow.svg") center no-repeat;
+      mask: url("/pic/tokyo-night/icon/follow.svg") center no-repeat;
       mask-size: 20px;
       width: 1.25rem;
       height: 1.25rem;
@@ -556,7 +556,7 @@ img[alt="Offline"] {
 }
 img[alt="Read"] {
 	background: var(--button-primary-bg);
-	mask: url("../img/message.svg") center no-repeat;
+	mask: url("/pic/tokyo-night/icon/message.svg") center no-repeat;
   mask-size: 20px;
 	height: 1.25rem;
 	width: 1.25rem;
@@ -568,7 +568,7 @@ img[alt="Read"] {
 }
 img[alt="Unread"] {
 	background: var(--red);
-	mask: url("../img/message.svg") center no-repeat;
+	mask: url("/pic/tokyo-night/icon/message.svg") center no-repeat;
 	mask-size: 20px;
 	height: 1.25rem;
 	width: 1.25rem;
@@ -595,7 +595,7 @@ td > a[href*="sendmessage.php"] {
     top: 6px;
     left:4.5px;
     background: var(--button-primary-text-color);
-    mask: url("../img/send.svg") center no-repeat;
+    mask: url("/pic/tokyo-night/icon/send.svg") center no-repeat;
     mask-size: 19px;
     width: 1.25rem;
     height: 1.25rem;
@@ -628,7 +628,7 @@ a[href*="action=add&type=friend"]{
     top: 7.5px;
     left:6px;
     background: var(--button-secondary-text-color);
-    mask: url("../img/addfriend1.svg") center no-repeat;
+    mask: url("/pic/tokyo-night/icon/addfriend1.svg") center no-repeat;
     mask-size: 22px;
     width: 1.25rem;
     height: 1.25rem;
@@ -658,7 +658,7 @@ a[href*="action=delete&type=friend"], a[href*="action=delete&type=befriend"] {
     top: 7.5px;
     left:6px;
     background: var(--button-secondary-text-color);
-    mask: url("../img/removefriend.svg") center no-repeat;
+    mask: url("/pic/tokyo-night/icon/removefriend.svg") center no-repeat;
     mask-size: 22px;
     width: 1.25rem;
     height: 1.25rem;
@@ -676,7 +676,7 @@ p:has(> a[href*="action=delete&type=friend"], > a[href*="action=add&type=friend"
 }
 .buddylist {
 	background: var(--button-primary-bg);
-	mask: url("../img/friends.svg") center no-repeat;
+	mask: url("/pic/tokyo-night/icon/friends.svg") center no-repeat;
   mask-size: 24px;
 	width: 1.5rem;
 	height: 1.5rem;
@@ -690,7 +690,7 @@ p:has(> a[href*="action=delete&type=friend"], > a[href*="action=add&type=friend"
 }
 .mytorrents {
 	background: var(--button-primary-bg);
-	mask: url("../img/mytorrents.svg") center no-repeat;
+	mask: url("/pic/tokyo-night/icon/mytorrents.svg") center no-repeat;
   mask-size: 25px;
 	width: 1.5rem;
 	height: 1.625rem;
@@ -704,7 +704,7 @@ p:has(> a[href*="action=delete&type=friend"], > a[href*="action=add&type=friend"
 }
 a[href*="imdb.com/name/nm"]:not(#cast a)  {
   display: inline-block;
-  background: url("../img/imdb.svg") left no-repeat;
+  background: url("/pic/tokyo-night/icon/imdb.svg") left no-repeat;
   background-size: auto;
   background-size: contain;
 	height: 16px;
@@ -734,7 +734,7 @@ button.rc__actions-ignore, button.rc__actions-wishlist, .show-ignore.button  {
 img[src*="/icon_latest_reply.gif"][alt="Last post"] {
 	display: inline-block;
 	box-sizing: border-box;
-	mask: url("../img/jumptoend.svg") center no-repeat;
+	mask: url("/pic/tokyo-night/icon/jumptoend.svg") center no-repeat;
   mask-size: 20px;
   background: var(--button-primary-bg);
 	width: 1.25rem;
@@ -759,7 +759,7 @@ img[src*="/top.gif"][alt="Top"] {
 	padding-left: 20px;
   margin-bottom: -6px;
   margin-left: 4px;
-	mask: url("../img/totop.svg") center no-repeat;
+	mask: url("/pic/tokyo-night/icon/totop.svg") center no-repeat;
   mask-size: 25px;
 	background: var(--button-primary-bg);
 }
@@ -772,7 +772,7 @@ a[href="#top"]  {
 img[src*="star.gif"][alt=Donor], .donor {
   display: inline-block;
   box-sizing: border-box;
-  mask: url("../img/star.svg") no-repeat;
+  mask: url("/pic/tokyo-night/icon/star.svg") no-repeat;
   background-color: var(--peach);
   mask-size: 12px;
   width: 12px;
@@ -781,7 +781,7 @@ img[src*="star.gif"][alt=Donor], .donor {
 img[src*="starbig.gif"][alt=Donor] {
   display: inline-block;
   box-sizing: border-box;
-  mask: url("../img/star.svg") no-repeat;
+  mask: url("/pic/tokyo-night/icon/star.svg") no-repeat;
   background-color: var(--peach);
   mask-size: 24px;
   width: 24px;
@@ -794,7 +794,7 @@ img[src*="disabledbig.gif"] {
 	width: 16px;
 	height: 16px;
 	padding-left: 16px;
-	mask: url("../img/disabled.svg") center no-repeat;
+	mask: url("/pic/tokyo-night/icon/disabled.svg") center no-repeat;
 	background: var(--red);
 	margin-bottom: -1px;
 }
@@ -804,7 +804,7 @@ img[src*="disabled.gif"] {
   width: 11px;
   height: 11px;
   padding-left: 11px;
-	mask: url("../img/disabled.svg") center no-repeat;
+	mask: url("/pic/tokyo-night/icon/disabled.svg") center no-repeat;
   background: var(--red);
   margin-bottom: -1px;
 }
@@ -814,7 +814,7 @@ img[src*="warned.gif"][alt=Warned] {
   width: 13px;
   height: 13px;
   padding-left: 13px;
-  mask: url("../img/warning.svg") center no-repeat;
+  mask: url("/pic/tokyo-night/icon/warning.svg") center no-repeat;
   background: var(--red);
 }
 img[src*="warnedbig.gif"][alt=Warned] {
@@ -823,7 +823,7 @@ img[src*="warnedbig.gif"][alt=Warned] {
   width: 16px;
   height: 16px;
   padding-left: 16px;
-  mask: url("../img/warning.svg") center no-repeat;
+  mask: url("/pic/tokyo-night/icon/warning.svg") center no-repeat;
   background: var(--red);
 }
 .label_showhide {
@@ -850,7 +850,7 @@ img[src*="warnedbig.gif"][alt=Warned] {
 #details a[href*="/sendmessageanon.php?id"] {
 	content: "";
 	background: var(--button-primary-bg);
-	mask: url("../img/unlocked.svg") center no-repeat;
+	mask: url("/pic/tokyo-night/icon/unlocked.svg") center no-repeat;
   mask-size: 24px;
 	height: 1.25rem;
 	width: 1.5rem;
