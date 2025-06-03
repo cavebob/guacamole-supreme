@@ -108,11 +108,7 @@ h2.stattitle {
 
 .tv-todownload {
 	display: flex;
-  background: var(--mantle);
-	border-radius: var(--main-br);
-	border: var(--table-border);
   gap: 1rem;
-  padding: 1rem;
   & #tv-show-list {
     display: flex;
     flex-flow: row wrap;
@@ -120,11 +116,18 @@ h2.stattitle {
     flex: min-content;
     max-width: 760px;
     overflow: scroll;
+    background: var(--mantle);
+    border-radius: var(--main-br);
+    border: var(--table-border);
+    padding: 1rem;
   }
   & .show-header {
     border-radius: var(--main-br);
     overflow: clip;
     position: relative;
+    & .show-banner {
+      max-width: 100%;
+    }
   }
   .show-unfollow {
     backdrop-filter: blur(6px);
@@ -135,5 +138,74 @@ h2.stattitle {
     position: absolute;
     bottom: 0px;
     right: 0px;
+    text-transform: lowercase;
+    font-variant: small-caps;
+    font-size: var(--font-size-tag);
+    visibility: hidden;
+    line-height: normal;
   }
+}
+#tv-episode-list {
+  background: var(--mantle);
+  border-radius: var(--main-br);
+  border: var(--table-border);
+  border-left: var(--table-border);
+}
+.tv-todownload .show-torrents {
+  text-align: left;
+  & .show-title {
+    font-size: var(--font-size-larger);
+    font-weight: bold;
+    border-bottom: var(--table-border);
+    padding: .75rem;
+
+  }
+  & .show-preference {
+    padding: .5rem;
+    & * {
+      display: inline-block;
+    }
+  }
+  & .show-season {
+    &>* {
+      padding: .5rem;
+    }
+    & .season-title {
+      font-size: var(--font-size-large);
+      color: var(--th-text-color);
+      font-weight: bold;
+      border-top: var(--table-border);
+      border-bottom: var(--table-border);
+      padding: .5rem;
+      background: var(--crust);
+      display: flex;
+      flex-flow: row wrap;
+      gap: .5rem;
+      align-items: center;
+    }
+  }
+  .season-episode {
+
+    &:not(:last-child){
+      padding-bottom: .5rem;
+      margin-bottom: .5rem;
+      border-bottom: var(--table-border);
+    }
+    & .episode-title {
+      font-weight: bold;
+    }
+  }
+  & .tv-torrent {
+    display: flex;
+    align-items: center;
+    gap: .125rem;
+    &>:first-child{
+      order: 2;
+      padding-left: .25rem;
+    }
+    .season-episode > & {
+      padding-left: .5rem;
+    }
+  }
+  
 }

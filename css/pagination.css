@@ -47,3 +47,6 @@ p:has(a[href*="page="]):not(.sub) {
 }
 /* requests comments pagination */
 /* .center_comments > p */
+div:has(.center_comments) > p[align="center"] {
+  margin: 1rem auto;
+}

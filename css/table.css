@@ -662,3 +662,49 @@ div.center:is([style="margin: 10px 0px 10px 0px;"], [style="margin: 10px 0px 30p
     margin-bottom: 0;
   }
 }
+.bottom > table[width="800"]:has(td[width="12%"]) ~ :is(h1,h2,h3) {
+  margin: 0;
+
+}
+form[action="inbox.php"] + div {
+  & img {
+    vertical-align: text-bottom;
+  }
+}
+.bottom:has(>#torrent-list) {
+  & > h1:first-child {
+    margin: 0;
+  }
+  & strong + br, strong + br + br {
+    display: none;
+  }
+  & > #torrent-list {
+    margin: 0;
+  }
+}
+td.embedded:has(#table_reseed_button_requests) > h1 {
+  margin-bottom: 1rem;
+}
+.bottom:has(form[action="dox.php"]) {
+  & > br {
+    display: none;
+  }
+
+  & > .main:first-child .embedded {
+    display: flex;
+    width: 75%;
+    margin: auto;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 1rem;
+  }
+  & > .main:last-child .embedded {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 1rem;
+    & div[align="left"] {
+      width: 75%
+    }
+  }
+}

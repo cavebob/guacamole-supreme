@@ -44,6 +44,7 @@ div[style="width: 930px; margin: 0px auto;"]:has(a[name="votes"], a[name="startc
 }
 .h3_exclusive {
   font-size: var(--font-size);
+  margin-bottom: 0 !important;
 }
 .collapsable:has(+.hideablecontent[style="display: none;"]) {
   position: relative;
@@ -353,7 +354,13 @@ td > i:has(+ [href*="sendmessageanon"]), table:has(>thead>tr>.colhead) em {
   border-radius: var(--small-br);
   filter: brightness(90%);
 }
-.js-source-data, .bottom > p:has(>a[name="startcomments"]) {
+.bottom > p:has(>a[name="startcomments"]) {
 	margin-top: -.5rem;
 	margin-bottom: -.5rem;
+}
+.js-source-data {
+  display: none;
+}
+#details td:has(.index) span[style="float:right;"] {
+  margin-left: .625rem;
 }

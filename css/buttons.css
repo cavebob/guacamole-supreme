@@ -18,7 +18,7 @@
 p:has(.index[href*="/comments/add"]) {
   display: flex;
   justify-content: center;
-  margin: 1rem auto;
+  margin: auto;
   height: auto;
 }
 /* Secondary button styling */
@@ -563,7 +563,7 @@ img[alt="Read"] {
 	align-self: center;
 	padding-left: 1.25rem;
 	filter: grayscale(50%);
-	display: block;
+	display: inline-block;
 	box-sizing: border-box;
 }
 img[alt="Unread"] {
@@ -575,7 +575,7 @@ img[alt="Unread"] {
 	align-self: center;
 	padding-left: 1.25rem;
 	filter: grayscale(50%);
-	display: block;
+	display: inline-block;
 	box-sizing: border-box;
 }
 td > a[href*="sendmessage.php"] {
@@ -883,4 +883,19 @@ img.poll, img[src$="bar.gif"] {
 }
 #profilesettings :is(input[type="radio"], input[type="checkbox"]) {
   margin-left: .25rem;
+}
+.season-watched, .tv-torrent-watched {
+	display: inline-block;
+	background: var(--button-primary-bg);
+	mask: url("../pic/tokyo-night/icon/checkmark.svg") center no-repeat;
+	width: 1.25rem;
+	height: 1.25rem;
+  mask-size: 20px;
+	vertical-align: middle;
+	margin: 0;
+	cursor: pointer;
+  &:hover {
+    background: var(--button-primary-hover-bg)
+  }
+  
 }
