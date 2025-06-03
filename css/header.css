@@ -80,7 +80,7 @@
 	border-radius: var(--main-br);
 	width: auto !important;
   max-width: max-content;
-  left: auto !important;
+  /* left: auto !important; */
   right: 1rem;
 	overflow: clip;
 	filter: drop-shadow(0 1rem 1rem black);
