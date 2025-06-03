@@ -611,6 +611,10 @@ li.active-result {
   border: var(--button-secondary-border);
   background-image: none
 }
+:is(#selected_languages_chosen, #selected_countries_chosen)[style="width: 238px;"] {
+  width: auto !important;
+  min-width: 12.5rem;
+}
 /* ################################### */
 /* ################################### */
 /* ################################### */

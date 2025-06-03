@@ -708,3 +708,14 @@ td.embedded:has(#table_reseed_button_requests) > h1 {
     }
   }
 }
+#tags td:has(.tag-content) {
+  text-indent: 0 !important;
+}
+#tags {
+  & thead th.aleft.header:is(:nth-child(3), :nth-child(4)) {
+    display: none;
+  }
+  .center {
+    text-align: right;
+  }
+}
