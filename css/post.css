@@ -84,6 +84,8 @@ body td.comment > p.sub, td[style="border: 1px black dashed"] > p.sub {
 	margin: 0 0 -1px 3px !important;
 	overflow: auto;
 	border-radius: var(--main-br) var(--main-br) 0 0;
+  display: flex;
+  align-items: center;
   & +.main {
     border-collapse: separate;
   }
