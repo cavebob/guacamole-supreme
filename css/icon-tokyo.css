@@ -1,21 +1,12 @@
 :root {
   /* Accent Colors */
-  --rosewater: #f5e0dc;
   --flamingo: hsl(0, 59%, 88%);
-  --pink: #f5c2e7;
-  --mauve: #cba6f7;
   --red: #ff6675;
   --maroon: #eba0ac;
   --peach: #fab387;
-  --yellow: #f9e2af;
-  --green: #a1e87d;
-  --green-seeding: hsl(135, 80.4%, 66%);
+  --yellow: #f9e2af
   --teal: #73daca;
-  --sky: #89dceb;
-  --sapphire: #74c7ec;
   --blue: hsl(240, 100%, 92%);
-  --lavender: #b4befe;
-  --bookmark-blue: hsl(212, 97.7%, 65.5%);
 
   --bluray: var(--sapphire);
   --encode: var(--yellow);
@@ -94,7 +85,7 @@
 #codec0:has([class^="medium0"])::after {
   content: "Audio";
   border: 1px solid hsla(0, 58%, 88%, 0.5);
-  color: var(--flamingo);
+  color: var(--audio);
   background-color: hsla(0, 59%, 18%, .2);
   border-radius: .25rem;
   text-transform: lowercase;
@@ -200,11 +191,6 @@ td[id^="codec"].catcell,
 .category8 {
   background: no-repeat center /41px url("../pic/styles/tokyo-night/types/video-question.svg");
 }
-
-/* Temporary for testing */
-.catcell + [id^="codec"] > [class^="medium"] {
-  height: 0;
-}
-[id^="codec"] > img[src="../pic/blank2.gif"] {
-  height: 0;
+img[class*="medium"][src="/pic/blank2.gif"] {
+	height: 0;
 }

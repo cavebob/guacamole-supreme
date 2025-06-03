@@ -46,7 +46,6 @@ td[style="border: 1px black dashed"] > p.sub {
 	min-width: 100%;
 }
 p.sub {
-  overflow: hidden;
 	text-overflow: ellipsis;
 	box-sizing: border-box;
 	max-width: 64rem;
