@@ -1541,6 +1541,10 @@ td.embedded:has(#table_reseed_button_requests) > h1{
   margin-right:auto;
   margin-left:auto;
 }
+td.bottom > table[width="800"] + table.main + h2 + table[width="100%"]:has(.sub) :is(p.sub, p.sub + .main){
+  margin-left:auto !important;
+  margin-right:auto !important;
+}
 :is(.sources_table, form[action="delete.php"]) th{
   padding:.5rem;
   border-bottom:var(--table-border);
