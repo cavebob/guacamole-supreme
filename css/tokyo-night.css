@@ -2307,7 +2307,7 @@ a[href*="action=delete&type=block"]{
     }
   }
 }
-p:has(> a[href*="action=delete&type=friend"], > a[href*="action=add&type=friend"]){
+p:has(> a[href*="action=delete&type=friend"], > a[href*="action=add&type=friend"], a[href*="action=add&type=block"], a[href*="action=delete&type=block"]){
   font-size:0;
 }
 .buddylist{
