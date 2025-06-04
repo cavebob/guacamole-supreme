@@ -50,6 +50,8 @@
   --button-secondary-text-hover-color:hsl(240, 9.7%, 12.2%);
   --button-secondary-border:1px solid #414358;
 
+  --default-avatar-color:var(--unreadpost-bg-color);
+
   --details-th-text-color:var(--heading-color);
   --th-text-color:var(--heading-color);
   --heading-color:hsl(240, 12.8%, 61.8%);
@@ -1528,8 +1530,13 @@ td.embedded:has(#table_reseed_button_requests) > h1{
 .center_comments .main:has(p.sub){
 	width:100%;
 }
-.bottom:has(>.main) :is(>.main:has(p.sub), >.main:has(.std-content), :is(.main:has(.std-content), 
-.main:has(p.sub)) table:not(.lottery_table,:has(+div[style="margin-top:10px;margin-bottom:5px;"]), #details table)){
+.embedded:has(.padding2) h2{
+  margin-bottom:1rem;
+  text-align:center;
+}
+.bottom:has(>.main):not([id]) >.main:has(p.sub), 
+.bottom:has(>.main):not([id]) >.main:has(.std-content),
+.bottom:has(>.main):not([id]) :is(.main:has(.std-content), .main:has(p.sub)) table:not(.lottery_table,:has(+div[style="margin-top:10px;margin-bottom:5px;"]), #details table){
   width:100%;
   margin-right:auto;
   margin-left:auto;
@@ -2209,6 +2216,37 @@ a[href*="action=delete&type=friend"], a[href*="action=delete&type=befriend"]{
     }
   }
 }
+a[href*="action=add&type=block"]{
+  display:inline-block;
+  position:relative;
+  width:2rem;
+  height:2rem;
+  margin-left:.5rem;
+  border:var(--button-secondary-border);
+  border-radius:var(--main-br);
+  background:var(--button-secondary-bg);
+  color:var(--button-secondary-text-color);
+  font-size:0;
+  vertical-align:middle;
+  &::before{
+    position:absolute;
+    top:7.5px;
+    left:6px;
+    width:1.25rem;
+    height:1.25rem;
+    background:var(--button-secondary-text-color);
+    content:"";
+    mask:url("../pic/tokyo-night/icon/blockuser.svg") center no-repeat;
+    mask-size:22px;
+  }
+  &:hover{
+    border-color:transparent;
+    background-color:var(--button-secondary-hover-bg);
+    &::before{
+      background:var(--button-secondary-text-hover-color);
+    }
+  }
+}
 p:has(> a[href*="action=delete&type=friend"], > a[href*="action=add&type=friend"]){
   font-size:0;
 }
@@ -2437,6 +2475,16 @@ img.poll, img[src$="bar.gif"]{
     background:var(--button-primary-hover-bg)
   }
   
+}
+.default_avatar{
+	width:150px;
+  height:150px;
+  background:var(--default-avatar-color);
+	mask:url("../pic/tokyo-night/icon/default-avatar5.svg") center no-repeat;
+  mask-size:150px;
+}
+td:has(>.default_avatar){
+  height:150px;
 }
 .bottom > .small{
   color:var(--subtext0);
@@ -4775,7 +4823,7 @@ hr, td[style="border: 1px black dashed"]{
 	padding:.5rem;
 	border:var(--table-border) !important;
 	border-radius:var(--main-br);
-	background-color:var(--quote-bg-color);
+	background-color:var(--quote-bg-color) !important;
 }
 body td.comment > p.sub, td[style="border: 1px black dashed"] > p.sub{
   display:flex;
@@ -4843,6 +4891,9 @@ p.sub > a[href*="/details.php?id="]{
 	overflow:hidden;
 	text-overflow:ellipsis;
 	white-space:nowrap;
+}
+:is(.comment,.text) .sub + .main + br + br{
+  display:none;
 }
 @media (min-width: 1008px){
   .bottom:not([id]){
