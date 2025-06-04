@@ -171,10 +171,10 @@ td[id^="codec"].catcell,
   background: no-repeat center /37px url("../pic/styles/tokyo-night/types/film.svg");
 }
 .category2 {
-  background: no-repeat center /40px url("../pic/styles/tokyo-night/types/icon-tv-24x24-4.svg");
+  background: no-repeat center /40px url("../pic/styles/tokyo-night/types/tv.svg");
 }
 .category3 {
-  background: no-repeat center /40px url("../pic/styles/tokyo-night/types/video.svg");
+  background: no-repeat center /40px url("../pic/styles/tokyo-night/types/documentary.svg");
 }
 .category4 {
   background: no-repeat center /36px url("../pic/styles/tokyo-night/types/music.svg");
@@ -183,13 +183,13 @@ td[id^="codec"].catcell,
   background: no-repeat center /40px url("../pic/styles/tokyo-night/types/volleyball.svg");
 }
 .category6 {
-  background: no-repeat center /40px url("../pic/styles/tokyo-night/types/microphone.svg");
+  background: no-repeat center /40px url("../pic/styles/tokyo-night/types/audio.svg");
 }
 .category7 {
   background: no-repeat center /40px url("../pic/styles/tokyo-night/types/18-plus.svg");
 }
 .category8 {
-  background: no-repeat center /41px url("../pic/styles/tokyo-night/types/video-question.svg");
+  background: no-repeat center /41px url("../pic/styles/tokyo-night/types/misc.svg");
 }
 img[class*="medium"][src="/pic/blank2.gif"] {
 	height: 0;
