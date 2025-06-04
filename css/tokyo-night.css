@@ -2482,7 +2482,7 @@ a[href*="action=add&type=friend"]{
     height:1.25rem;
     background:var(--button-secondary-text-color);
     content:"";
-    mask:url("../pic/tokyo-night/icon/addfriend1.svg") center no-repeat;
+    mask:url("../pic/tokyo-night/icon/friendadd.svg") center no-repeat;
     mask-size:22px;
   }
   &:hover{
@@ -2513,7 +2513,7 @@ a[href*="action=delete&type=friend"], a[href*="action=delete&type=befriend"]{
     height:1.25rem;
     background:var(--button-secondary-text-color);
     content:"";
-    mask:url("../pic/tokyo-night/icon/removefriend.svg") center no-repeat;
+    mask:url("../pic/tokyo-night/icon/friendremove.svg") center no-repeat;
     mask-size:22px;
   }
   &:hover{
@@ -2973,11 +2973,11 @@ p[id^="news"]{
 }
 
 .embedded:has(nobr){
-  width:100%;
+  width:auto;
 }
 
 .embedded:has(> img.poll){
-  min-width:max-content;
+  width:fit-content;
 }
 
 #tabs{
