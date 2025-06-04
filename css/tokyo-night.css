@@ -1830,7 +1830,10 @@ td [style="border: none; padding: 4px; spacing: 0px;"]{
   & .small{
     margin-left:-.75rem;
   }
+}
 
+body > .popup{
+  position:absolute;
 }
 
 .btn, button, [type="button"], .index[href*="/comments/add"], .button{
