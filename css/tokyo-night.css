@@ -332,6 +332,7 @@ textarea{
   height:auto;
   min-height:12rem;
   overflow:clip;
+  font-size:var(--font-size);
 }
 
 .footer{
