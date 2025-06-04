@@ -2082,7 +2082,7 @@ a[id^="rss"]{
   }
 }
 
-.js-bookmarkadd{
+.js-bookmarkadd, [href*="javascript:addBookmark"]{
   display:inline-block;
   width:1.25rem;
   height:1.25rem;
