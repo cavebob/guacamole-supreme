@@ -1051,7 +1051,7 @@ a.alert-box--news{
       border-bottom-right-radius:var(--main-br);
     }
   }
-  & :is(td:first-child, th:first-child){
+  & :is(td:first-child:not([id*="codec"], .catcell), th:first-child){
     text-indent:.5rem;
   }
 }
