@@ -27,8 +27,8 @@
 .category6,
 .category7,
 .category8 {
-    height: 42px;
     width: 42px;
+    height: 42px;
 }
 .medium1,
 .medium2,
@@ -36,16 +36,16 @@
 .medium4,
 .medium5,
 .medium6 {
+    box-sizing: border-box;
     display: flex;
     flex-flow: row wrap;
-    box-sizing: border-box;
     align-content: center;
 }
 .catcell {
-    padding: 0;
-    border-width: 0 0 1px 1px;
+    width: 42px;
     height: 42px;
-    width: 42px
+    padding: 0;
+    border-width: 0 0 1px 1px
 } 
 #details [id^="codec"] {
   text-indent: 0rem !important;
@@ -61,105 +61,105 @@
 }
 [id^="codec"]:has([class^="medium"])::before,
 [id^="codec"]:has([class^="medium"])::after {
-    z-index: 2;
-    font-weight: 500;
+    box-sizing: content-box;
     display: flex;
+    z-index: 2;
+    align-items: center;
     justify-content: center;
     height: 21px;
-    box-sizing: content-box;
-    white-space: nowrap;
-    align-items: center;
-    text-transform: uppercase;
     font-variant: small-caps;
+    font-weight: 500;
+    text-transform: uppercase;
+    white-space: nowrap;
 }
 [id^="codec"]:has([class^="medium"])::before {
     border-radius: .25rem .25rem 0 0;
 }
 [id^="codec"]:not(#codec0):has([class^="medium"])::after {
-    border-radius: 0 0 0.25rem 0.25rem;
     border-top: 0 !important;
+    border-radius: 0 0 0.25rem 0.25rem;
 }
 #codec0 {
   height: 42px;
 }
 #codec0:has([class^="medium0"])::after {
-  content: "Audio";
   border: 1px solid hsla(0, 58%, 88%, 0.5);
-  color: var(--audio);
-  background-color: hsla(0, 59%, 18%, .2);
   border-radius: .25rem;
-  text-transform: lowercase;
+  background-color: hsla(0, 59%, 18%, .2);
+  content: "Audio";
+  color: var(--audio);
   font-variant: small-caps;
+  text-transform: lowercase;
 }
 #codec1:has([class^="medium"])::after {
-    content: "H264";
     border: var(--general-border);
-    color: var(--codec);
     background-color: var(--crust);
+    content: "H264";
+    color: var(--codec);
 }
 #codec2:has([class^="medium"])::after {
-    content: "MPEG2";
     border: var(--general-border);
-    color: var(--codec);
     background-color: var(--crust);
+    content: "MPEG2";
+    color: var(--codec);
 }
 #codec3:has([class^="medium"])::after {
-    content: "VC-1";
     border: var(--general-border);
-    color: var(--codec);
     background-color: var(--crust);
+    content: "VC-1";
+    color: var(--codec);
 }
 #codec4:has([class^="medium"])::after {
-    content: "XVID";
     border: var(--general-border);
-    color: var(--codec);
     background-color: var(--crust);
+    content: "XVID";
+    color: var(--codec);
 }
 #codec5:has([class^="medium"])::after{
-    content: "HEVC";
     border: var(--general-border);
-    color: var(--codec);
     background-color: var(--crust);
+    content: "HEVC";
+    color: var(--codec);
 }
 #codec6:has([class^="medium"])::after {
-    content: "VP9";
     border: var(--general-border);
-    color: var(--codec);
     background-color: var(--crust);
+    content: "VP9";
+    color: var(--codec);
 }
 [id^="codec"]:has(.medium1)::before {
-    content: "Blu-Ray";
     border: 1px solid hsla(199, 76%, 59%, 0.5);
-    color: var(--bluray);
     background-color: hsla(199, 26%, 39%, 0.1);
+    content: "Blu-Ray";
+    color: var(--bluray);
     font-variant: all-small-caps;
 }
 [id^="codec"]:has(.medium3)::before {
-    content: "Encode";
     border: 1px solid hsla(41, 56%, 73%, 0.5);
-    color: var(--encode);
     background-color: hsla(41, 26%, 60%, 0.1);
+    content: "Encode";
+    color: var(--encode);
     font-variant: all-small-caps;
 }
 [id^="codec"]:has(.medium4)::before {
-    content: "Capture";
     border: 1px solid hsla(350, 65%, 77%, 0.5);
-    color: var(--capture);
     background-color: hsla(350, 25%, 10%, 0.1);
+    content: "Capture";
+    color: var(--capture);
     font-variant: all-small-caps;
 }
 [id^="codec"]:has(.medium5)::before {
-    content: "Remux";
     border: 1px solid hsla(171, 38%, 45%, 0.5);
-    color: var(--remux);
     background-color: hsla(171, 18%, 25%, 0.1);
+    content: "Remux";
+    color: var(--remux);
     font-variant: all-small-caps;
 }
 [id^="codec"]:has(.medium6)::before {
-    content: "WEB-DL";
     border: 1px solid hsla(232, 57%, 65%, 0.5);
-    color: var(--webdl);
     background-color: hsla(232, 10%, 20%, 0.1);
+    content: "WEB-DL";
+    color: var(--webdl);
     font-variant: all-small-caps;
 }
 td[id^="codec"].catcell,

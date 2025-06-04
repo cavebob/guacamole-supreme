@@ -4815,7 +4815,6 @@ tr:has(td > .hasposted){
 .readpost, 
 html body table.main tbody tr td.bottom table.main:last-of-type > tbody:first-child > tr:first-child > td:first-child > table:first-child > tbody:first-child > tr:first-child > td:first-child > table.main,
 td.bottom > table[width="800"] + table.main + h2 + table[width="100%"] > tbody > tr > td > p.sub + table.main{
-	min-width:100%;
 	max-width:64rem;
 	min-height:150px;
 	margin-bottom:.7rem;
@@ -4845,7 +4844,6 @@ td[style="border: 1px black dashed"] > p.sub{
   }
 }
 .std-content > tbody > tr > td > table.main{
-	min-width:100%;
 	min-height:150px;
 	margin-bottom:.5rem;
 	overflow:hidden;
