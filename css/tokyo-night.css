@@ -23,7 +23,6 @@
 }
 
 :root{
-  --rosewater:#f5e0dc;
   --flamingo:#f2cdcd;
   --pink:#f5c2e7;
   --mauve:#cba6f7;
@@ -34,7 +33,6 @@
   --green:#a1e87d;
   --green-seeding:hsl(135, 80.4%, 66%);
   --teal:#73daca;
-  --sky:#89dceb;
   --sapphire:#74c7ec;
   --blue:hsl(240, 100%, 92%);
   --lavender:#b4befe;
@@ -43,8 +41,6 @@
   --text-muted-color:#9191a1;
   --subtext1:#bac2de;
   --subtext0:#a6adc8;
-  --overlay2:#9399b2;
-  --overlay1:#7f849c;
   --overlay0:#6c7086;
   --surface2:#585b70;
   --surface1:#45475a;
