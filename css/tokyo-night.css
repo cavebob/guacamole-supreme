@@ -2514,7 +2514,7 @@ img[src*="warnedbig.gif"][alt=Warned]{
 .label_showhide span{
   display:none;
 }
-div:has(.div_showhide:is(:not([style]), [style="display: block;"])) .label_showhide::before{
+div:has(.div_showhide[style="display: block;"]) .label_showhide::before{
   box-sizing:border-box;
   display:inline-block;
   position:absolute;
