@@ -18,6 +18,7 @@
   --surface0: #414358;
   --crust: hsl(240, 13.7%, 10%);
   --general-border: 1px solid var(--surface0);
+  --small-br: .25rem;
 }
 .category1,
 .category2,
@@ -74,18 +75,18 @@
     white-space: nowrap;
 }
 [id^="codec"]:has([class^="medium"])::before {
-    border-radius: .25rem .25rem 0 0;
+    border-radius: var(--small-br) var(--small-br) 0 0;
 }
 [id^="codec"]:not(#codec0):has([class^="medium"])::after {
     border-top: 0 !important;
-    border-radius: 0 0 0.25rem 0.25rem;
+    border-radius: 0 0 var(--small-br) var(--small-br);
 }
 #codec0 {
   height: 42px;
 }
 #codec0:has([class^="medium0"])::after {
   border: 1px solid hsla(0, 58%, 88%, 0.5);
-  border-radius: .25rem;
+  border-radius: var(--small-br);
   background-color: hsla(0, 59%, 18%, .2);
   content: "Audio";
   color: var(--audio);
