@@ -3561,7 +3561,7 @@ div[style="width: 930px; margin: 0px auto;"]:has(a[name="votes"], a[name="startc
   height:40px;
   background:var(--button-primary-bg);
   cursor:pointer;
-  mask:url("../pic/tokyo-night/icon/arrowdown.svg") center no-repeat;
+  mask:url("../pic/tokyo-night/icon/arrowright.svg") center no-repeat;
   mask-size:22px;
 }
 .collapsable:has(+.hideablecontent[style="display: block;"], +.hideablecontent:not([style])) .plusminus{
@@ -3573,7 +3573,7 @@ div[style="width: 930px; margin: 0px auto;"]:has(a[name="votes"], a[name="startc
   height:40px;
   background:var(--button-primary-bg);
   cursor:pointer;
-  mask:url("../pic/tokyo-night/icon/arrowright.svg") center no-repeat;
+  mask:url("../pic/tokyo-night/icon/arrowdown.svg") center no-repeat;
   mask-size:22px;
   transition:filter ease .25s;
 }
