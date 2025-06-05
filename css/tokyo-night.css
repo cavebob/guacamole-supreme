@@ -795,7 +795,7 @@ a.alert-box--news{
   }
 }
 .menunavigation_new a{
-  text-decoration:underline;
+  color:var(--link-hover-color);
 }
 .menu a.normal{
   display:block;
