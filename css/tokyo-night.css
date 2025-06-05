@@ -343,6 +343,7 @@ h3{
   color:var(--mauve);
 }
 pre{
+  font-family:var(--mono-font-stack);
   white-space:pre-wrap;
 }
 td{
@@ -1606,6 +1607,9 @@ td [style="border: none; padding: 4px; spacing: 0px;"]{
 body > .popup{
   position:absolute;
 }
+#offerbody td:nth-last-child(5) em{  
+  color:var(--text-muted-color);
+}
 .btn, button, [type="button"], .index[href*="/comments/add"], .button{
   padding:var(--button-padding);
   border:var(--button-primary-border);
@@ -2504,7 +2508,7 @@ img[src*="warnedbig.gif"][alt=Warned]{
 	align-self:center;
 	width:1.5rem;
 	height:1.25rem;
-	padding-left:1rem;
+	padding-left:1.25rem;
 	background:var(--button-primary-bg);
 	content:"";
 	filter:grayscale(40%);
@@ -3806,7 +3810,7 @@ a.list-overview:hover .list-overview__text{
   gap:.25rem
 }
 td > i:has(+ [href*="sendmessageanon"]), table:has(>thead>tr>.colhead) em{
-  color:var(--subtext0);
+  color:var(--text-muted-color);
 }
 #subcell img{
   width:30px;
