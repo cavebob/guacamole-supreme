@@ -49,10 +49,10 @@
   --surface2:#585b70;
   --surface1:#45475a;
   --surface0:#414358;
-  --quote-bg-color:#323245; 
+  --quote-bg-color:#323245;
   --base:#1f202e;
   --mantle:hsl(240, 17.6%, 20%);
-  --crust:var(--header); 
+  --crust:hsl(240, 13.7%, 10%);
   --header:hsl(240, 13.7%, 10%);
   --link-color:var(--blue);
   --link-hover-color:hsl(240, 100%, 80%);
@@ -69,7 +69,7 @@
   --button-primary-text-hover-color:hsl(240, 12%, 4.9%);
   --button-primary-border:1px solid transparent;
   --button-secondary-bg:hsl(240, 13.7%, 10%);
-  --button-secondary-hover-bg:hsl(230.2, 90.2%, 80%);
+  --button-secondary-hover-bg:hsl(230, 90%, 80%);
   --button-secondary-text-color:hsl(232.5, 10.5%, 85.1%);
   --button-secondary-text-hover-color:hsl(240, 9.7%, 12.2%);
   --button-secondary-border:1px solid #414358;
@@ -229,7 +229,7 @@ table[width="450"]{
 
 html{
   background:var(--base);
-  accent-color:var(--mauve);
+  accent-color:var(--lavender);
   caret-color:var(--lavender);
   scrollbar-color:var(--surface1) var(--crust);
   scrollbar-gutter:stable;
@@ -290,7 +290,7 @@ select, input{
   border:var(--input-border);
   border-radius:var(--main-br);
   background:var(--input-bg);
-  color:var(--lavender);
+  color:var(--input-text-color);
   font-size:var(--font-size);
 }
 
@@ -539,8 +539,8 @@ div:has(.center_comments) > p[align="center"]{
   flex-flow:row wrap;
   justify-content:space-between;
    &:not(:last-child){
-    border-top:1px solid var(--surface0);
-    border-bottom:1px solid var(--surface0)
+    border-top:var(--general-border);
+    border-bottom:var(--general-border);
    }
 }
 
@@ -555,10 +555,6 @@ div:has(.center_comments) > p[align="center"]{
 }
 
 #header #logo{
-  --svg-gradient-1:linear-gradient(30deg,
-  var(--lavender) 0%,
-  var(--link-hover-color) 66%);
---svg-linear-gradient:linear-gradient(45turn, hsl(2, 72%, 70%), hsl(48, 75%, 75%));
   display:flex;
   width:100%;
   height:2rem;
@@ -589,7 +585,6 @@ div:has(.center_comments) > p[align="center"]{
   display:flex;
   flex-flow:row nowrap;
   height:2.25rem;
-  border-left:1px solid var(--surface1);
   &>input{
 
     outline:0;
@@ -649,7 +644,7 @@ div:has(.center_comments) > p[align="center"]{
     width:100%;
 
     &:hover{
-      background-color:var(--lavender);
+      background-color:var(--link-hover-color);
       color:var(--crust);
       transition:background-color ease .25s
     }
@@ -915,7 +910,7 @@ a.alert-box--news{
   transition:all .25s ease;
 
   &:hover{
-    background-color:var(--lavender);
+    background-color:var(--link-hover-color);
     & a{
       color:var(--crust);
     }
@@ -955,7 +950,7 @@ a.alert-box--news{
 }
 
 #sidebar-container h2{
-  border-bottom:1px solid var(--surface0)
+  border-bottom:var(--general-border);
 }
 
 #sidebar-container .embedded>table:not(:last-child){
@@ -1039,7 +1034,7 @@ a.alert-box--news{
 #torrent-list, .tablesorter, .lottery_table, .row-seclog table, [action="/log"] ~ table:not(.main), table.padding2, [action="dox.php"]+p+table, .label + table:has(a[href*="viewtopic"]), .table_requests, form[method="get"][style="margin-bottom:20px;"] + table[cellpadding="5"]:not([class]), .bottom > table[cellpadding="5"]:not([class], [id]):has(div[class*="locked"]), #latest_posts > table, form[action="/forums/search"] ~ table, form[action="dox.php"] > table, table.tableb table[width="500"], #request-list, form[action="inbox.php"] > table:has(#inboxbody), .bottom:not([id]) > table[width="660"],.bottom:not([id]) > script + h1 + table, table:has(>thead>tr>.colhead[align="left"]), table[width="500"]:first-child +h1:has([href*="lists"]) + h3 + table{
   margin:1rem 0;
   overflow:auto;
-  border:1px solid var(--surface0);
+  border:var(--table-border);
   border-radius:var(--main-br);
   border-collapse:separate;
   border-spacing:0;
@@ -1067,7 +1062,7 @@ table.tableb table[width="500"],
 .bottom:not([id]) > script + h1 + table, #request-list, form[action="inbox.php"] > table:has(#inboxbody), 
 .bottom:not([id]) > table[width="660"],
 table[width="500"]:first-child +h1:has([href*="lists"]) + h3 + table) td{
-  border-top:1px solid var(--surface0);
+  border-top:var(--table-border);
   background-color:var(--mantle);
 }
 
@@ -1148,14 +1143,14 @@ form[action="dox.php"] td[style="border:black solid 1px;"]{
 
 .tablesorter, .lottery_table, .row-seclog table,
 .label + table:has(a[href*="viewtopic"]), .table_requests{
-  border:1px solid var(--surface0);
+  border:var(--table-border);
   border-radius:var(--main-br);
   border-collapse:initial;
   background-color:var(--mantle);
 }
 
 :is(#torrent-list, .tablesorter, .lottery_table, .row-seclog table, .table_requests, table:has(>thead>tr>td.colhead[align="left"])) td:not(.colhead){
-  border-top:1px solid var(--surface0);
+  border-top:var(--table-border);
   background-color:var(--base);
 }
 
@@ -1165,7 +1160,7 @@ form[action="dox.php"] td[style="border:black solid 1px;"]{
 }
 
 .label + table:has(a[href*="viewtopic"]) td:not(.embedded){
-  border-top:1px solid var(--surface0);
+  border-top:var(--table-border);
   background-color:var(--base);
 }
 
@@ -1175,7 +1170,7 @@ form[action="dox.php"] td[style="border:black solid 1px;"]{
 
 :is(.bottom > table[cellpadding="5"]:not([class], [id]):has(div[class*="locked"]), #latest_posts > table, form[action="/forums/search"] ~ table) td:not(.embedded){
   padding:.25rem;
-  border-top:1px solid var(--surface0);
+  border-top:var(--table-border);
   background-color:var(--mantle);
 }
 
@@ -1198,7 +1193,7 @@ div:has(>h1+.main+.message) > table.message){
   margin:auto;
   overflow:auto;
   overflow:clip;
-  border:1px solid var(--surface0);
+  border:var(--table-border);
   border-radius:var(--main-br);
   border-collapse:separate;
   border-spacing:0;
@@ -1222,7 +1217,7 @@ div:has(>h1+.main+.message) > table.message){
 form[action="/forums/search"] > table:only-child,
 .bottom:not([id]) > .main[border="0"][cellspacing="0"][cellpadding="0"] .embedded > table[width="100%"][cellpadding="5"], 
 div:has(>h1+.main+.message) > table.message) tr td{
-  border-bottom:1px solid var(--surface0);
+  border-bottom:var(--table-border);
   background-color:var(--mantle);
 }
 
@@ -1342,7 +1337,7 @@ font[size="+3"]:has([href$="/support/contactstaff"]){
   margin-block:.5rem;
   padding:.5rem;
   overflow:clip;
-  border:1px solid var(--surface0);
+  border:var(--table-border);
   border-radius:var(--main-br);
   background:var(--mantle);
   background-color:var(--crust);
@@ -2881,7 +2876,7 @@ td:has(>.default_avatar){
 
 p[id^="news"]{
   padding:0 1rem 1rem;
-  border-bottom:1px solid var(--surface0);
+  border-bottom:var(--general-border);
   font-size:var(--font-size-news)
 }
 
@@ -2993,7 +2988,7 @@ p[id^="news"]{
 
 .tab{
   flex:fit-content;
-  border:var(--table-border);
+  border:var(--general-border);
   border-radius:var(--main-br);
   background-color:var(--mantle);
   font-weight:700;
@@ -3030,7 +3025,7 @@ table:has(a[href$="/lists/my"]), table:has(td[width="12%"] > b > a[href*="/staff
   gap:1rem;
   & > td{
     flex:fit-content;
-    border:var(--table-border);
+    border:var(--general-border);
     border-radius:var(--main-br);
     background-color:var(--mantle);
     font-weight:700;
@@ -3119,7 +3114,7 @@ table:has(a[href$="/lists/my"]), table:has(td[width="12%"] > b > a[href*="/staff
 #moresearch3[style="display: table-row;"]{
   display:flex !important;
   justify-content:space-between;
-  border-top:1px solid var(--surface0)
+  border-top:var(--general-border);
 }
 
 #moresearch3 > td:first-child{
@@ -3420,7 +3415,7 @@ div.dhtmlxcalendar select.dhtmlxRichSelector{
     padding:.25rem .5rem;
   }
   & option:hover{
-    background-color:var(--lavender);
+    background-color:var(--link-hover-color);
     color:var(--crust);
   }
 }
@@ -3815,7 +3810,6 @@ li.active-result{
 #torrent-list a.fl::after{
   content:"FREE";
   color:var(--lavender);
-  
 }
 
 #torrent-list a[title^="25%"]::after,
@@ -3901,7 +3895,6 @@ td:has(>a[href*="#snatches"]){
   }
   & a:first-of-type{
     margin-top:.5rem;
-    
   }
 }
 
@@ -3925,7 +3918,7 @@ td:has(>a[href*="#snatches"]){
   display:flex;
   flex:100%;
   padding:.5rem .75rem;
-  border:1px solid var(--surface0);
+  border:var(--table-border);
   border-radius:var(--main-br);
   background:var(--mantle)
 }
@@ -4048,7 +4041,7 @@ div[style="width: 930px; margin: 0px auto;"]:has(a[name="votes"], a[name="startc
       display:flex;
       align-items:center;
       justify-content:center;
-      color:var(--text-muted-color);
+      color:var(--heading-color);
       font-size:var(--font-size-larger);
       & > a{
         padding:.5rem;
@@ -4276,7 +4269,7 @@ a.list-overview:hover .list-overview__text{
 #tagassociate + br + em > a::after{
   display:inline-block;
   padding:var(--button-padding);
-  border:var(--table-border);
+  border:var(--general-border);
   border-radius:var(--main-br);
   background:var(--base);
   content:"Tags";
@@ -4846,7 +4839,6 @@ h2.stattitle{
     border-bottom:var(--table-border);
     font-weight:bold;
     font-size:var(--font-size-larger);
-
   }
   & .show-preference{
     padding:.5rem;
@@ -4873,7 +4865,6 @@ h2.stattitle{
     }
   }
   .season-episode{
-
     &:not(:last-child){
       margin-bottom:.5rem;
       padding-bottom:.5rem;
@@ -4895,10 +4886,11 @@ h2.stattitle{
       padding-left:.5rem;
     }
   }
-  
 }
 
-th.sortable{width:auto}
+th.sortable{
+  width:auto
+}
 
 div.film-list-container{
 	box-sizing:border-box;
