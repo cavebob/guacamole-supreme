@@ -2482,25 +2482,58 @@ img[src*="warnedbig.gif"][alt=Warned]{
   mask:url("../pic/tokyo-night/icon/warning.svg") center no-repeat;
 }
 .label_showhide{
+  display:inline-flex;
+  position:relative;
+  align-items:center;
+  padding-right:.25rem;
+  padding-left:1.125rem;
+  gap:.25rem;
   color:var(--subtext0);
+  font-weight:bold;
 }
-.label_showhide span:hover{
-	background:var(--button-secondary-hover-bg);
-	color:var(--button-secondary-text-hover-color);
+.label_showhide::before{
+  box-sizing:border-box;
+  display:inline-block;
+  position:absolute;
+  left:2px;
+  width:16px;
+  height:16px;
+  background:var(--subtext0);
+  content:'';
+  mask:url("../pic/tokyo-night/icon/hideright.svg") center no-repeat;
+  mask-size:14px;
+}
+.label_showhide:hover{
+	color:var(--button-primary-hover-bg);
+  cursor:pointer;
 	filter:brightness(1);
+  &::before{
+    background:var(--button-primary-hover-bg);
+  }
 }
 .label_showhide span{
-	box-sizing:border-box;
-	display:inline-block;
-	margin-bottom:1px;
-	padding:0 .25rem .15rem .25rem;
-	border:var(--button-secondary-border);
-	border-radius:var(--main-br);
-	background:var(--button-secondary-bg);
-	color:var(--button-secondary-text-color);
-	font-variant:small-caps;
-	font-weight:700;
-	font-size:110%;
+  display:none;
+}
+div:has(.div_showhide:is(:not([style]), [style="display: block;"])) .label_showhide::before{
+  box-sizing:border-box;
+  display:inline-block;
+  position:absolute;
+  top:4px;
+  left:2px;
+  width:16px;
+  height:16px;
+  background:var(--subtext0);
+  content:'';
+  mask:url("../pic/tokyo-night/icon/hidedown.svg") center no-repeat;
+  mask-size:14px;
+}
+.label_showhide:hover{
+	color:var(--button-primary-hover-bg);
+  cursor:pointer;
+	filter:brightness(1);
+  &::before{
+    background:var(--button-primary-hover-bg) !important;
+  }
 }
 #details a[href*="/sendmessageanon.php?id"]{
 	box-sizing:border-box;
@@ -3540,7 +3573,7 @@ div[style="width: 930px; margin: 0px auto;"]:has(a[name="votes"], a[name="startc
   height:40px;
   background:var(--button-primary-bg);
   cursor:pointer;
-  mask:url("../pic/tokyo-night/icon/arrowup.svg") center no-repeat;
+  mask:url("../pic/tokyo-night/icon/arrowright.svg") center no-repeat;
   mask-size:22px;
   transition:filter ease .25s;
 }
