@@ -60,7 +60,7 @@
   --general-border:1px solid var(--surface0);
 
   --button-primary-bg:#9eadfa;
-  --button-primary-hover-bg:#6e79f7;
+  --button-primary-hover-bg:hsl(235, 90%, 70%);
   --button-primary-text-color:hsl(240, 9.7%, 12.2%);
   --button-primary-text-hover-color:hsl(240, 12%, 4.9%);
   --button-primary-border:1px solid transparent;
@@ -2657,7 +2657,7 @@ p[id^="news"]{
   padding:1rem;
   border:var(--table-border);
   border-top:0;
-  border-radius:0 0 1rem 1rem;
+  border-radius:0 0 var(--main-br) var(--main-br);
   background:var(--mantle);
 }
 #news ~ table:last-of-type{
