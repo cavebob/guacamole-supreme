@@ -27,8 +27,8 @@
 .category6,
 .category7,
 .category8 {
-    width: 42px;
-    height: 42px;
+  width: 42px;
+  height: 42px;
 }
 .medium1,
 .medium2,
@@ -36,22 +36,22 @@
 .medium4,
 .medium5,
 .medium6 {
-    box-sizing: border-box;
-    display: flex;
-    flex-flow: row wrap;
-    align-content: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
 }
 .catcell {
-    width: 42px;
-    height: 42px;
-    padding: 0;
-    border-width: 0 0 1px 1px
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border-width: 0 0 1px 1px
 } 
 #details [id^="codec"] {
   text-indent: 0rem !important;
 }
 #details [id^="codec"] > img {
-    display: none;
+  display: none;
 }
 [id^="codec"]:has([class^="medium"])::before {
   font-size: .75rem
@@ -61,24 +61,24 @@
 }
 [id^="codec"]:has([class^="medium"])::before,
 [id^="codec"]:has([class^="medium"])::after {
-    box-sizing: content-box;
-    display: flex;
-    z-index: 2;
-    align-items: center;
-    justify-content: center;
-    width: 43px;
-    height: 21px;
-    font-variant: small-caps;
-    font-weight: 500;
-    text-transform: uppercase;
-    white-space: nowrap;
+  box-sizing: content-box;
+  display: flex;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 21px;
+  font-variant: small-caps;
+  font-weight: 500;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 [id^="codec"]:has([class^="medium"])::before {
-    border-radius: var(--small-br) var(--small-br) 0 0;
+  border-radius: var(--small-br) var(--small-br) 0 0;
 }
 [id^="codec"]:not(#codec0):has([class^="medium"])::after {
-    border-top: 0 !important;
-    border-radius: 0 0 var(--small-br) var(--small-br);
+  border-top: 0 !important;
+  border-radius: 0 0 var(--small-br) var(--small-br);
 }
 #codec0 {
   height: 42px;
@@ -93,80 +93,80 @@
   text-transform: lowercase;
 }
 #codec1:has([class^="medium"])::after {
-    border: var(--general-border);
-    background-color: var(--crust);
-    content: "H264";
-    color: var(--codec);
+  border: var(--general-border);
+  background-color: var(--crust);
+  content: "H264";
+  color: var(--codec);
 }
 #codec2:has([class^="medium"])::after {
-    border: var(--general-border);
-    background-color: var(--crust);
-    content: "MPEG2";
-    color: var(--codec);
+  border: var(--general-border);
+  background-color: var(--crust);
+  content: "MPEG2";
+  color: var(--codec);
 }
 #codec3:has([class^="medium"])::after {
-    border: var(--general-border);
-    background-color: var(--crust);
-    content: "VC-1";
-    color: var(--codec);
+  border: var(--general-border);
+  background-color: var(--crust);
+  content: "VC-1";
+  color: var(--codec);
 }
 #codec4:has([class^="medium"])::after {
-    border: var(--general-border);
-    background-color: var(--crust);
-    content: "XVID";
-    color: var(--codec);
+  border: var(--general-border);
+  background-color: var(--crust);
+  content: "XVID";
+  color: var(--codec);
 }
 #codec5:has([class^="medium"])::after{
-    border: var(--general-border);
-    background-color: var(--crust);
-    content: "HEVC";
-    color: var(--codec);
+  border: var(--general-border);
+  background-color: var(--crust);
+  content: "HEVC";
+  color: var(--codec);
 }
 #codec6:has([class^="medium"])::after {
-    border: var(--general-border);
-    background-color: var(--crust);
-    content: "VP9";
-    color: var(--codec);
+  border: var(--general-border);
+  background-color: var(--crust);
+  content: "VP9";
+  color: var(--codec);
 }
 [id^="codec"]:has(.medium1)::before {
-    border: 1px solid hsla(199, 76%, 59%, 0.5);
-    background-color: hsla(199, 26%, 39%, 0.1);
-    content: "Blu-Ray";
-    color: var(--bluray);
-    font-variant: all-small-caps;
+  border: 1px solid hsla(199, 76%, 59%, 0.5);
+  background-color: hsla(199, 26%, 39%, 0.1);
+  content: "Blu-Ray";
+  color: var(--bluray);
+  font-variant: all-small-caps;
 }
 [id^="codec"]:has(.medium3)::before {
-    border: 1px solid hsla(41, 56%, 73%, 0.5);
-    background-color: hsla(41, 26%, 60%, 0.1);
-    content: "Encode";
-    color: var(--encode);
-    font-variant: all-small-caps;
+  border: 1px solid hsla(41, 56%, 73%, 0.5);
+  background-color: hsla(41, 26%, 60%, 0.1);
+  content: "Encode";
+  color: var(--encode);
+  font-variant: all-small-caps;
 }
 [id^="codec"]:has(.medium4)::before {
-    border: 1px solid hsla(350, 65%, 77%, 0.5);
-    background-color: hsla(350, 25%, 10%, 0.1);
-    content: "Capture";
-    color: var(--capture);
-    font-variant: all-small-caps;
+  border: 1px solid hsla(350, 65%, 77%, 0.5);
+  background-color: hsla(350, 25%, 10%, 0.1);
+  content: "Capture";
+  color: var(--capture);
+  font-variant: all-small-caps;
 }
 [id^="codec"]:has(.medium5)::before {
-    border: 1px solid hsla(171, 38%, 45%, 0.5);
-    background-color: hsla(171, 18%, 25%, 0.1);
-    content: "Remux";
-    color: var(--remux);
-    font-variant: all-small-caps;
+  border: 1px solid hsla(171, 38%, 45%, 0.5);
+  background-color: hsla(171, 18%, 25%, 0.1);
+  content: "Remux";
+  color: var(--remux);
+  font-variant: all-small-caps;
 }
 [id^="codec"]:has(.medium6)::before {
-    border: 1px solid hsla(232, 57%, 65%, 0.5);
-    background-color: hsla(232, 10%, 20%, 0.1);
-    content: "WEB-DL";
-    color: var(--webdl);
-    font-variant: all-small-caps;
+  border: 1px solid hsla(232, 57%, 65%, 0.5);
+  background-color: hsla(232, 10%, 20%, 0.1);
+  content: "WEB-DL";
+  color: var(--webdl);
+  font-variant: all-small-caps;
 }
 td[id^="codec"].catcell,
 .catcell {
-    box-sizing: border-box;
-    padding: 0 2px !important;
+  box-sizing: border-box;
+  padding: 0 2px !important;
 }
 .category1 {
   background: no-repeat center /37px url("../pic/styles/tokyo-night/types/film.svg");
@@ -194,5 +194,4 @@ td[id^="codec"].catcell,
 }
 img[class*="medium"][src="/pic/blank2.gif"] {
 	height: 0;
-} 
- 
+}
