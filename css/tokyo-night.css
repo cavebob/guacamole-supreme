@@ -689,7 +689,7 @@ div:has(.center_comments) > p[align="center"]{
 	margin:auto;
 	padding:.3rem .5rem;
 	border:var(--table-border);
-	border-radius:.5rem;
+	border-radius:var(--main-br);
 	background-color:var(--base);
 	filter:drop-shadow(0 0px 20px black) brightness(120%);
 }
@@ -2813,7 +2813,7 @@ img.poll, img[src$="bar.gif"]{
 	min-width:1px;
 	height:.5rem;
   padding-top:8px;
-	border-radius:.25rem;
+	border-radius:var(--small-br);
 	background:var(--lavender);
 }
 
@@ -2884,7 +2884,7 @@ p[id^="news"]{
   flex:100%;
   order:0;
   border:var(--table-border);
-  border-radius:1rem;
+  border-radius:var(--main-br);
   background:var(--mantle);
   & > table td{
     padding:0 1rem;
@@ -2897,7 +2897,7 @@ p[id^="news"]{
   margin-bottom:-1rem;
   padding:1rem;
   border:var(--table-border);
-  border-radius:1rem 1rem 0 0;
+  border-radius:var(--main-br) var(--main-br) 0 0;
   background:var(--mantle);
 }
 
@@ -2907,7 +2907,7 @@ p[id^="news"]{
   margin-bottom:-1rem;
   padding:1rem;
   border:var(--table-border);
-  border-radius:1rem 1rem 0 0;
+  border-radius:var(--main-br) var(--main-br) 0 0;
   background:var(--mantle);
 }
 
@@ -2933,7 +2933,7 @@ p[id^="news"]{
   padding:.5rem;
   border:var(--table-border);
   border-top:0;  
-  border-radius:0 0 1rem 1rem;
+  border-radius:0 0 var(--main-br) var(--main-br);
   background:var(--mantle);
 }
 
@@ -4562,7 +4562,7 @@ ul.showseasons > li > ul > li > ul{
 
 img.rc__film__poster{
 	object-fit:fill;
-	border-radius:.5rem;
+	border-radius:var(--main-br);
   filter:var(--poster-shadow);
 }
 
