@@ -5186,6 +5186,11 @@ p.sub > a[href*="/details.php?id="]{
     color:var(--subtext0);
   }
 }
+.comment p:last-child:has(font.small[size="1"]){
+	margin-top:.5rem;
+	color:var(--subtext0);
+  text-align:right;
+}
 @media (min-width: 1008px){
   .bottom:not([id]){
     max-width:960px;
