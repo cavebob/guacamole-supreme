@@ -1,22 +1,22 @@
 @font-face{
-  font-family:'Noto Sans';
+  font-style:normal;
+  font-weight:100 900;
   src:url("../pic/tokyo-night/fonts/NotoSans-VariableFont_wdth\,wght.woff2") format('woff2');
-  font-weight:100 900;
-  font-style:normal;
-  font-display:swap;
-}
-@font-face{
   font-family:'Noto Sans';
-  src:url("../pic/tokyo-night/fonts/NotoSans-Italic-VariableFont_wdth\,wght.woff2") format('woff2');
-  font-weight:100 900;
-  font-style:italic;
   font-display:swap;
 }
 @font-face{
-  font-family:'Noto Sans Mono';
-  src:url("../pic/tokyo-night/fonts/NotoSansMono-VariableFont_wdth\,wght.woff2") format('woff2');
+  font-style:italic;
   font-weight:100 900;
+  src:url("../pic/tokyo-night/fonts/NotoSans-Italic-VariableFont_wdth\,wght.woff2") format('woff2');
+  font-family:'Noto Sans';
+  font-display:swap;
+}
+@font-face{
   font-style:normal;
+  font-weight:100 900;
+  src:url("../pic/tokyo-night/fonts/NotoSansMono-VariableFont_wdth\,wght.woff2") format('woff2');
+  font-family:'Noto Sans Mono';
   font-display:swap;
 }
 :root{
@@ -3847,11 +3847,11 @@ td:has(+#plotcell){
   }
 }
 .contentlayout th{
+  width:5rem;
   color:var(--details-th-text-color);
   font-variant:small-caps;
   font-size:var(--font-size);
   text-transform:lowercase;
-  width:5rem;
 }
 .fourcell th+td{
   font-family:var(--mono-font-stack)
@@ -4001,14 +4001,14 @@ div[style="width: 930px; margin: 0px auto;"] > h1.left{
   text-align:center;
 }
 #details td:has(> #moderated + br){
+  padding-inline:.5rem;
   & .label{
     margin-left:-.5rem;
   }
   & #moderated{
-    font-weight:bold;
     color:var(--red);
+    font-weight:bold;
   }
-  padding-inline:.5rem;
 }
 #plotcell td{
 	padding:.25rem;
