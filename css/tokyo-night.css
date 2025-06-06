@@ -792,7 +792,7 @@ div:has(.center_comments) > p[align="center"]{
 	border-radius:var(--input-box-border-radius);
 	background:var(--red);
 }
-a.alert-box--news{
+#header a.alert-box--news{
 	display:flex;
 	align-items:center;
 	order:-2;
@@ -1734,6 +1734,13 @@ body > .popup{
       border-top-right-radius:var(--main-br);
     }
   }
+}
+.bottom .alert-box{
+  padding:1rem;
+  border:var(--table-border);
+  border-radius:var(--main-br);
+  background:var(--crust);
+  color:var(--red);
 }
 .btn, button, [type="button"], .index[href*="/comments/add"], .button{
   padding:var(--button-padding);
