@@ -839,7 +839,7 @@ a.alert-box--news{
 .menu{
   z-index:1;
   position:sticky;
-  top:6.125rem;
+  top:6.1875rem;
   background:var(--header);
 }
 .menu tr{
@@ -3999,6 +3999,19 @@ div[style="width: 930px; margin: 0px auto;"]:has(a[name="votes"]){
 }
 div[style="width: 930px; margin: 0px auto;"] > h1.left{
   text-align:center;
+}
+#details td:has(> #moderated + br){
+  & .label{
+    margin-left:-.5rem;
+  }
+  & #moderated{
+    font-weight:bold;
+    color:var(--red);
+  }
+  padding-inline:.5rem;
+}
+#plotcell td{
+	padding:.25rem;
 }
 tr:has(#showbanner){
   & > td{
