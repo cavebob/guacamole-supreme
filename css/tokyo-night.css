@@ -1782,6 +1782,7 @@ p:has(.index[href*="/comments/add"]){
   font-weight:700;
   font-size:.75rem;
   line-height:normal;
+  text-indent:0;
   text-transform:lowercase;
   vertical-align:middle;
   user-select:none;
