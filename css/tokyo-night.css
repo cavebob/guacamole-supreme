@@ -3656,8 +3656,23 @@ td:has(>a[href*="#snatches"]){
   display:inline flex;
   flex-flow:row wrap;
   & div{
-  font-size:0;
-  filter:brightness(80%);
+    position:relative;
+    font-size:0;
+    filter:brightness(80%);
+    &:hover span{
+      z-index:10;
+      position:absolute;
+      bottom:100%;
+      left:50%;
+      width:max-content;
+      padding:.5rem;
+      transform:translateX(-50%);
+      border:var(--general-border);
+      border-radius:var(--main-br);
+      background:var(--crust);
+      font-size:var(--font-size);
+      filter:brightness(1);
+    }
   }
 }
 :is(#details, .torrent-title + table[width="930"]:has([id^="l"].label), .lottery_table2:has([id^="l"].label)) td{
