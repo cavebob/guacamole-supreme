@@ -980,7 +980,7 @@ div:has(.center_comments) > p[align="center"]{
       border-bottom-right-radius:var(--main-br);
     }
   }
-  & :is(td:first-child:not([id*="codec"], .catcell), th:first-child){
+  & :is(td:first-child:not([id*="codec"], .catcell, :has([class*="locked"])), th:first-child){
     padding-inline:.5rem;
   }
 }
@@ -2811,6 +2811,7 @@ p[id^="news"]{
 }
 #news ~ table img[style^="max-width"]{
   max-width:100% !important;
+  border-radius:var(--small-br);
 }
 #news #showmore a{
   display:block;
