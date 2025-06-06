@@ -431,6 +431,30 @@ span.small{
 b{
   font-weight:700
 }
+font[size="1"]{
+  font-size:10px;
+  line-height:12px;
+}
+font[size="2"]{
+  font-size:13px;
+  line-height:16px;
+}
+font[size="4"]{
+  font-size:18px;
+  line-height:22px;
+}
+font[size="5"]{
+  font-size:24px;
+  line-height:28px;
+}
+font[size="6"]{
+  font-size:32px;
+  line-height:36px;
+}
+font[size="7"]{
+  font-size:48px;
+  line-height:52px;
+}
 p:has(a[href*="page="]):not(.sub){
   display:flex;
   flex-flow:row wrap;
@@ -1765,7 +1789,7 @@ p:has(.index[href*="/comments/add"]){
 .tag[class*="exclusive"]{
   color:var(--mauve);
 }
-.tag.new{
+.tag.new, .tag.moderate{
   color:var(--red);
 }
 .tag.internal{
