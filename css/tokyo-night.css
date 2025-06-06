@@ -195,6 +195,9 @@ td[style="padding: 3px"]{
 table[width="450"]{
   width:auto;
 }
+td[style="padding-left: 30px; border-left: 1px solid black; width:27%; vertical-align:top;"]{
+  padding-left:0 !important;
+}
 html{
   background:var(--base);
   accent-color:var(--lavender);
@@ -3726,6 +3729,7 @@ td:has(+#plotcell){
   font-variant:small-caps;
   font-size:var(--font-size);
   text-transform:lowercase;
+  width:5rem;
 }
 .fourcell th+td{
   font-family:var(--mono-font-stack)
@@ -5055,7 +5059,6 @@ p.sub > a[href*="/details.php?id="]{
       table:not(:last-child){
         margin-bottom:0rem;
       }
-      
     }
   }
 }
