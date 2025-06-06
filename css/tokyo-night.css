@@ -1742,6 +1742,9 @@ body > .popup{
   background:var(--crust);
   color:var(--red);
 }
+.j-bpinfo, .tableb .fl{
+  color:var(--green);
+}
 .btn, button, [type="button"], .index[href*="/comments/add"], .button{
   padding:var(--button-padding);
   border:var(--button-primary-border);
