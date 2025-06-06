@@ -3760,6 +3760,9 @@ div[style="width: 930px; margin: 0px auto;"]:has(a[name="votes"], a[name="startc
         color:var(--link-color);
       }
     }
+    & h3{
+      text-align:center;
+    }
   }
 }
 .contentlayout > tbody > tr:last-child > td:only-child{  
