@@ -981,7 +981,7 @@ div:has(.center_comments) > p[align="center"]{
     }
   }
   & :is(td:first-child:not([id*="codec"], .catcell), th:first-child){
-    text-indent:.5rem;
+    padding-inline:.5rem;
   }
 }
 .bottom > table[cellpadding="5"]:not([class], [id]):has(div[class*="locked"]), #latest_posts > table, 
