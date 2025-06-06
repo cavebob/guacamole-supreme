@@ -1600,8 +1600,8 @@ td.embedded:has(#table_reseed_button_requests) > h1{
   margin-left:auto;
 }
 td.bottom > table[width="800"] + table.main + h2 + table[width="100%"]:has(.sub) :is(p.sub, p.sub + .main){
-  margin-left:auto !important;
   margin-right:auto !important;
+  margin-left:auto !important;
 }
 :is(.sources_table, form[action="delete.php"]) th{
   padding:.5rem;
@@ -1662,32 +1662,32 @@ body > .popup{
     text-align:center
   }
   & form{
-    background:var(--mantle);
-    border-radius:var(--main-br);
-    border:var(--table-border);
-    padding:1rem;
     display:flex;
     flex-flow:row wrap;
+    padding:1rem;
     gap:.5rem;
+    border:var(--table-border);
+    border-radius:var(--main-br);
+    background:var(--mantle);
   }
   & input[style="height: 23px; margin-left: 5px"]{
-    margin:0 !important;
     height:2.125rem !important;
+    margin:0 !important;
   }
   & .sub{
-    background:var(--crust);
-    border-top-left-radius:var(--main-br);
-    border-top-right-radius:var(--main-br);
-    padding:.5rem;
     margin-top:1rem;
+    padding:.5rem;
     border:var(--table-border);
+    border-top-right-radius:var(--main-br);
+    border-top-left-radius:var(--main-br);
+    background:var(--crust);
   }
   & .main{
     border:var(--table-border);
     border-top:0;
-    background:var(--mantle);
     border-radius:0 0 var(--main-br) var(--main-br);
     border-collapse:separate;
+    background:var(--mantle);
   }
   & .main td{
     padding:.25rem .5rem;
@@ -1702,8 +1702,8 @@ body > .popup{
       margin-bottom:-1px;
     }
     & .main td{
-      border-radius:0;
-      border:0 !important
+      border:0 !important;
+      border-radius:0
     }
     & .main{
       border-top:var(--table-border);
@@ -5103,6 +5103,22 @@ p.sub > a[href*="/details.php?id="]{
 }
 :is(.comment,.text) .sub + .main + br + br{
   display:none;
+}
+.previewbox{
+  & .sub{
+    display:flex;
+    align-items:center;
+    width:max-content;
+    height:1.75rem;
+    margin:0 0 -1px 3px !important;
+    padding:0 .5rem;
+    overflow:auto;
+    border:var(--table-border);
+    border-bottom:0;
+    border-radius:var(--main-br) var(--main-br) 0 0;
+    background-color:var(--crust);
+    color:var(--subtext0);
+  }
 }
 @media (min-width: 1008px){
   .bottom:not([id]){
