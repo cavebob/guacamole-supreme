@@ -1778,7 +1778,8 @@ p:has(.index[href*="/comments/add"]){
   height:auto;
   margin:auto;
 }
-#resultsarea button:not(.tvdb_button, button[onclick^="hide"]), .tvdb_button, .fl_token_button input[type="submit"], .tag-content>a, input[type="submit"][value]:not([id], [class]), .button2, input[type="reset"]{
+#resultsarea button:not(.tvdb_button, button[onclick^="hide"]), .tvdb_button, .fl_token_button input[type="submit"], 
+.tag-content>a, input[type="submit"][value]:not([id], [class]), .button2, input[type="reset"], .label ~ b > a:is([href="#for"], [href="#against"]){
   display:inline-block;
   padding:var(--button-padding);
   border:var(--button-secondary-border);
@@ -1792,6 +1793,14 @@ p:has(.index[href*="/comments/add"]){
     border-color:transparent;
     background-color:var(--button-secondary-hover-bg);
     color:var(--button-secondary-text-hover-color);
+  }
+}
+.label ~ b > a{
+  &:is([href="#for"]):hover font{
+    color:var(--button-secondary-hover-text-color);
+  }
+  &:is([href="#against"]):hover font{
+    color:var(--button-secondary-hover-text-color);
   }
 }
 .tag{
