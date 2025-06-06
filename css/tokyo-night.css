@@ -4909,6 +4909,8 @@ table.main > tbody > tr > td.text{
 table.main > tbody > tr > td.text, td.comment{
 	box-sizing:border-box;
 	padding:.8rem;
+  word-break:break-word;
+	overflow-wrap:break-word;
 }
 .std-content > tbody > tr > td > table > tbody:first-child > tr:first-child > td:first-child > p[style="margin-left: 5px;"]{
 	margin:auto;
