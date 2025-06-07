@@ -6,6 +6,7 @@
   --yellow: #f9e2af;
   --teal: #73daca;
   --blue: hsl(240, 100%, 92%);
+  --lavender: #b4befe;
 
   --bluray: var(--sapphire);
   --encode: var(--yellow);
@@ -15,6 +16,7 @@
   --audio: var(--flamingo);
   --codec: var(--blue);
   --surface0: #414358;
+  --icon-color: var(--lavender);
   --crust: hsl(240, 13.7%, 10%);
   --general-border: 1px solid var(--surface0);
   --small-br: .25rem;
@@ -29,6 +31,7 @@
 .category8 {
   width: 42px;
   height: 42px;
+  background-color: var(--icon-color);
 }
 .medium1,
 .medium2,
@@ -169,28 +172,28 @@ td[id^="codec"].catcell,
   padding: 0 2px !important;
 }
 .category1 {
-  background: no-repeat center /37px url("../pic/styles/tokyo-night/types/film.svg");
+  mask: no-repeat center /37px url("../pic/styles/tokyo-night/types/film.svg");
 }
 .category2 {
-  background: no-repeat center /40px url("../pic/styles/tokyo-night/types/tv.svg");
+  mask: no-repeat center /40px url("../pic/styles/tokyo-night/types/tv.svg");
 }
 .category3 {
-  background: no-repeat center /40px url("../pic/styles/tokyo-night/types/documentary.svg");
+  mask: no-repeat center /40px url("../pic/styles/tokyo-night/types/documentary.svg");
 }
 .category4 {
-  background: no-repeat center /36px url("../pic/styles/tokyo-night/types/music.svg");
+  mask: no-repeat center /36px url("../pic/styles/tokyo-night/types/music.svg");
 }
 .category5 {
-  background: no-repeat center /40px url("../pic/styles/tokyo-night/types/volleyball.svg");
+  mask: no-repeat center /40px url("../pic/styles/tokyo-night/types/volleyball.svg");
 }
 .category6 {
-  background: no-repeat center /40px url("../pic/styles/tokyo-night/types/audio.svg");
+  mask: no-repeat center /40px url("../pic/styles/tokyo-night/types/audio.svg");
 }
 .category7 {
-  background: no-repeat center /40px url("../pic/styles/tokyo-night/types/18-plus.svg");
+  mask: no-repeat center /40px url("../pic/styles/tokyo-night/types/18-plus.svg");
 }
 .category8 {
-  background: no-repeat center /41px url("../pic/styles/tokyo-night/types/misc.svg");
+  mask: no-repeat center /41px url("../pic/styles/tokyo-night/types/misc.svg");
 }
 img[class*="medium"][src="/pic/blank2.gif"] {
 	height: 0;
