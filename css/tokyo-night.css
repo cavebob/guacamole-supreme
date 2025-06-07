@@ -1105,7 +1105,7 @@ table.tableb, table.tableb table[width="500"]{
 :is(#profilesettings, form[action] > table:only-of-type:not(#searchbox), form[action] > div > table:only-of-type,
 form[action="/forums/search"] > table:only-child,
 .bottom:not([id]) > .main[border="0"][cellspacing="0"][cellpadding="0"] .embedded > table[width="100%"][cellpadding="5"],
-div:has(>h1+.main+.message) > table.message){
+div:has(>h1+.main+.message) > table.message, #form){
   margin:auto;
   overflow:auto;
   overflow:clip;
@@ -1131,13 +1131,13 @@ div:has(>h1+.main+.message) > table.message){
 :is(#profilesettings,  form[action] > table:only-of-type:not(#searchbox), form[action] > div > table:only-of-type,
 form[action="/forums/search"] > table:only-child,
 .bottom:not([id]) > .main[border="0"][cellspacing="0"][cellpadding="0"] .embedded > table[width="100%"][cellpadding="5"], 
-div:has(>h1+.main+.message) > table.message) tr td{
+div:has(>h1+.main+.message) > table.message, #form) tr td{
   border-bottom:var(--table-border);
   background-color:var(--mantle);
 }
 :is(#profilesettings,  form[action] > table:only-of-type:not(#searchbox), form[action] > div > table:only-of-type,
 form[action="/forums/search"] > table:only-child,
-.bottom:not([id]) > .main[border="0"][cellspacing="0"][cellpadding="0"] .embedded > table[width="100%"][cellpadding="5"], div:has(>h1+.main+.message) > table.message) tr:last-child td{
+.bottom:not([id]) > .main[border="0"][cellspacing="0"][cellpadding="0"] .embedded > table[width="100%"][cellpadding="5"], div:has(>h1+.main+.message) > table.message, #form) tr:last-child td{
   border-bottom:none;
 }
 #profilesettings span{
