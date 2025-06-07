@@ -5374,15 +5374,17 @@ p.sub > a[href*="/details.php?id="]{
     order:2;
   }
   & #news ~ h2:last-of-type{
-    flex:0 1 40%;
+    flex:0;
+    min-width:50%;
     order:3;
-    margin-right:30%;
-    margin-left:30%;
+    margin-right:auto;
+    margin-left:auto;
   }
   & #news ~ table:last-of-type{
-    flex:0 1 40%;
+    flex:0;
+    min-width:50%;
     order:4;
-    margin-right:30%;
-    margin-left:30%;
+    margin-right:auto;
+    margin-left:auto;
   }
 }
