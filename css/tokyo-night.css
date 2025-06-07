@@ -5216,6 +5216,24 @@ p.sub > a[href*="/details.php?id="]{
 @media (min-width: 1008px){
   .bottom:not([id]){
     max-width:960px;
+    & #news + h2{
+      flex:100%;
+      order:1;
+    }
+    #news ~ table:first-of-type{
+      flex:100%;
+      order:2;
+    }
+    & #news ~ h2:last-of-type{
+      flex:0 1 40%;
+      order:3;
+      margin-right:60%;
+    }
+    #news ~ table:last-of-type{
+      flex:0 1 40%;
+      order:4;
+      margin-right:60%;
+    }
     &:has(#tvstatboxes){
       max-width:1280px;
     }
@@ -5224,6 +5242,24 @@ p.sub > a[href*="/details.php?id="]{
 @media (min-width: 1236px){
   .bottom:not([id]){
     max-width:1200px;
+    & #news + h2{
+      flex:70%;
+      order:1;
+    }
+    #news ~ table:first-of-type{
+      flex:70%;
+      order:3;
+    }
+    & #news ~ h2:last-of-type{
+      flex:1 1 27%;
+      order:2;
+      margin-right:0;
+    }
+    & #news ~ table:last-of-type{
+      flex:1 1 27%;
+      order:4;
+      margin-right:0;
+    }
     &:has(#tvstatboxes){
       max-width:1680px;
     }
@@ -5265,7 +5301,6 @@ p.sub > a[href*="/details.php?id="]{
           flex-flow:row wrap;
           align-items:center;
         }
-      
       table:not(:last-child){
         margin-bottom:0rem;
       }
@@ -5274,6 +5309,24 @@ p.sub > a[href*="/details.php?id="]{
   p.sub{
     overflow:hidden;
     text-overflow:ellipsis;
+  }
+  & #news + h2{
+    flex:100%;
+    order:1;
+  }
+  #news ~ table:first-of-type{
+    flex:100%;
+    order:2;
+  }
+  & #news ~ h2:last-of-type{
+    flex:0 1 40%;
+    order:3;
+    margin-right:60%;
+  }
+  & #news ~ table:last-of-type{
+    flex:0 1 40%;
+    order:4;
+    margin-right:60%;
   }
 }
 @media (max-width: 1008px){
@@ -5311,5 +5364,25 @@ p.sub > a[href*="/details.php?id="]{
       }
       
     }
+  }
+  & #news + h2{
+    flex:100%;
+    order:1;
+  }
+  #news ~ table:first-of-type{
+    flex:100%;
+    order:2;
+  }
+  & #news ~ h2:last-of-type{
+    flex:0 1 40%;
+    order:3;
+    margin-right:30%;
+    margin-left:30%;
+  }
+  & #news ~ table:last-of-type{
+    flex:0 1 40%;
+    order:4;
+    margin-right:30%;
+    margin-left:30%;
   }
 }
