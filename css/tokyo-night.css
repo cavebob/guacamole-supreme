@@ -502,6 +502,9 @@ p:has(a[href*="page="]):not(.sub){
       order:1;
     }
   }
+  &>b{
+    color:var(--text-muted-color);
+  }
 }
 div:has(.center_comments) > p[align="center"]{
   margin:1rem auto;
