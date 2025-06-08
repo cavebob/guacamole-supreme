@@ -887,13 +887,17 @@ div:has(.center_comments) > p[align="center"]{
   min-width:10rem;
   max-width:14rem;
   height:min-content;
-  overflow-y:scroll;
-  overflow-x:hidden;
   max-height:calc(100vh - 8.25rem);
-  padding:1rem !important;
+  margin-bottom:-54px;
+  padding:1rem 1rem !important;
+  overflow-x:hidden;
+  overflow-y:hidden;
   border:var(--table-border);
   background:var(--mantle);
-  margin-bottom: -54px; /* Extend over footer */
+  scrollbar-gutter:stable;
+  &:hover{
+    overflow-y:auto;
+  }
 }
 #sidebar-container .embedded{
   display:flex;
