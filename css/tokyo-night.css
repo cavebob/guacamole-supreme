@@ -893,6 +893,7 @@ div:has(.center_comments) > p[align="center"]{
   padding:1rem !important;
   border:var(--table-border);
   background:var(--mantle);
+  margin-bottom: -54px; /* Extend over footer */
 }
 #sidebar-container .embedded{
   display:flex;
