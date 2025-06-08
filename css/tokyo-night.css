@@ -882,11 +882,14 @@ div:has(.center_comments) > p[align="center"]{
 #sidebar-container{
   display:flex;
   position:sticky;
-  top:7.625rem;
+  top:8.25rem;
   flex:1;
   min-width:10rem;
   max-width:14rem;
-  max-height:100%;
+  height:min-content;
+  overflow-y:scroll;
+  overflow-x:hidden;
+  max-height:calc(100vh - 8.25rem);
   padding:1rem !important;
   border:var(--table-border);
   background:var(--mantle);
@@ -2059,7 +2062,6 @@ a[id^="rss"]{
   }
 }
 a.js-wishlistadd:not([id^="rss"]), a[title="Add this film to your wishlist"], a[title="Add to wishlist"], a[title="Add to wishlist"][onclick*="delWishlist"], img.info__wishlist{
-  display:inline-block;
   display:inline-block;
   width:1.25rem;
   height:1.25rem;
