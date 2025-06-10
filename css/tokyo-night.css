@@ -2633,7 +2633,6 @@ img[src*="/top.gif"][alt="Top"]{
   margin-left:4px;
 	padding-left:20px;
 	background:var(--button-primary-bg);
-	filter:brightness(90%) grayscale(.5);
 	mask:url("../pic/tokyo-night/icon/totop.svg") center no-repeat;
   mask-size:25px;
 }
