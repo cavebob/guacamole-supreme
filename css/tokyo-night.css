@@ -1869,7 +1869,7 @@ p:has(.index[href*="/comments/add"]){
 .tag{
   display:inline-block;
   margin:0 0 0 4px;
-  padding:1px .5rem;
+  padding:1px .5rem 2px;
   border:var(--general-border);
   border-radius:var(--main-br);
   background:var(--crust);
@@ -1879,7 +1879,6 @@ p:has(.index[href*="/comments/add"]){
   line-height:normal;
   text-indent:0;
   text-transform:lowercase;
-  vertical-align:middle;
   user-select:none;
 }
 .tag[class*="exclusive"]{
