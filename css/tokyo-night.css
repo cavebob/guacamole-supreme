@@ -5254,7 +5254,8 @@ p.sub > a[href*="/details.php?id="]{
 	text-overflow:ellipsis;
 	white-space:nowrap;
 }
-:is(.comment,.text) .sub + .main + br + br{
+:is(.comment,.text) .sub + .main + br + br,
+:is(.comment, .text) .sub + .main + br + br + br{
   display:none;
 }
 .previewbox{
