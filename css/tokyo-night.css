@@ -286,7 +286,7 @@ textarea{
   max-width:min(80vw, 64rem);
   height:auto;
   min-height:12rem;
-  overflow:clip;
+  overflow:auto;
   font-size:var(--font-size);
 }
 .footer{
@@ -534,6 +534,9 @@ div:has(.center_comments) > p[align="center"]{
 #header .embedded:first-child{
   flex:3; 
   order:1;
+  & a:hover #logo{
+    background:var(--button-primary-hover-bg);
+  }
 }
 #header .embedded > a{
   flex:100%;
@@ -882,7 +885,7 @@ div:has(.center_comments) > p[align="center"]{
 #sidebar-container{
   display:flex;
   position:sticky;
-  top:8.25rem;
+  top:8.125rem;
   flex:1;
   min-width:10rem;
   max-width:14rem;
