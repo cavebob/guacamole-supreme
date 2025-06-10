@@ -92,7 +92,7 @@
   --font-size-larger:1.25rem;
   --font-size-largest:1.5rem;
   --mono-font-stack:'Noto Sans Mono', ui-monospace, 'DejaVu Sans Mono', 'Cascadia Code','Source Code Pro', Menlo, Consolas, monospace;
-  --sans-font-stack:'Noto Sans', system-ui, sans-serif;
+  --sans-font-stack:-apple-system, 'Noto Sans', system-ui, sans-serif;
 
   --small-br:.25rem;
   --main-br:.5rem;
@@ -885,7 +885,7 @@ div:has(.center_comments) > p[align="center"]{
 #sidebar-container{
   display:flex;
   position:sticky;
-  top:8.125rem;
+  top:8.25rem;
   flex:1;
   min-width:10rem;
   max-width:14rem;
@@ -4400,7 +4400,7 @@ div.rc__plot{
 	width:100%;
 	height:70%;
 	padding:.5rem;
-	overflow:scroll;
+	overflow:auto;
 	font-size:var(--font-size);
 }
 div.rc__downloads{
