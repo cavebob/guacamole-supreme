@@ -191,10 +191,7 @@ div.rc__rating{
   border:1px solid var(--audio) !important;
   border-radius:var(--small-br) !important;
   background-color:hsl(313, 30%, 93%) !important;
-  content:"Audio" !important;
   color:var(--audio) !important;
-  font-variant:small-caps !important;
-  text-transform:lowercase !important;
 }
 [id^="codec"]:has([class^="medium"])::after{
   font-size:var(--font-size-small) !important;
@@ -202,7 +199,6 @@ div.rc__rating{
 [id^="codec"]:has(.medium1)::before{
   border:1px solid hsla(211, 94%, 41%, .4) !important;
   background-color:#EBEEF7 !important;
-  content:"Blu-Ray" !important;
   color:var(--bluray) !important;
   font-variant:all-small-caps !important;
 }
@@ -214,7 +210,6 @@ div.rc__rating{
 [id^="codec"]:has(.medium3)::before{
   border:1px solid hsla(50, 100%, 26%, .4) !important;
   background-color:hsl(46, 58%, 93%) !important;
-  content:"Encode" !important;
   color:var(--encode) !important;
   font-variant:all-small-caps !important;
 }
@@ -226,7 +221,6 @@ div.rc__rating{
 [id^="codec"]:has(.medium4)::before{
   border:1px solid hsla(1, 63%, 44%, .4) !important;
   background-color:hsl(353, 31%, 95%) !important;
-  content:"Capture" !important;
   color:var(--capture) !important;
   font-variant:all-small-caps !important;
 }
@@ -238,7 +232,6 @@ div.rc__rating{
 [id^="codec"]:has(.medium5)::before{
   border:1px solid hsla(120, 100%, 25%, .4) !important;
   background-color:#E9F2EA !important;
-  content:"Remux" !important;
   color:var(--remux) !important;
   font-variant:all-small-caps !important;
 }
@@ -250,7 +243,6 @@ div.rc__rating{
 [id^="codec"]:has(.medium6)::before{
   border:1px solid hsla(275, 91%, 55%, .4) !important;
   background-color:#F1EDF8 !important;
-  content:"WEB-DL" !important;
   color:var(--webdl) !important;
   font-variant:all-small-caps !important;
 }
