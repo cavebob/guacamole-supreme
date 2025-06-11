@@ -876,8 +876,10 @@ div:has(.center_comments) > p[align="center"]{
   border:var(--table-border);
   background:var(--mantle);
   scrollbar-gutter:stable;
+  overscroll-behavior:contain;
   &:hover{
     overflow-y:auto;
+    overscroll-behavior:contain;
   }
 }
 #sidebar-container .embedded{
