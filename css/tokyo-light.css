@@ -113,7 +113,6 @@ div.rc__film:hover .rc__overlay{
 }
 #torrent-list td:not(.catcell) > a[href*="/film/info"]{
   background-color:#F7F2E1 !important;
-  border-color:var(--internal-yellow) !important;
   color:var(--internal-yellow) !important;
 }
 .tag[class*="exclusive"]{
