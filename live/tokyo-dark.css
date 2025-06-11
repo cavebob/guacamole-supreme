@@ -3144,6 +3144,44 @@ table:has(a[href$="/lists/my"]), table:has(td[width="12%"] > b > a[href*="/staff
     display:none;
   }
 }
+#moresearch3 .bottom[style="padding-bottom: 2px;padding-left: 7px"]{
+  padding-bottom:0 !important;
+}
+#moresearch3 .bottom[style="padding-left: 15px"]{
+  padding-left:0 !important;
+  margin-top:.25rem;
+  & > input{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-transform:lowercase;
+    font-variant:small-caps;
+    width:6.4rem;
+    padding:0;
+  }
+}
+#moresearch3 td:has(>a[href="browse.php?all=1"]){
+  margin-top:.5rem;
+  font-size:0;
+  &>a{
+    font-size:var(--font-size);
+    text-transform:lowercase;
+    font-variant:small-caps;
+    display:flex;
+    height:2.125rem;
+    width:6.4rem;
+    align-items:center;
+    justify-content:center;
+    border-radius:var(--main-br);
+    border:var(--button-primary-border);
+    background:var(--button-primary-bg);
+    color:var(--button-primary-text-color);
+    &:hover{
+      background:var(--button-primary-hover-bg);
+      color:var(--button-primary-text-hover-color);
+    }
+  }
+}
 #moresearch3 > td > .bottom > tbody > tr:nth-child(2){
   order:4
 }
