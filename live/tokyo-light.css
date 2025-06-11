@@ -1,64 +1,65 @@
 :root{
-  --flamingo:#f2cdcd;
-  --pink:#f5c2e7;
-  --mauve:#cba6f7;
-  --red:#ff6675;
-  --maroon:#eba0ac;
-  --peach:#fab387;
-  --yellow:#f9e2af;
-  --green:#a1e87d;
-  --green-seeding:hsl(135, 80.4%, 66%);
-  --teal:#73daca;
-  --sapphire:#74c7ec;
-  --blue:hsl(240, 100%, 92%);
-  --lavender:#9eadfa;
-  --bookmark-blue:hsl(212, 97.7%, 65.5%);
-  --text:hsl(240, 5.9%, 90%);
-  --text-muted-color:#9191a1;
-  --subtext1:#bac2de;
-  --subtext0:#a6adc8;
-  --overlay0:#9eadfa;
-  --surface2:#585b70;
-  --surface1:#45475a;
-  --surface0:#414358;
-  --quote-bg-color:#323245;
-  --base:#1f202e;
-  --mantle:hsl(240, 17.6%, 20%);
-  --crust:hsl(240, 13.7%, 10%);
-  --header:hsl(240, 13.7%, 10%);
+  --flamingo:#d94f70;
+  --pink:#d36ecf;
+  --mauve:hsl(275, 91%, 55%);
+  --red:hsl(1, 63%, 44%);
+  --maroon:#d05462;
+  --peach:hsl(25, 100%, 55%);
+  --yellow:hsl(47, 100%, 55%);
+  --internal-yellow:hsl(50, 100%, 26%);
+  --green:hsl(120, 100%, 25%);
+  --green-seeding:hsl(120, 100%, 25%);
+  --teal:#2aa198;
+  --sapphire:hsl(211, 94%, 41%);
+  --blue:hsl(220, 80%, 40%);
+  --lavender:hsl(212, 100%, 50%);
+  --bookmark-blue:hsl(212, 80%, 40%);
+  --text:hsl(0, 0%, 2%);
+  --text-muted-color:#666675;
+  --subtext1:hsl(230.8, 12%, 50%);
+  --subtext0:hsl(227, 13%, 35%);
+  --overlay0:#999aaa;
+  --surface2:#c6c8dc;
+  --surface1:#d7d9ec;
+  --surface0:hsl(213, 8%, 80%);
+  --quote-bg-color:hsl(210, 46%, 95%);
+  --base:hsl(0, 0%, 87%);
+  --mantle:hsl(0, 0%, 93%);
+  --crust:hsl(0, 0%, 100%);
+  --header:hsl(0, 0%, 92.5%);
 
-  --link-color:var(--blue);
-  --link-hover-color:hsl(240, 100%, 80%);
+  --link-color:hsl(220, 100%, 10%);
+  --link-hover-color:hsl(216, 100%, 45%);
 
-  --input-placeholder-text-color:hsl(240, 16.6%, 63.3%);
-  --input-bg:hsl(235, 18.2%, 12.9%);
-  --input-text-color:hsl(240, 100%, 92%);
+  --input-placeholder-text-color:hsl(240, 6%, 60%);
+  --input-bg:hsl(0, 0%, 98%);
+  --input-text-color:hsl(240, 5.9%, 10%);
   --input-border:var(--general-border);
 
   --table-border:var(--general-border);
   --general-border:1px solid var(--surface0);
 
-  --button-primary-bg:#9eadfa;
-  --button-primary-hover-bg:hsl(235, 90%, 70%);
-  --button-primary-text-color:hsl(240, 9.7%, 12.2%);
-  --button-primary-text-hover-color:hsl(240, 12%, 4.9%);
+  --button-primary-bg:hsl(216, 100%, 45%);
+  --button-primary-hover-bg:hsl(213, 100%, 27%);
+  --button-primary-text-color:hsl(0, 0%, 100%);
+  --button-primary-text-hover-color:hsl(0, 0%, 100%);
   --button-primary-border:1px solid transparent;
-  
-  --button-secondary-bg:hsl(240, 13.7%, 10%);
-  --button-secondary-hover-bg:hsl(230, 90%, 80%);
-  --button-secondary-text-color:hsl(232.5, 10.5%, 85.1%);
-  --button-secondary-text-hover-color:hsl(240, 9.7%, 12.2%);
-  --button-secondary-border:1px solid #414358;
 
-  --default-avatar-color:var(--unreadpost-bg-color);
+  --button-secondary-bg:hsl(0, 0%, 86%);
+  --button-secondary-hover-bg:hsl(0, 0%, 75%);
+  --button-secondary-text-color:hsl(220, 0%, 0%);
+  --button-secondary-text-hover-color:hsl(0, 0%, 0%);
+  --button-secondary-border:1px solid hsl(213, 8%, 70%);
 
-  --details-th-text-color:var(--heading-color);
-  --th-text-color:var(--heading-color);
-  --heading-color:hsl(240, 12.8%, 61.8%);
+  --default-avatar-color:hsl(237, 8%, 85%);
 
-  --featured:var(--quote-bg-color);
+  --details-th-text-color:hsl(210, 10%, 42.5%);
+  --th-text-color:hsl(210, 10%, 50%);
+  --heading-color:hsl(216, 100%, 50%);
 
-  --unreadpost-bg-color:hsl(237, 15.6%, 25.1%);
+  --featured:#fff;
+
+  --unreadpost-bg-color:hsl(237, 30%, 90%);
   --unreadpost-border:1px solid var(--unreadpost-border-color);
   --unreadpost-border-color:var(--overlay0);
 
@@ -78,10 +79,185 @@
   --main-br:.5rem;
   --button-padding:.375rem .75rem;
 
-  --poster-shadow:drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.5));
-  
-  --recommendation-blur-button-border:1px solid hsla(0, 0%, 100%, 0.137);
-  --recommendation-blur-bg-color:hsla(236, 19%, 15%, 0.66);
+  --poster-shadow:drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.15));
+
+  --recommendation-blur-button-border:1px solid hsla(0, 0%, 0%, 0.5);
+  --recommendation-blur-bg-color:hsla(0, 0%, 0%, 0.15);
+
+  --shadow:0 1px 3px rgba(0, 0, 0, 0.1);
+
+  --film-overlay-bg:hsla(0, 0%, 0%, 0.72);
+}
+.unlocked{
+  filter:grayscale(.5) opacity(.5) !important;
+}
+#subcell img{
+  filter:brightness(1) !important;
+}
+.menu{
+  border-bottom:var(--table-border) !important;
+  box-shadow:var(--shadow) !important;
+}
+#sidebar-container{
+  border-top:0 !important;
+}
+:is(#torrent-list, [action="/log"] ~ table:not(.main), table.padding2, [action="dox.php"] + p + table, form[method="get"][style="margin-bottom:20px !important;"] + table[cellpadding="5"]:not([class]), #profilesettings, form[action="dox.php"] > table, table.tableb table[width="500"], .bottom:not([id]) > script + h1 + table, #request-list, form[action="inbox.php"] > table:has(#inboxbody), .bottom:not([id]) > table[width="660"], table[width="500"]:first-child + h1:has([href*="lists"]) + h3 + table) th{
+  background-color:var(--crust) !important;
+}
+:is(#torrent-list, .tablesorter, .lottery_table, .row-seclog table, .table_requests, table:has(> thead > tr > td.colhead[align="left"])) td:not(.colhead){
+  border-top:var(--table-border) !important;
+  background-color:var(--mantle) !important;
+}
+div.rc__film:hover .rc__overlay{
+  backdrop-filter:blur(10px) !important;
+}
+#torrent-list td:not(.catcell) > a[href*="/film/info"]{
+  background-color:#F7F2E1 !important;
+  border-color:var(--internal-yellow) !important;
+  color:var(--internal-yellow) !important;
+}
+.tag[class*="exclusive"]{
+  color:hsl(275, 91%, 55%) !important;
+  background:#F1EDF8 !important;
+}
+.tag.new,
+.tag.moderate{
+  color:hsl(1, 63%, 44%) !important;
+  background:hsl(353, 31%, 95%) !important;
+}
+.tag.internal{
+  color:var(--internal-yellow) !important;
+  background:#F7F2E1 !important;
+}
+[class*="half_freeleech"]{
+  color:var(--sapphire) !important;
+  background:#EBEEF7 !important;
+}
+.tag_completed{
+  color:var(--peach) !important;
+  background:hsl(25, 31%, 92.5%) !important;
+}
+.tag_incomplete{
+  color:hsl(1, 63%, 44%) !important;
+  background:hsl(353, 31%, 95%) !important;
+}
+.tag_seeding{
+  color:var(--green-seeding) !important;
+  background:#E9F2EA !important;
+}
+span.tag.freeleech,
+span.tag.tag_leeching{
+  color:var(--lavender) !important;
+  background:#EBEEF7 !important;
+}
+.list-overview__overlay{
+  backdrop-filter:blur(20px) !important;
+  background-color:initial !important;
+}
+a.list-overview:hover .list-overview__text{
+  filter:initial !important;
+}
+.banner_container .statposter_views, 
+div.rc__downloads{
+  backdrop-filter:initial !important;
+  background-color:hsl(0, 0%, 27.8%) !important;
+  color:hsl(230.8, 12%, 85%) !important;
+}
+div.rc__rating{
+  backdrop-filter:initial !important;
+  background-color:hsl(0, 0%, 27.8%) !important;
+}
+:is(button.rc__actions-ignore, button.rc__actions-wishlist, .show-ignore.button, .tv-todownload .show-unfollow):not(:hover){
+  backdrop-filter:blur(6px);
+  background-color:var(--button-secondary-bg) !important;
+  color:var(--button-secondary-text-color) !important;
+}
+#showpage{
+  background:var(--mantle) !important;
+}
+#showpage img[src*="quickchart.io"]{
+  filter:initial !important;
+}
+[id*=codec]{
+  --bluray:hsl(211, 94%, 41%) !important;
+  --encode:hsl(50, 100%, 26%) !important;
+  --capture:hsl(1, 63%, 44%) !important;
+  --remux:hsl(120, 100%, 25%) !important;
+  --webdl:hsl(275, 91%, 55%) !important;
+  --audio:hsl(313, 90%, 58%) !important;
+  --codec:hsl(220, 100%, 49%) !important;
+}
+#codec0:has([class^="medium0"])::after{
+  border:1px solid var(--audio) !important;
+  border-radius:var(--small-br) !important;
+  background-color:hsl(313, 30%, 93%) !important;
+  content:"Audio" !important;
+  color:var(--audio) !important;
+  font-variant:small-caps !important;
+  text-transform:lowercase !important;
+}
+[id^="codec"]:has([class^="medium"])::after{
+  font-size:var(--font-size-small) !important;
+}
+[id^="codec"]:has(.medium1)::before{
+  border:1px solid hsla(211, 94%, 41%, .4) !important;
+  background-color:#EBEEF7 !important;
+  content:"Blu-Ray" !important;
+  color:var(--bluray) !important;
+  font-variant:all-small-caps !important;
+}
+[id^="codec"]:has(.medium1)::after{
+  background-color:#EBEEF7 !important;
+  border:1px solid hsla(211, 94%, 41%, .4) !important;
+  color:var(--bluray) !important;
+}
+[id^="codec"]:has(.medium3)::before{
+  border:1px solid hsla(50, 100%, 26%, .4) !important;
+  background-color:hsl(46, 58%, 93%) !important;
+  content:"Encode" !important;
+  color:var(--encode) !important;
+  font-variant:all-small-caps !important;
+}
+[id^="codec"]:has(.medium3)::after{
+  background-color:#F7F2E1 !important;
+  border:1px solid hsla(50, 100%, 26%, .4) !important;
+  color:var(--encode) !important;
+}
+[id^="codec"]:has(.medium4)::before{
+  border:1px solid hsla(1, 63%, 44%, .4) !important;
+  background-color:hsl(353, 31%, 95%) !important;
+  content:"Capture" !important;
+  color:var(--capture) !important;
+  font-variant:all-small-caps !important;
+}
+[id^="codec"]:has(.medium4)::after{
+  border:1px solid hsla(1, 63%, 44%, .4) !important;
+  background-color:#F6EEEF !important;
+  color:var(--capture) !important;
+}
+[id^="codec"]:has(.medium5)::before{
+  border:1px solid hsla(120, 100%, 25%, .4) !important;
+  background-color:#E9F2EA !important;
+  content:"Remux" !important;
+  color:var(--remux) !important;
+  font-variant:all-small-caps !important;
+}
+[id^="codec"]:has(.medium5)::after{
+  border:1px solid hsla(120, 100%, 25%, .4) !important;
+  background-color:#E9F2EA !important;
+  color:var(--remux) !important;
+}
+[id^="codec"]:has(.medium6)::before{
+  border:1px solid hsla(275, 91%, 55%, .4) !important;
+  background-color:#F1EDF8 !important;
+  content:"WEB-DL" !important;
+  color:var(--webdl) !important;
+  font-variant:all-small-caps !important;
+}
+[id^="codec"]:has(.medium6)::after{
+  border:1px solid hsla(275, 91%, 55%, .4) !important;
+  background-color:#F1EDF8 !important;
+  color:var(--webdl) !important;
 }
 table, td, tr, th, button{
   padding:0;
@@ -527,7 +703,7 @@ div:has(.center_comments) > p[align="center"]{
   width:100%;
   height:2rem;
   background:var(--lavender);
-  mask:url("../pic/tokyo-night/logo/logo.svg") left no-repeat;
+  mask:url("/pic/tokyo-night/logo/logo.svg") left no-repeat;
   mask-size:contain;
 }
 #header .embedded:nth-child(2){
@@ -704,7 +880,7 @@ div:has(.center_comments) > p[align="center"]{
   height:2rem;
   background:var(--button-primary-bg);
   font-size:0;
-  mask:url("../pic/tokyo-night/icon/setting.svg") center no-repeat;
+  mask:url("/pic/tokyo-night/icon/setting.svg") center no-repeat;
   mask-size:24px;
   &:hover{
     background:var(--button-primary-hover-bg);
@@ -716,7 +892,7 @@ div:has(.center_comments) > p[align="center"]{
   height:2rem;
   background:var(--button-primary-bg);
   font-size:0;
-  mask:url("../pic/tokyo-night/icon/logout.svg") center no-repeat;
+  mask:url("/pic/tokyo-night/icon/logout.svg") center no-repeat;
   mask-size:24px;
   &:hover{
     background:var(--button-primary-hover-bg);
@@ -753,7 +929,7 @@ div:has(.center_comments) > p[align="center"]{
   height:2rem;
   background:var(--button-primary-bg);
   content:'';
-  mask:center url("../pic/tokyo-night/icon/notification.svg");
+  mask:center url("/pic/tokyo-night/icon/notification.svg");
   mask-repeat:no-repeat;
   mask-size:24px;
 }
@@ -766,7 +942,7 @@ div:has(.center_comments) > p[align="center"]{
   width:2rem;
   height:2rem;
   background:var(--button-primary-bg);
-  mask:url("../pic/tokyo-night/icon/message.svg") center no-repeat;
+  mask:url("/pic/tokyo-night/icon/message.svg") center no-repeat;
   mask-size:24px;
   &:hover{
     background:var(--button-primary-hover-bg);
@@ -1909,7 +2085,7 @@ h1.fl, span.tag.freeleech, span.tag.tag_leeching{
   border:0;
   background:var(--button-primary-bg);
   cursor:pointer;
-  mask:url("../pic/tokyo-night/icon/search.svg") center no-repeat;
+  mask:url("/pic/tokyo-night/icon/search.svg") center no-repeat;
   mask-size:18px;
   &:hover{
     background:var(--button-primary-hover-bg);
@@ -1937,7 +2113,7 @@ h1.fl, span.tag.freeleech, span.tag.tag_leeching{
       height:1.25rem;
       background:var(--button-secondary-text-color);
       content:"";
-      mask:url("../pic/tokyo-night/icon/ignore.svg") center no-repeat;
+      mask:url("/pic/tokyo-night/icon/ignore.svg") center no-repeat;
       mask-size:18px;
     }
     &:hover{
@@ -2001,7 +2177,7 @@ a[href*="show.php?id"] > .tvdb_button{
     height:1.25rem;
     background:var(--button-secondary-text-color);
     content:"";
-    mask:url("../pic/tokyo-night/icon/about.svg") center no-repeat;
+    mask:url("/pic/tokyo-night/icon/about.svg") center no-repeat;
     mask-size:20px;
   }
   &:hover{
@@ -2018,7 +2194,7 @@ a.js-download:not(.index, .list-links > a){
   height:1.25rem;
   background:var(--button-primary-bg);
   vertical-align:middle;
-  mask:url("../pic/tokyo-night/icon/download.svg") center no-repeat;
+  mask:url("/pic/tokyo-night/icon/download.svg") center no-repeat;
   mask-size:20px;
   &:hover{
     background:var(--button-primary-hover-bg)
@@ -2030,7 +2206,7 @@ a[id^="rss"]{
   height:1.25rem;
   background:var(--button-primary-bg);
   vertical-align:middle;
-  mask:url("../pic/tokyo-night/icon/rss.svg") center no-repeat;
+  mask:url("/pic/tokyo-night/icon/rss.svg") center no-repeat;
   mask-size:18px;
   &:hover{
     background:var(--button-primary-hover-bg);
@@ -2043,7 +2219,7 @@ a[id^="rss"]{
   margin-left:-1px;
   background:var(--button-primary-bg);
   vertical-align:middle;
-  mask:url("../pic/tokyo-night/icon/bookmark.svg") center no-repeat;
+  mask:url("/pic/tokyo-night/icon/bookmark.svg") center no-repeat;
   mask-size:20px;
   &:hover{
     background:var(--button-primary-hover-bg);
@@ -2056,7 +2232,7 @@ a.js-wishlistadd:not([id^="rss"]), a[title="Add this film to your wishlist"], a[
   background:var(--button-primary-bg);
   vertical-align:middle;
   cursor:pointer;
-  mask:url("../pic/tokyo-night/icon/wishlist.svg") center no-repeat;
+  mask:url("/pic/tokyo-night/icon/wishlist.svg") center no-repeat;
   mask-size:22px;
   &:hover{
     background:var(--button-primary-hover-bg);
@@ -2072,7 +2248,7 @@ a[href*="javascript:unignoreshow"], a[onclick*="delWishlist"], a[onclick*="remov
   background:var(--yellow);
   vertical-align:middle;
   cursor:pointer;
-  mask:url("../pic/tokyo-night/icon/wishlisted.svg") center no-repeat;
+  mask:url("/pic/tokyo-night/icon/wishlisted.svg") center no-repeat;
   mask-size:22px;
   &:hover{
     background:var(--button-primary-hover-bg);
@@ -2086,7 +2262,7 @@ a.js-bookmarkdel, a[href*="javascript:delBookmark"]{
   background:var(--bookmark-blue);
   vertical-align:middle;
   cursor:pointer;
-  mask:url("../pic/tokyo-night/icon/bookmarked.svg") center no-repeat;
+  mask:url("/pic/tokyo-night/icon/bookmarked.svg") center no-repeat;
   mask-size:20px;
   &:hover{
     background:var(--button-primary-hover-bg);
@@ -2123,7 +2299,7 @@ img[alt="Offline"]{
     display:block;
     width:2.5rem;
     height:1.25rem;
-    background:url("../pic/tokyo-night/icon/imdb.svg") center no-repeat;
+    background:url("/pic/tokyo-night/icon/imdb.svg") center no-repeat;
     font-size:0;
     filter:brightness(80%);
     &:hover{
@@ -2134,7 +2310,7 @@ img[alt="Offline"]{
     display:block;
     width:2.5rem;
     height:1.25rem;
-    background:url("../pic/tokyo-night/icon/tvdb.svg") center no-repeat;
+    background:url("/pic/tokyo-night/icon/tvdb.svg") center no-repeat;
     font-size:0;
     filter:brightness(80%);
     &:hover{
@@ -2172,7 +2348,7 @@ img[alt="Offline"]{
       content:"";
       font-size:var(--font-size);
       vertical-align:middle;
-      mask:url("../pic/tokyo-night/icon/ignore.svg") center no-repeat;
+      mask:url("/pic/tokyo-night/icon/ignore.svg") center no-repeat;
       mask-size:20px;
     }
     &::after{
@@ -2223,7 +2399,7 @@ img[alt="Offline"]{
       content:"";
       font-size:var(--font-size);
       vertical-align:middle;
-      mask:url("../pic/tokyo-night/icon/unignore.svg") center no-repeat;
+      mask:url("/pic/tokyo-night/icon/unignore.svg") center no-repeat;
       mask-size:20px;
     }
     &::after{
@@ -2274,7 +2450,7 @@ img[alt="Offline"]{
       content:"";
       font-size:var(--font-size);
       vertical-align:middle;
-      mask:url("../pic/tokyo-night/icon/unfollow.svg") center no-repeat;
+      mask:url("/pic/tokyo-night/icon/unfollow.svg") center no-repeat;
       mask-size:20px;
     }
     &::after{
@@ -2325,7 +2501,7 @@ img[alt="Offline"]{
       content:"";
       font-size:var(--font-size);
       vertical-align:middle;
-      mask:url("../pic/tokyo-night/icon/follow.svg") center no-repeat;
+      mask:url("/pic/tokyo-night/icon/follow.svg") center no-repeat;
       mask-size:20px;
     }
     &::after{
@@ -2355,7 +2531,7 @@ img[alt="Read"]{
 	padding-left:1.25rem;
 	background:var(--button-primary-bg);
 	filter:grayscale(50%);
-	mask:url("../pic/tokyo-night/icon/message.svg") center no-repeat;
+	mask:url("/pic/tokyo-night/icon/message.svg") center no-repeat;
   mask-size:20px;
 }
 img[alt="Unread"]{
@@ -2367,7 +2543,7 @@ img[alt="Unread"]{
 	padding-left:1.25rem;
 	background:var(--red);
 	filter:grayscale(50%);
-	mask:url("../pic/tokyo-night/icon/message.svg") center no-repeat;
+	mask:url("/pic/tokyo-night/icon/message.svg") center no-repeat;
 	mask-size:20px;
 }
 td > a[href*="sendmessage.php"]{
@@ -2389,7 +2565,7 @@ td > a[href*="sendmessage.php"]{
     height:1.25rem;
     background:var(--button-primary-text-color);
     content:"";
-    mask:url("../pic/tokyo-night/icon/send.svg") center no-repeat;
+    mask:url("/pic/tokyo-night/icon/send.svg") center no-repeat;
     mask-size:19px;
   }
   &:hover{
@@ -2422,7 +2598,7 @@ a[href*="action=add&type=friend"]{
     height:1.25rem;
     background:var(--button-secondary-text-color);
     content:"";
-    mask:url("../pic/tokyo-night/icon/friendadd.svg") center no-repeat;
+    mask:url("/pic/tokyo-night/icon/friendadd.svg") center no-repeat;
     mask-size:22px;
   }
   &:hover{
@@ -2452,7 +2628,7 @@ a[href*="action=delete&type=friend"], a[href*="action=delete&type=befriend"]{
     height:1.25rem;
     background:var(--button-secondary-text-color);
     content:"";
-    mask:url("../pic/tokyo-night/icon/friendremove.svg") center no-repeat;
+    mask:url("/pic/tokyo-night/icon/friendremove.svg") center no-repeat;
     mask-size:22px;
   }
   &:hover{
@@ -2483,7 +2659,7 @@ a[href*="action=add&type=block"]{
     height:1.25rem;
     background:var(--button-secondary-text-color);
     content:"";
-    mask:url("../pic/tokyo-night/icon/blockadd.svg") center no-repeat;
+    mask:url("/pic/tokyo-night/icon/blockadd.svg") center no-repeat;
     mask-size:22px;
   }
   &:hover{
@@ -2514,7 +2690,7 @@ a[href*="action=delete&type=block"]{
     height:1.25rem;
     background:var(--button-secondary-text-color);
     content:"";
-    mask:url("../pic/tokyo-night/icon/blockremove.svg") center no-repeat;
+    mask:url("/pic/tokyo-night/icon/blockremove.svg") center no-repeat;
     mask-size:22px;
   }
   &:hover{
@@ -2534,7 +2710,7 @@ p:has(> a[href*="action=delete&type=friend"], > a[href*="action=add&type=friend"
   margin:0 .25rem;
 	border-radius:var(--input-box-border-radius);
 	background:var(--button-primary-bg);
-	mask:url("../pic/tokyo-night/icon/friends.svg") center no-repeat;
+	mask:url("/pic/tokyo-night/icon/friends.svg") center no-repeat;
   mask-size:24px;
 	transition:all .25s ease;
 
@@ -2548,7 +2724,7 @@ p:has(> a[href*="action=delete&type=friend"], > a[href*="action=add&type=friend"
   margin:0 .25rem;
   margin-top:7px;
 	background:var(--button-primary-bg);
-	mask:url("../pic/tokyo-night/icon/mytorrents.svg") center no-repeat;
+	mask:url("/pic/tokyo-night/icon/mytorrents.svg") center no-repeat;
   mask-size:25px;
 	transition:all .25s ease;
   
@@ -2562,7 +2738,7 @@ a[href*="imdb.com/name/nm"]:not(#cast a){
 	height:16px;
   margin-left:.25rem;
 	border-radius:2px;
-  background:url("../pic/tokyo-night/icon/imdb.svg") left no-repeat;
+  background:url("/pic/tokyo-night/icon/imdb.svg") left no-repeat;
   background-size:auto;
   background-size:contain;
   vertical-align:middle;
@@ -2594,7 +2770,7 @@ img[src*="/icon_latest_reply.gif"][alt="Last post"]{
 	padding-left:20px;
   background:var(--button-primary-bg);
 	vertical-align:bottom;
-	mask:url("../pic/tokyo-night/icon/jumptoend.svg") center no-repeat;
+	mask:url("/pic/tokyo-night/icon/jumptoend.svg") center no-repeat;
   mask-size:20px;
   &:hover{
     background:var(--button-primary-hover-bg);
@@ -2613,7 +2789,7 @@ img[src*="/top.gif"][alt="Top"]{
   margin-left:4px;
 	padding-left:20px;
 	background:var(--button-primary-bg);
-	mask:url("../pic/tokyo-night/icon/totop.svg") center no-repeat;
+	mask:url("/pic/tokyo-night/icon/totop.svg") center no-repeat;
   mask-size:25px;
 }
 a[href="#top"]{
@@ -2629,7 +2805,7 @@ img[src*="star.gif"][alt=Donor], .donor{
   height:12px;
   padding-left:12px;
   background-color:var(--peach);
-  mask:url("../pic/tokyo-night/icon/star.svg") no-repeat;
+  mask:url("/pic/tokyo-night/icon/star.svg") no-repeat;
   mask-size:12px;
 }
 img[src*="starbig.gif"][alt=Donor]{
@@ -2639,7 +2815,7 @@ img[src*="starbig.gif"][alt=Donor]{
   height:24px;
   padding-left:24px;
   background-color:var(--peach);
-  mask:url("../pic/tokyo-night/icon/star.svg") no-repeat;
+  mask:url("/pic/tokyo-night/icon/star.svg") no-repeat;
   mask-size:24px
 }
 img[src*="disabledbig.gif"]{
@@ -2650,7 +2826,7 @@ img[src*="disabledbig.gif"]{
 	margin-bottom:-1px;
 	padding-left:16px;
 	background:var(--red);
-	mask:url("../pic/tokyo-night/icon/disabled.svg") center no-repeat;
+	mask:url("/pic/tokyo-night/icon/disabled.svg") center no-repeat;
 }
 img[src*="disabled.gif"]{
   box-sizing:border-box;
@@ -2660,7 +2836,7 @@ img[src*="disabled.gif"]{
   margin-bottom:-1px;
   padding-left:11px;
   background:var(--red);
-	mask:url("../pic/tokyo-night/icon/disabled.svg") center no-repeat;
+	mask:url("/pic/tokyo-night/icon/disabled.svg") center no-repeat;
 }
 img[src*="warned.gif"][alt=Warned]{
   box-sizing:border-box;
@@ -2670,7 +2846,7 @@ img[src*="warned.gif"][alt=Warned]{
   margin-bottom:-5px;
   padding-left:16px;
   background:var(--red);
-  mask:url("../pic/tokyo-night/icon/warning.svg") center no-repeat;
+  mask:url("/pic/tokyo-night/icon/warning.svg") center no-repeat;
   mask-size:18px;
 }
 img[src*="warnedbig.gif"][alt=Warned]{
@@ -2681,7 +2857,7 @@ img[src*="warnedbig.gif"][alt=Warned]{
   margin-bottom:-5px;
   padding-left:20px;
   background:var(--red);
-  mask:url("../pic/tokyo-night/icon/warning.svg") center no-repeat;
+  mask:url("/pic/tokyo-night/icon/warning.svg") center no-repeat;
   mask-size:24px;
 }
 .label_showhide{
@@ -2703,7 +2879,7 @@ img[src*="warnedbig.gif"][alt=Warned]{
   height:16px;
   background:var(--subtext0);
   content:'';
-  mask:url("../pic/tokyo-night/icon/hideright.svg") center no-repeat;
+  mask:url("/pic/tokyo-night/icon/hideright.svg") center no-repeat;
   mask-size:14px;
 }
 .label_showhide:hover{
@@ -2727,7 +2903,7 @@ div:has(.div_showhide[style="display: block;"]) .label_showhide::before{
   height:16px;
   background:var(--subtext0);
   content:'';
-  mask:url("../pic/tokyo-night/icon/hidedown.svg") center no-repeat;
+  mask:url("/pic/tokyo-night/icon/hidedown.svg") center no-repeat;
   mask-size:14px;
 }
 .label_showhide:hover{
@@ -2748,7 +2924,7 @@ div:has(.div_showhide[style="display: block;"]) .label_showhide::before{
 	background:var(--button-primary-bg);
 	content:"";
 	filter:grayscale(40%);
-	mask:url("../pic/tokyo-night/icon/unlocked.svg") center no-repeat;
+	mask:url("/pic/tokyo-night/icon/unlocked.svg") center no-repeat;
   mask-size:24px;
   &:hover{
     background:var(--button-primary-hover-bg);
@@ -2783,7 +2959,7 @@ img.poll, img[src$="bar.gif"]{
 	background:var(--button-primary-bg);
 	vertical-align:middle;
 	cursor:pointer;
-	mask:url("../pic/tokyo-night/icon/checkmark.svg") center no-repeat;
+	mask:url("/pic/tokyo-night/icon/checkmark.svg") center no-repeat;
   mask-size:20px;
   &:hover{
     background:var(--button-primary-hover-bg)
@@ -2793,7 +2969,7 @@ img.poll, img[src$="bar.gif"]{
 	width:150px;
   height:150px;
   background:var(--default-avatar-color);
-	mask:url("../pic/tokyo-night/icon/default-avatar.svg") center no-repeat;
+	mask:url("/pic/tokyo-night/icon/default-avatar.svg") center no-repeat;
   mask-size:150px;
 }
 td:has(>.default_avatar){
@@ -3848,7 +4024,7 @@ div[style="width: 930px; margin: 0px auto;"]:has(a[name="votes"], a[name="startc
   height:40px;
   background:var(--button-primary-bg);
   cursor:pointer;
-  mask:url("../pic/tokyo-night/icon/arrowright.svg") center no-repeat;
+  mask:url("/pic/tokyo-night/icon/arrowright.svg") center no-repeat;
   mask-size:22px;
 }
 .collapsable:has(+.hideablecontent[style="display: block;"], +.hideablecontent:not([style])) .plusminus{
@@ -3860,7 +4036,7 @@ div[style="width: 930px; margin: 0px auto;"]:has(a[name="votes"], a[name="startc
   height:40px;
   background:var(--button-primary-bg);
   cursor:pointer;
-  mask:url("../pic/tokyo-night/icon/arrowdown.svg") center no-repeat;
+  mask:url("/pic/tokyo-night/icon/arrowdown.svg") center no-repeat;
   mask-size:22px;
   transition:filter ease .25s;
 }
@@ -3996,7 +4172,7 @@ a:has(.imdb){
   display:block;
   width:2.5rem;
   height:1.5rem;
-  background:url("../pic/tokyo-night/icon/imdb.svg") left no-repeat;
+  background:url("/pic/tokyo-night/icon/imdb.svg") left no-repeat;
   background-size:contain;
   & > img{
     opacity:0;
@@ -5102,13 +5278,13 @@ div.item-description{
 	height:36px;
   background-color:var(--lavender);
   filter:brightness(.6);
-	mask:url("../pic/tokyo-night/icon/unlocked.svg") center no-repeat
+	mask:url("/pic/tokyo-night/icon/unlocked.svg") center no-repeat
 }
 .unlockednew{
 	width:36px;
 	height:36px;
   background-color:var(--lavender);
-	mask:url("../pic/tokyo-night/icon/unlocked.svg") center no-repeat;
+	mask:url("/pic/tokyo-night/icon/unlocked.svg") center no-repeat;
   mask-size:36px;
 }
 .locked{
@@ -5117,7 +5293,7 @@ div.item-description{
   margin-bottom:7px;
   background-color:var(--lavender);
   filter:brightness(.7);
-	mask:url("../pic/tokyo-night/icon/locked.svg") center no-repeat;
+	mask:url("/pic/tokyo-night/icon/locked.svg") center no-repeat;
   mask-size:36px;
 }
 .lockednew{
@@ -5125,7 +5301,7 @@ div.item-description{
 	height:36px;
   margin-bottom:7px;
   background-color:var(--lavender);
-	mask:url("../pic/tokyo-night/icon/locked.svg") center no-repeat;
+	mask:url("/pic/tokyo-night/icon/locked.svg") center no-repeat;
   mask-size:36px;
 }
 .embedded:has(>[class*="locked"]){
