@@ -232,7 +232,6 @@ div.rc__rating{
 [id^="codec"]:has(.medium5)::before{
   border:1px solid hsla(120, 100%, 25%, .4) !important;
   background-color:#E9F2EA !important;
-  content:"Remux" !important;
   color:var(--remux) !important;
   font-variant:all-small-caps !important;
 }
