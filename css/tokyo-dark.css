@@ -3160,7 +3160,7 @@ table:has(a[href$="/lists/my"]), table:has(td[width="12%"] > b > a[href*="/staff
     padding:0;
   }
 }
-#moresearch3 td:has(>a[href="https://hdbits.org/browse.php?all=1"]){
+#moresearch3 td:has(>a[href="browse.php?all=1"]){
   margin-top:.5rem;
   font-size:0;
   &>a{
