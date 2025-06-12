@@ -5623,9 +5623,9 @@ p.sub > a[href*="/details.php?id="]{
   & tr.selected td{
     background:var(--crust) !important;
   }
-  & .dataTable.display tr:is(.selected,:hover){ 
-    background:inherit;
-  }
+}
+.spackPhase .dataTable.display tr:is(.selected,:hover){ 
+  background:inherit;
 }
 .controlSection, #spackSearchSystem{
   & > div{
