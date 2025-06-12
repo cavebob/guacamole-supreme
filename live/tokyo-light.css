@@ -1,4 +1,4 @@
-:root{
+:is(:root, #dummy-id-for-specificity){
   --flamingo:#d94f70;
   --pink:#d36ecf;
   --mauve:hsl(275, 91%, 55%);
@@ -116,38 +116,38 @@ div.rc__film:hover .rc__overlay{
   color:var(--internal-yellow) !important;
 }
 .tag[class*="exclusive"]{
-  color:hsl(275, 91%, 55%) !important;
   background:#F1EDF8 !important;
+  color:hsl(275, 91%, 55%) !important;
 }
 .tag.new,
 .tag.moderate{
-  color:hsl(1, 63%, 44%) !important;
   background:hsl(353, 31%, 95%) !important;
+  color:hsl(1, 63%, 44%) !important;
 }
 .tag.internal{
-  color:var(--internal-yellow) !important;
   background:#F7F2E1 !important;
+  color:var(--internal-yellow) !important;
 }
 [class*="half_freeleech"]{
-  color:var(--sapphire) !important;
   background:#EBEEF7 !important;
+  color:var(--sapphire) !important;
 }
 .tag_completed{
-  color:var(--peach) !important;
   background:hsl(25, 31%, 92.5%) !important;
+  color:var(--peach) !important;
 }
 .tag_incomplete{
-  color:hsl(1, 63%, 44%) !important;
   background:hsl(353, 31%, 95%) !important;
+  color:hsl(1, 63%, 44%) !important;
 }
 .tag_seeding{
-  color:var(--green-seeding) !important;
   background:#E9F2EA !important;
+  color:var(--green-seeding) !important;
 }
 span.tag.freeleech,
 span.tag.tag_leeching{
-  color:var(--lavender) !important;
   background:#EBEEF7 !important;
+  color:var(--lavender) !important;
 }
 .list-overview__overlay{
   backdrop-filter:blur(20px) !important;
@@ -188,7 +188,6 @@ div.rc__rating{
 }
 #codec0:has([class^="medium0"])::after{
   border:1px solid var(--audio) !important;
-  border-radius:var(--small-br) !important;
   background-color:hsl(313, 30%, 93%) !important;
   color:var(--audio) !important;
 }
@@ -199,29 +198,26 @@ div.rc__rating{
   border:1px solid hsla(211, 94%, 41%, .4) !important;
   background-color:#EBEEF7 !important;
   color:var(--bluray) !important;
-  font-variant:all-small-caps !important;
 }
 [id^="codec"]:has(.medium1)::after{
-  background-color:#EBEEF7 !important;
   border:1px solid hsla(211, 94%, 41%, .4) !important;
+  background-color:#EBEEF7 !important;
   color:var(--bluray) !important;
 }
 [id^="codec"]:has(.medium3)::before{
   border:1px solid hsla(50, 100%, 26%, .4) !important;
   background-color:hsl(46, 58%, 93%) !important;
   color:var(--encode) !important;
-  font-variant:all-small-caps !important;
 }
 [id^="codec"]:has(.medium3)::after{
-  background-color:#F7F2E1 !important;
   border:1px solid hsla(50, 100%, 26%, .4) !important;
+  background-color:#F7F2E1 !important;
   color:var(--encode) !important;
 }
 [id^="codec"]:has(.medium4)::before{
   border:1px solid hsla(1, 63%, 44%, .4) !important;
   background-color:hsl(353, 31%, 95%) !important;
   color:var(--capture) !important;
-  font-variant:all-small-caps !important;
 }
 [id^="codec"]:has(.medium4)::after{
   border:1px solid hsla(1, 63%, 44%, .4) !important;
@@ -243,7 +239,6 @@ div.rc__rating{
   border:1px solid hsla(275, 91%, 55%, .4) !important;
   background-color:#F1EDF8 !important;
   color:var(--webdl) !important;
-  font-variant:all-small-caps !important;
 }
 [id^="codec"]:has(.medium6)::after{
   border:1px solid hsla(275, 91%, 55%, .4) !important;
