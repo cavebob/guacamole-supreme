@@ -1821,7 +1821,7 @@ h2:has(>a[href*="/staff/reports"]) + table .padding2{
   & br{
     line-height:normal;
   }
-  & br+:has(+br+br+.sub){
+  & br+:has(+br+br+.sub), .main+br+br+br{
     display:none;
   }
   & .sub + .main{

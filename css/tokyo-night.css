@@ -1821,7 +1821,7 @@ h2:has(>a[href*="/staff/reports"]) + table .padding2{
   & br{
     line-height:normal;
   }
-  & br+:has(+br+br+.sub){
+  & br+:has(+br+br+.sub), .main+br+br+br{
     display:none;
   }
   & .sub + .main{
@@ -5441,7 +5441,7 @@ p.sub > a[href*="/details.php?id="]{
   }
 }
 #toggleHistory{
-  float:unset!important;
+  float:none !important;
 }
 .infoBox.red h3{
   padding:1rem;
@@ -5453,12 +5453,16 @@ p.sub > a[href*="/details.php?id="]{
 .dataTables_filter{
   margin-top:.5rem;
 }
-.lottery_table2{
+.spackPhase .lottery_table2{
+  overflow:clip;
   & tr:hover td{
     background:var(--crust) !important;
   }
   & tr.selected td{
-    background:var(--crust)!important
+    background:var(--crust) !important;
+  }
+  & .dataTable.display tr.selected{ 
+    background:inherit;
   }
 }
 .controlSection, #spackSearchSystem{
@@ -5466,7 +5470,7 @@ p.sub > a[href*="/details.php?id="]{
     padding:0 .75rem;
   }
 }
-div.dataTables_info{
+.dataTables_wrapper div.dataTables_info{
   display:flex;
   flex-flow:row-reverse nowrap;
   align-items:center;
@@ -5537,6 +5541,15 @@ span[style="float: right;"]:has(button[data-cmd="delnow"]){
 }
 .lottery_table2:empty{
   display:none;
+}
+.spackPhase .dataTable thead :is(th, td){
+	border-bottom:none;
+}
+.spackPhase :is(.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate){
+	color:var(--subtext0);
+}
+.spackPhase :is(div.dataTables_wrapper span.select-info, div.dataTables_wrapper span.select-item){
+	margin-left:0;
 }
 @media (min-width: 1008px){
   .bottom:not([id]){
