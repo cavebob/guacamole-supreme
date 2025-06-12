@@ -1809,6 +1809,33 @@ table:has(>tbody>tr>td[width="200"][height="200"]){
     }
   }
 }
+h2:has(>a[href*="/staff/reports"]) + table .padding2{
+  table-layout:fixed;
+  & .center{
+    text-align:left;
+  }
+  & td:not(:last-child){
+    border-right:var(--table-border);
+    padding-inline:0.5rem !important;
+  }
+  & br{
+    line-height:normal;
+  }
+  & br+:has(+br+br+.sub){
+    display:none;
+  }
+  & .sub + .main{
+    max-width:100%;
+  }
+  & .sub + .main td{
+    max-width:100%;
+    word-break:break-word;
+    overflow-wrap:break-word;
+  }
+}
+.embedded > h2:has(>a[href*="/staff/reports"]) + table[width="100%"][cellpadding="10"]{
+  max-width:100%;
+}
 .btn, button, [type="button"], .index[href*="/comments/add"], .button{
   padding:var(--button-padding);
   border:var(--button-primary-border);
@@ -5374,22 +5401,22 @@ p.sub > a[href*="/details.php?id="]{
 }
 .spackPhase{
   display:grid;
+  min-width:40rem;
   gap:1rem;
   text-align:initial;
-  min-width:40rem;
 }
-.controlSection{
+.spackPhase .controlSection{
   display:grid;
-  background:var(--mantle);
-  border:var(--table-border);
-  border-radius:var(--main-br);
+  width:100%;
   overflow:clip;
   gap:.5rem;
-  width:100%;
+  border:var(--table-border);
+  border-radius:var(--main-br);
+  background:var(--mantle);
   & h1,h2,h3{
+    padding:.5rem;
     border-bottom:var(--general-border);
     background:var(--mantle);
-    padding:.5rem;
   }
   #spackSearchSystem{
     display:grid;
@@ -5402,20 +5429,15 @@ p.sub > a[href*="/details.php?id="]{
 [style="text-align: center; padding: 12px; background-color: white;"]{
   background:var(--mantle) !important;
 }
-#spackPerform, #spackReport{
-  display:grid !important
-}
-#quickSelection{
-  & button{
-    padding:.25rem .5rem;
-    background:var(--button-secondary-bg);
-    color:var(--button-secondary-text-color);
-    border:var(--button-secondary-border);
-    &:hover{
-      background:var(--button-secondary-hover-bg);
-      color:var(--button-secondary-text-hover-color);
-      border-color:transparent;
-    }
+#quickSelection button{
+  padding:.25rem .5rem;
+  border:var(--button-secondary-border);
+  background:var(--button-secondary-bg);
+  color:var(--button-secondary-text-color);
+  &:hover{
+    border-color:transparent;
+    background:var(--button-secondary-hover-bg);
+    color:var(--button-secondary-text-hover-color);
   }
 }
 #toggleHistory{
@@ -5444,19 +5466,18 @@ p.sub > a[href*="/details.php?id="]{
     padding:0 .75rem;
   }
 }
-.dataTables_info{
+div.dataTables_info{
   display:flex;
   flex-flow:row-reverse nowrap;
   align-items:center;
-  color:var(--subtext0);
-  gap:1rem;
   justify-content:space-between;
+  gap:1rem;
+  color:var(--subtext0);
   & >.select-info{
   padding:.25rem .5rem;
   border:var(--table-border);
   border-radius:var(--main-br);
   background:var(--mantle);
-  color:var(--bookmark-blue);
   }
 }
 #episodeSearch_filter label{
@@ -5472,18 +5493,50 @@ div.controlSection label:not(:has(+b+b+b)){
 #spackSearchSystem label{
   width:15%;
 }
-button[data-cmd="delnow"]{
-  background:var(--button-secondary-bg);
-  color:var(--red);
+.spackPhase :is(button[data-cmd="delnow"], button[data-cmd="delsubs"]){
   border:var(--button-secondary-border);
   border-color:var(--red);
-  margin:0 .5rem;
-
+  background:var(--button-secondary-bg);
+  color:var(--red);
+  &:hover{
+    border-color:var(--red);
+    background:var(--red);
+    color:var(--button-secondary-text-hover-color);
+  }
 }
 span[style="float: right;"]:has(button[data-cmd="delnow"]){
-  display:inline-block;
   flex-flow:row nowrap;
-  float:unset !important;
+  float:none !important;
+}
+#episodeSearch{
+  width:100% !important;
+  & th{
+    &.sorting, 
+    &.right, 
+    &.center{
+      width:auto !important;
+    }
+  }
+}
+.bottom table.dataTable.no-footer{
+	border-bottom:var(--table-border);
+}
+.bottom table.dataTable, table.dataTable th, table.dataTable td{
+	box-sizing:border-box;
+}
+#dox_packs h3{
+  margin:0;
+  border-bottom:0;
+  font-size:var(--font-size);
+}
+#spackReport .controlSection{
+  display:block;
+  & a{
+    font-weight:bold;
+  }
+}
+.lottery_table2:empty{
+  display:none;
 }
 @media (min-width: 1008px){
   .bottom:not([id]){

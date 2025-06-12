@@ -1809,6 +1809,33 @@ table:has(>tbody>tr>td[width="200"][height="200"]){
     }
   }
 }
+h2:has(>a[href*="/staff/reports"]) + table .padding2{
+  table-layout:fixed;
+  & .center{
+    text-align:left;
+  }
+  & td:not(:last-child){
+    border-right:var(--table-border);
+    padding-inline:0.5rem !important;
+  }
+  & br{
+    line-height:normal;
+  }
+  & br+:has(+br+br+.sub){
+    display:none;
+  }
+  & .sub + .main{
+    max-width:100%;
+  }
+  & .sub + .main td{
+    max-width:100%;
+    word-break:break-word;
+    overflow-wrap:break-word;
+  }
+}
+.embedded > h2:has(>a[href*="/staff/reports"]) + table[width="100%"][cellpadding="10"]{
+  max-width:100%;
+}
 .btn, button, [type="button"], .index[href*="/comments/add"], .button{
   padding:var(--button-padding);
   border:var(--button-primary-border);
