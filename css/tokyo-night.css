@@ -5461,7 +5461,7 @@ p.sub > a[href*="/details.php?id="]{
   & tr.selected td{
     background:var(--crust) !important;
   }
-  & .dataTable.display tr.selected{ 
+  & .dataTable.display tr:is(.selected,.selected:hover){ 
     background:inherit;
   }
 }
@@ -5515,7 +5515,7 @@ span[style="float: right;"]:has(button[data-cmd="delnow"]){
 #episodeSearch{
   width:100% !important;
   & th{
-    &.sorting, 
+    &[class*="sorting"], 
     &.right, 
     &.center{
       width:auto !important;

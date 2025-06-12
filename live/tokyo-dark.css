@@ -5399,6 +5399,158 @@ p.sub > a[href*="/details.php?id="]{
 	color:var(--subtext0);
   text-align:right;
 }
+.spackPhase{
+  display:grid;
+  min-width:40rem;
+  gap:1rem;
+  text-align:initial;
+}
+.spackPhase .controlSection{
+  display:grid;
+  width:100%;
+  overflow:clip;
+  gap:.5rem;
+  border:var(--table-border);
+  border-radius:var(--main-br);
+  background:var(--mantle);
+  & h1,h2,h3{
+    padding:.5rem;
+    border-bottom:var(--general-border);
+    background:var(--mantle);
+  }
+  #spackSearchSystem{
+    display:grid;
+    gap:.5rem;
+  }
+  & div:last-child{
+    margin-bottom:.5rem;
+  }
+}
+[style="text-align: center; padding: 12px; background-color: white;"]{
+  background:var(--mantle) !important;
+}
+#quickSelection button{
+  padding:.25rem .5rem;
+  border:var(--button-secondary-border);
+  background:var(--button-secondary-bg);
+  color:var(--button-secondary-text-color);
+  &:hover{
+    border-color:transparent;
+    background:var(--button-secondary-hover-bg);
+    color:var(--button-secondary-text-hover-color);
+  }
+}
+#toggleHistory{
+  float:none !important;
+}
+.infoBox.red h3{
+  padding:1rem;
+  border:var(--table-border);
+  border-radius:var(--main-br);
+  background:var(--crust);
+  color:var(--red);
+}
+.dataTables_filter{
+  margin-top:.5rem;
+}
+.spackPhase .lottery_table2{
+  overflow:clip;
+  & tr:hover td{
+    background:var(--crust) !important;
+  }
+  & tr.selected td{
+    background:var(--crust) !important;
+  }
+  & .dataTable.display tr:is(.selected,.selected:hover){ 
+    background:inherit;
+  }
+}
+.controlSection, #spackSearchSystem{
+  & > div{
+    padding:0 .75rem;
+  }
+}
+.dataTables_wrapper div.dataTables_info{
+  display:flex;
+  flex-flow:row-reverse nowrap;
+  align-items:center;
+  justify-content:space-between;
+  gap:1rem;
+  color:var(--subtext0);
+  & >.select-info{
+  padding:.25rem .5rem;
+  border:var(--table-border);
+  border-radius:var(--main-br);
+  background:var(--mantle);
+  }
+}
+#episodeSearch_filter label{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:.5rem;
+}
+div.controlSection label:not(:has(+b+b+b)){
+	display:inline-block;
+	width:25%;
+}
+#spackSearchSystem label{
+  width:15%;
+}
+.spackPhase :is(button[data-cmd="delnow"], button[data-cmd="delsubs"]){
+  border:var(--button-secondary-border);
+  border-color:var(--red);
+  background:var(--button-secondary-bg);
+  color:var(--red);
+  &:hover{
+    border-color:var(--red);
+    background:var(--red);
+    color:var(--button-secondary-text-hover-color);
+  }
+}
+span[style="float: right;"]:has(button[data-cmd="delnow"]){
+  flex-flow:row nowrap;
+  float:none !important;
+}
+#episodeSearch{
+  width:100% !important;
+  & th{
+    &[class*="sorting"], 
+    &.right, 
+    &.center{
+      width:auto !important;
+    }
+  }
+}
+.bottom table.dataTable.no-footer{
+	border-bottom:var(--table-border);
+}
+.bottom table.dataTable, table.dataTable th, table.dataTable td{
+	box-sizing:border-box;
+}
+#dox_packs h3{
+  margin:0;
+  border-bottom:0;
+  font-size:var(--font-size);
+}
+#spackReport .controlSection{
+  display:block;
+  & a{
+    font-weight:bold;
+  }
+}
+.lottery_table2:empty{
+  display:none;
+}
+.spackPhase .dataTable thead :is(th, td){
+	border-bottom:none;
+}
+.spackPhase :is(.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate){
+	color:var(--subtext0);
+}
+.spackPhase :is(div.dataTables_wrapper span.select-info, div.dataTables_wrapper span.select-item){
+	margin-left:0;
+}
 @media (min-width: 1008px){
   .bottom:not([id]){
     max-width:960px;
