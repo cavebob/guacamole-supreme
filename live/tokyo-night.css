@@ -5461,7 +5461,7 @@ p.sub > a[href*="/details.php?id="]{
   & tr.selected td{
     background:var(--crust) !important;
   }
-  & .dataTable.display tr:is(.selected,.selected:hover){ 
+  & .dataTable.display tr:is(.selected,:hover){ 
     background:inherit;
   }
 }
