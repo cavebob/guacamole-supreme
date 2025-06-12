@@ -45,7 +45,7 @@
   --button-primary-border:1px solid transparent;
   
   --button-secondary-bg:hsl(240, 13.7%, 10%);
-  --button-secondary-hover-bg:hsl(230, 90%, 80%);
+  --button-secondary-hover-bg:#9eadfa;
   --button-secondary-text-color:hsl(232.5, 10.5%, 85.1%);
   --button-secondary-text-hover-color:hsl(240, 9.7%, 12.2%);
   --button-secondary-border:1px solid #414358;
@@ -227,12 +227,17 @@ a{
   }
 }
 select, input{
-  padding:.5rem;
   border:var(--input-border);
   border-radius:var(--main-br);
   background:var(--input-bg);
   color:var(--input-text-color);
   font-size:var(--font-size);
+}
+select{
+  padding:0 .5rem;
+}
+input{
+  padding:.5rem;
 }
 select, input[type="submit"], [type="button"], input[type="reset"]{
   height:2.125rem;
@@ -326,6 +331,7 @@ h3{
   color:var(--mauve);
 }
 [style="color: blue"],
+[style*="color: blue;"],
 [style="color: #0000ff"]{
   color:var(--bookmark-blue) !important;
 }
@@ -354,6 +360,7 @@ h3{
   color:var(--teal) !important;
 }
 [style="color: red"],
+[style*="color: red;"],
 [style="color: #ff0000"],
 [style="color: #ee0000"],
 [style="color: #dd0000"]{
@@ -960,7 +967,7 @@ div:has(.center_comments) > p[align="center"]{
   margin-top:1rem;
   gap:1rem;
 }
-#torrent-list, .tablesorter, .lottery_table, .row-seclog table, [action="/log"] ~ table:not(.main), table.padding2, [action="dox.php"]+p+table, .label + table:has(a[href*="viewtopic"]), .table_requests, form[method="get"][style="margin-bottom:20px;"] + table[cellpadding="5"]:not([class]), .bottom > table[cellpadding="5"]:not([class], [id]):has(div[class*="locked"]), #latest_posts > table, form[action="/forums/search"] ~ table, form[action="dox.php"] > table, table.tableb table[width="500"], #request-list, form[action="inbox.php"] > table:has(#inboxbody), .bottom:not([id]) > table[width="660"],.bottom:not([id]) > script + h1 + table, table:has(>thead>tr>.colhead[align="left"]), table[width="500"]:first-child +h1:has([href*="lists"]) + h3 + table{
+#torrent-list, .tablesorter, .lottery_table, .lottery_table2, .row-seclog table, [action="/log"] ~ table:not(.main), table.padding2, [action="dox.php"]+p+table, .label + table:has(a[href*="viewtopic"]), .table_requests, form[method="get"][style="margin-bottom:20px;"] + table[cellpadding="5"]:not([class]), .bottom > table[cellpadding="5"]:not([class], [id]):has(div[class*="locked"]), #latest_posts > table, form[action="/forums/search"] ~ table, form[action="dox.php"] > table, table.tableb table[width="500"], #request-list, form[action="inbox.php"] > table:has(#inboxbody), .bottom:not([id]) > table[width="660"],.bottom:not([id]) > script + h1 + table, table:has(>thead>tr>.colhead[align="left"]), table[width="500"]:first-child +h1:has([href*="lists"]) + h3 + table{
   margin:1rem 0;
   overflow:auto;
   border:var(--table-border);
@@ -1021,7 +1028,7 @@ form[action="/forums/search"] ~ table{
     text-indent:0 !important;
   }
 }
-:is(#torrent-list, .tablesorter, .lottery_table, .row-seclog, 
+:is(#torrent-list, .tablesorter, .lottery_table, .lottery_table2, .row-seclog, 
 [action="/log"] ~ table:not(.main), table.padding2, [action="dox.php"]+p+table,
 .label + table:has(a[href*="viewtopic"]), .table_requests, 
 form[method="get"][style="margin-bottom:20px;"] + table[cellpadding="5"]:not([class]),  
@@ -1038,7 +1045,7 @@ table[width="500"]:first-child +h1:has([href*="lists"]) + h3 + table) th{
     border-top-right-radius:var(--main-br)
   }
 }
-:is(#torrent-list, .tablesorter, .lottery_table, .row-seclog, 
+:is(#torrent-list, .tablesorter, .lottery_table, .lottery_table2, .row-seclog, 
 [action="/log"] ~ table:not(.main), table.padding2, [action="dox.php"]+p+table,
 .label + table:has(a[href*="viewtopic"]), .table_requests, 
 form[method="get"][style="margin-bottom:20px;"] + table[cellpadding="5"]:not([class]), #profilesettings, 
@@ -1058,18 +1065,18 @@ form[action="dox.php"] td[style="border:black solid 1px;"]{
   border:none !important;
   border-top:var(--general-border) !important;
 }
-.tablesorter, .lottery_table, .row-seclog table,
+.tablesorter, .lottery_table, .lottery_table2, .row-seclog table,
 .label + table:has(a[href*="viewtopic"]), .table_requests{
   border:var(--table-border);
   border-radius:var(--main-br);
   border-collapse:initial;
   background-color:var(--mantle);
 }
-:is(#torrent-list, .tablesorter, .lottery_table, .row-seclog table, .table_requests, table:has(>thead>tr>td.colhead[align="left"])) td:not(.colhead){
+:is(#torrent-list, .tablesorter, .lottery_table, .lottery_table2, .row-seclog table, .table_requests, table:has(>thead>tr>td.colhead[align="left"])) td:not(.colhead){
   border-top:var(--table-border);
   background-color:var(--base);
 }
-:is(.tablesorter, .lottery_table, .row-seclog,
+:is(.tablesorter, .lottery_table, .lottery_table2, .row-seclog,
 .label + table:has(a[href*="viewtopic"]), .table_requests) th{
   background-color:var(--mantle)
 }
@@ -5364,6 +5371,119 @@ p.sub > a[href*="/details.php?id="]{
 	margin-top:.5rem;
 	color:var(--subtext0);
   text-align:right;
+}
+.spackPhase{
+  display:grid;
+  gap:1rem;
+  text-align:initial;
+  min-width:40rem;
+}
+.controlSection{
+  display:grid;
+  background:var(--mantle);
+  border:var(--table-border);
+  border-radius:var(--main-br);
+  overflow:clip;
+  gap:.5rem;
+  width:100%;
+  & h1,h2,h3{
+    border-bottom:var(--general-border);
+    background:var(--mantle);
+    padding:.5rem;
+  }
+  #spackSearchSystem{
+    display:grid;
+    gap:.5rem;
+  }
+  & div:last-child{
+    margin-bottom:.5rem;
+  }
+}
+[style="text-align: center; padding: 12px; background-color: white;"]{
+  background:var(--mantle) !important;
+}
+#spackPerform, #spackReport{
+  display:grid !important
+}
+#quickSelection{
+  & button{
+    padding:.25rem .5rem;
+    background:var(--button-secondary-bg);
+    color:var(--button-secondary-text-color);
+    border:var(--button-secondary-border);
+    &:hover{
+      background:var(--button-secondary-hover-bg);
+      color:var(--button-secondary-text-hover-color);
+      border-color:transparent;
+    }
+  }
+}
+#toggleHistory{
+  float:unset!important;
+}
+.infoBox.red h3{
+  padding:1rem;
+  border:var(--table-border);
+  border-radius:var(--main-br);
+  background:var(--crust);
+  color:var(--red);
+}
+.dataTables_filter{
+  margin-top:.5rem;
+}
+.lottery_table2{
+  & tr:hover td{
+    background:var(--crust) !important;
+  }
+  & tr.selected td{
+    background:var(--crust)!important
+  }
+}
+.controlSection, #spackSearchSystem{
+  & > div{
+    padding:0 .75rem;
+  }
+}
+.dataTables_info{
+  display:flex;
+  flex-flow:row-reverse nowrap;
+  align-items:center;
+  color:var(--subtext0);
+  gap:1rem;
+  justify-content:space-between;
+  & >.select-info{
+  padding:.25rem .5rem;
+  border:var(--table-border);
+  border-radius:var(--main-br);
+  background:var(--mantle);
+  color:var(--bookmark-blue);
+  }
+}
+#episodeSearch_filter label{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:.5rem;
+}
+div.controlSection label:not(:has(+b+b+b)){
+	display:inline-block;
+	width:25%;
+}
+#spackSearchSystem label{
+  width:15%;
+}
+button[data-cmd="delnow"]{
+  background:var(--button-secondary-bg);
+  color:var(--red);
+  border:var(--button-secondary-border);
+  border-color:var(--red);
+  margin:0 .5rem;
+
+}
+span[style="float: right;"]:has(button[data-cmd="delnow"]){
+  display:inline-block;
+  flex-flow:row nowrap;
+  float:unset !important;
 }
 @media (min-width: 1008px){
   .bottom:not([id]){
