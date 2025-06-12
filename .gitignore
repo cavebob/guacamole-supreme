@@ -1,4 +1,5 @@
 .vscode
+build*
 css/*
 !css/tokyo-*.css
 gist
