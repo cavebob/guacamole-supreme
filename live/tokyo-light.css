@@ -1806,6 +1806,9 @@ td.embedded:has(#table_reseed_button_requests) > h1{
 .embedded:has(.padding2) h2{
   margin-bottom:1rem;
   text-align:center;
+  &:has(>a[href*="/staff/reports"]){
+    margin-top:1rem;
+  }
 }
 .bottom:has(>.main):not([id]) >.main:has(p.sub), 
 .bottom:has(>.main):not([id]) >.main:has(.std-content),
@@ -1997,6 +2000,8 @@ table:has(>tbody>tr>td[width="200"][height="200"]){
 }
 h2:has(>a[href*="/staff/reports"]) + table .padding2{
   table-layout:fixed;
+  width:100%;
+  margin-top:0;
   & .center{
     text-align:left;
   }
