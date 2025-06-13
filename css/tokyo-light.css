@@ -184,6 +184,19 @@ a[href*="delete?delid"]:has(> img[src*="delete.png"]){
     }
   }
 }
+.tag-content > a[href*="/browse.php?tags[]="]:has(+a>img[src*="delete.png"]){
+  &:has(+a:hover>img[src*="delete.png"]){
+    &::before{
+      background-color:hsla(354, 100%, 70%, 0.5) !important; 
+      mix-blend-mode:multiply !important;
+    }
+  }
+  & +a:has(>img[src*="delete.png"]){
+    &:hover > img{
+      background:white !important;
+    }
+  }
+}
 [id*=codec]{
   --bluray:hsl(211, 94%, 41%) !important;
   --encode:hsl(50, 100%, 26%) !important;
@@ -3108,9 +3121,8 @@ td:has(>.default_avatar){
   & +a:has(>img[src*="delete.png"]){
     border-top-left-radius:0;
     border-bottom-left-radius:0;
-    margin-left:-1px
+    margin-left:-1px;
   }
-
 }
 img[src*="delete.png"]{
 	box-sizing:content-box;

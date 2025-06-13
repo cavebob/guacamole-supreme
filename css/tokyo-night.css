@@ -2939,9 +2939,8 @@ td:has(>.default_avatar){
   & +a:has(>img[src*="delete.png"]){
     border-top-left-radius:0;
     border-bottom-left-radius:0;
-    margin-left:-1px
+    margin-left:-1px;
   }
-
 }
 img[src*="delete.png"]{
 	box-sizing:content-box;
