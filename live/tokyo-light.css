@@ -4502,8 +4502,11 @@ div[style="width: 930px; margin: 0px auto;"] > h1.left{
 	padding:.25rem;
 }
 td:has(> form > input[name*="modsetencode"]) input[name*="modsetencode"]{
-  margin-top:5rem 0;
   margin-left:.25rem;
+  height:2.125rem;
+}
+td:has(> form > input[name*="modsetencode"]) form:has(input[name*="modsetencode"]){
+  margin-top:.5rem;
 }
 tr:has(#showbanner){
   & > td{
@@ -5765,9 +5768,8 @@ div.controlSection label:not(:has(+b+b+b)){
 }
 span[style="float: right;"]:has(button[data-cmd="delnow"]){
   flex-flow:row nowrap;
-  float:none !important;
 }
-#episodeSearch{
+#episodeSearch, #doxList{
   width:100% !important;
   & th{
     &[class*="sorting"], 
@@ -5805,6 +5807,43 @@ span[style="float: right;"]:has(button[data-cmd="delnow"]){
 }
 .spackPhase :is(div.dataTables_wrapper span.select-info, div.dataTables_wrapper span.select-item){
 	margin-left:0;
+}
+.spackPhase #doxList .subTable{
+  padding:.125rem;
+  width:100%;
+  & td{
+    padding:0.125rem;
+    border-top:0
+  }
+  td:has(>img){
+    padding-inline:initial !important;
+  }
+}
+td:has(>.subTable){
+  border-left:var(--table-border);
+}
+.spackPhase #doxList{
+  margin:0;
+  & > tbody > tr > td:first-child{
+    padding:.25rem;
+  }
+  & td{
+    vertical-align:top;
+    &:has(input){
+      padding-inline-start:.5rem;
+      vertical-align:middle;
+    }
+  }
+}
+button[disabled]{
+  opacity:0.5;
+  pointer-events:none;
+}
+.subTable button{
+  height:2rem;
+  padding-top:0;
+  padding-bottom:0;
+	margin:-4px -4px -2px;
 }
 @media (min-width: 1008px){
   .bottom:not([id]){
