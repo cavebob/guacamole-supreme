@@ -5663,6 +5663,13 @@ button[disabled]{
   padding-bottom:0;
 	margin:-4px -4px -2px;
 }
+.subTable img{
+  width:30px;
+  height:18px;
+  object-fit:none;
+  border-radius:var(--small-br);
+  filter:brightness(90%);
+}
 @media (min-width: 1008px){
   .bottom:not([id]){
     max-width:960px;
