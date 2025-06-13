@@ -2918,6 +2918,31 @@ td:has(>.default_avatar){
     }
   }
 }
+.tag-content > a[href*="/browse.php?tags[]="]:has(+a>img[src*="delete.png"]){
+  border-top-right-radius:0;
+  border-bottom-right-radius:0;
+  overflow:clip;
+  position:relative;
+  z-index:0;
+  &:has(+a:hover>img[src*="delete.png"]){
+    border-color:var(--red);
+    &::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background-color:hsla(354, 100%, 70%, 0.15);
+      pointer-events:none;
+      z-index:1;
+      mix-blend-mode:screen;
+    }
+  }
+  & +a:has(>img[src*="delete.png"]){
+    border-top-left-radius:0;
+    border-bottom-left-radius:0;
+    margin-left:-1px
+  }
+
+}
 img[src*="delete.png"]{
 	box-sizing:content-box;
 	display:inline-block;
@@ -2931,16 +2956,16 @@ img[src*="delete.png"]{
 }
 a[href*="delete?delid"]:has(>img[src*="delete.png"]){
   display:inline-block;
-  height:2rem;
-  width:2rem;
+  border:1px solid transparent;
+  height:1.75rem;
+  width:1.75rem;
   border-radius:var(--main-br);
   margin:-2px;
   > img{
-    mask-position:6px 5px;
+    mask-position:4px 3.25px;
   }
   &:hover{
     background:var(--red) !important;
-    border:1px solid var(--red);
     border-color:var(--red);
     & img{
       background:var(--button-secondary-text-hover-color)
