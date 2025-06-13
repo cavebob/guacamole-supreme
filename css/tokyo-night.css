@@ -2902,6 +2902,51 @@ td:has(>.default_avatar){
 .donated_wrapper .donated_rectangle.donated_color100 .donated_filled{
   background-color:var(--green-seeding)
 }
+.tag-content{
+  display:grid;
+  grid-auto-flow:column;
+}
+.tag-content a:has(img[src*="delete.png"]){
+  height:2.25rem;
+  width:2.25rem;
+  display:inline-block;
+  padding:0;
+  &:hover{
+    background:var(--red) !important;
+    & img{
+      background:var(--button-secondary-text-hover-color)
+    }
+  }
+}
+img[src*="delete.png"]{
+	box-sizing:content-box;
+	display:inline-block;
+	width:1.5rem !important;
+  height:1.75rem;
+	padding-left:24px;
+	background:var(--red);
+	mask:url("../pic/tokyo-night/icon/delete.svg") no-repeat;
+  mask-size:18px;
+  mask-position:8px 7px
+}
+a[href*="delete?delid"]:has(>img[src*="delete.png"]){
+  display:inline-block;
+  height:2rem;
+  width:2rem;
+  border-radius:var(--main-br);
+  margin:-2px;
+  > img{
+    mask-position:6px 5px;
+  }
+  &:hover{
+    background:var(--red) !important;
+    border:1px solid var(--red);
+    border-color:var(--red);
+    & img{
+      background:var(--button-secondary-text-hover-color)
+    }
+  }
+}
 .bottom > .small{
   color:var(--subtext0);
   font-size:var(--font-size-small);
@@ -4250,6 +4295,10 @@ div[style="width: 930px; margin: 0px auto;"] > h1.left{
 #plotcell td{
 	padding:.25rem;
 }
+td:has(> form > input[name*="modsetencode"]) input[name*="modsetencode"]{
+  margin-top:5rem 0;
+  margin-left:.25rem;
+}
 tr:has(#showbanner){
   & > td{
     display:flex;
@@ -5462,7 +5511,7 @@ p.sub > a[href*="/details.php?id="]{
     background:var(--crust) !important;
   }
 }
-.spackPhase .dataTable.display tr:is(.selected,:hover){ 
+.spackPhase .lottery_table2.dataTable.display tr:is(.selected,:hover){ 
   background:inherit;
 }
 .controlSection, #spackSearchSystem{
