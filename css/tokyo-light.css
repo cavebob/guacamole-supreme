@@ -1107,6 +1107,7 @@ div:has(.center_comments) > p[align="center"]{
   &>a{
     padding:.5rem 1rem;
     font-size:var(--font-size);
+    line-height:1.538;
   }
   & > div{
     display:flex;
@@ -1129,7 +1130,7 @@ div:has(.center_comments) > p[align="center"]{
 }
 #sidebar-container h2{
   display:flex;
-  padding:.5rem;;
+  padding:.5rem;
   & a{
     width:100%;
   }
