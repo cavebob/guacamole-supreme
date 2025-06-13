@@ -491,6 +491,13 @@ p:has(a[href*="page="]):not(.sub){
   }
   &>b{
     color:var(--text-muted-color);
+    &:has(>font.gray){
+      display:flex;
+      gap:.5rem;
+    }
+    & font.gray{
+      min-width:32px;
+    }
   }
 }
 div:has(.center_comments) > p[align="center"]{
