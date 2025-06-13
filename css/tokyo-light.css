@@ -1149,7 +1149,7 @@ div:has(.center_comments) > p[align="center"]{
   margin-top:1rem;
   gap:1rem;
 }
-#torrent-list, .tablesorter, .lottery_table, .lottery_table2, .row-seclog table, [action="/log"] ~ table:not(.main), table.padding2, [action="dox.php"]+p+table, .label + table:has(a[href*="viewtopic"]), .table_requests, form[method="get"][style="margin-bottom:20px;"] + table[cellpadding="5"]:not([class]), .bottom > table[cellpadding="5"]:not([class], [id]):has(div[class*="locked"]), #latest_posts > table, form[action="/forums/search"] ~ table, form[action="dox.php"] > table, table.tableb table[width="500"], #request-list, form[action="inbox.php"] > table:has(#inboxbody), .bottom:not([id]) > table[width="660"],.bottom:not([id]) > script + h1 + table, table:has(>thead>tr>.colhead[align="left"]), table[width="500"]:first-child +h1:has([href*="lists"]) + h3 + table{
+#torrent-list, .tablesorter, .lottery_table, .spackPhase .lottery_table2, .row-seclog table, [action="/log"] ~ table:not(.main), table.padding2, [action="dox.php"]+p+table, .label + table:has(a[href*="viewtopic"]), .table_requests, form[method="get"][style="margin-bottom:20px;"] + table[cellpadding="5"]:not([class]), .bottom > table[cellpadding="5"]:not([class], [id]):has(div[class*="locked"]), #latest_posts > table, form[action="/forums/search"] ~ table, form[action="dox.php"] > table, table.tableb table[width="500"], #request-list, form[action="inbox.php"] > table:has(#inboxbody), .bottom:not([id]) > table[width="660"],.bottom:not([id]) > script + h1 + table, table:has(>thead>tr>.colhead[align="left"]), table[width="500"]:first-child +h1:has([href*="lists"]) + h3 + table{
   margin:1rem 0;
   overflow:auto;
   border:var(--table-border);
@@ -1210,7 +1210,7 @@ form[action="/forums/search"] ~ table{
     text-indent:0 !important;
   }
 }
-:is(#torrent-list, .tablesorter, .lottery_table, .lottery_table2, .row-seclog, 
+:is(#torrent-list, .tablesorter, .lottery_table, .spackPhase .lottery_table2, .row-seclog, 
 [action="/log"] ~ table:not(.main), table.padding2, [action="dox.php"]+p+table,
 .label + table:has(a[href*="viewtopic"]), .table_requests, 
 form[method="get"][style="margin-bottom:20px;"] + table[cellpadding="5"]:not([class]),  
@@ -1227,7 +1227,7 @@ table[width="500"]:first-child +h1:has([href*="lists"]) + h3 + table) th{
     border-top-right-radius:var(--main-br)
   }
 }
-:is(#torrent-list, .tablesorter, .lottery_table, .lottery_table2, .row-seclog, 
+:is(#torrent-list, .tablesorter, .lottery_table, .spackPhase .lottery_table2, .row-seclog, 
 [action="/log"] ~ table:not(.main), table.padding2, [action="dox.php"]+p+table,
 .label + table:has(a[href*="viewtopic"]), .table_requests, 
 form[method="get"][style="margin-bottom:20px;"] + table[cellpadding="5"]:not([class]), #profilesettings, 
@@ -1247,18 +1247,18 @@ form[action="dox.php"] td[style="border:black solid 1px;"]{
   border:none !important;
   border-top:var(--general-border) !important;
 }
-.tablesorter, .lottery_table, .lottery_table2, .row-seclog table,
+.tablesorter, .lottery_table, .spackPhase .lottery_table2, .row-seclog table,
 .label + table:has(a[href*="viewtopic"]), .table_requests{
   border:var(--table-border);
   border-radius:var(--main-br);
   border-collapse:initial;
   background-color:var(--mantle);
 }
-:is(#torrent-list, .tablesorter, .lottery_table, .lottery_table2, .row-seclog table, .table_requests, table:has(>thead>tr>td.colhead[align="left"])) td:not(.colhead){
+:is(#torrent-list, .tablesorter, .lottery_table, .spackPhase .lottery_table2, .row-seclog table, .table_requests, table:has(>thead>tr>td.colhead[align="left"])) td:not(.colhead){
   border-top:var(--table-border);
   background-color:var(--base);
 }
-:is(.tablesorter, .lottery_table, .lottery_table2, .row-seclog,
+:is(.tablesorter, .lottery_table, .spackPhase .lottery_table2, .row-seclog,
 .label + table:has(a[href*="viewtopic"]), .table_requests) th{
   background-color:var(--mantle)
 }
