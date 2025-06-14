@@ -24,7 +24,7 @@
   --quote-bg-color:hsl(230, 14%, 14%);
   --base:hsl(230, 12%, 6%);
   --mantle:hsl(230, 12%, 10%);
-  --crust:hsl(230, 10%, 4%);
+  --crust:hsl(230, 10%, 4%) !important;
   --header:hsl(230, 10%, 9%);
 
   --link-color:hsl(214.5, 15%, 58.1%);
