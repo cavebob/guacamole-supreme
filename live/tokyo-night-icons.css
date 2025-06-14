@@ -172,28 +172,28 @@ td[id^="codec"].catcell,
   padding: 0 2px !important;
 }
 .category1 {
-  mask: no-repeat center /37px url("../pic/styles/tokyo-night/types/film.svg");
+  mask: no-repeat center /37px url("/pic/styles/tokyo-night/types/film.svg");
 }
 .category2 {
-  mask: no-repeat center /40px url("../pic/styles/tokyo-night/types/tv.svg");
+  mask: no-repeat center /40px url("/pic/styles/tokyo-night/types/tv.svg");
 }
 .category3 {
-  mask: no-repeat center /40px url("../pic/styles/tokyo-night/types/documentary.svg");
+  mask: no-repeat center /40px url("/pic/styles/tokyo-night/types/documentary.svg");
 }
 .category4 {
-  mask: no-repeat center /36px url("../pic/styles/tokyo-night/types/music.svg");
+  mask: no-repeat center /36px url("/pic/styles/tokyo-night/types/music.svg");
 }
 .category5 {
-  mask: no-repeat center /40px url("../pic/styles/tokyo-night/types/volleyball.svg");
+  mask: no-repeat center /40px url("/pic/styles/tokyo-night/types/volleyball.svg");
 }
 .category6 {
-  mask: no-repeat center /40px url("../pic/styles/tokyo-night/types/audio.svg");
+  mask: no-repeat center /40px url("/pic/styles/tokyo-night/types/audio.svg");
 }
 .category7 {
-  mask: no-repeat center /40px url("../pic/styles/tokyo-night/types/18-plus.svg");
+  mask: no-repeat center /40px url("/pic/styles/tokyo-night/types/18-plus.svg");
 }
 .category8 {
-  mask: no-repeat center /41px url("../pic/styles/tokyo-night/types/misc.svg");
+  mask: no-repeat center /41px url("/pic/styles/tokyo-night/types/misc.svg");
 }
 img[class*="medium"][src="/pic/blank2.gif"] {
 	height: 0;

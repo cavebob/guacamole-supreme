@@ -3855,6 +3855,9 @@ li.active-result{
 .has_hover{
   position:relative;
 }
+.browse_td_name_cell *{
+	vertical-align:middle;
+}
 #torrent-list a.fl::after,
 #torrent-list a[title^="25%"]::after,
 #torrent-list a[title^="50%"]::after{
