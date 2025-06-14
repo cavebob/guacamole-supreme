@@ -1057,6 +1057,7 @@ div:has(.center_comments) > p[align="center"]{
 }
 .menu a.normal{
   display:block;
+  align-content:center;
   min-width:4rem;
   height:100%;
   padding:.25rem .5rem;
@@ -1076,10 +1077,10 @@ div:has(.center_comments) > p[align="center"]{
   padding:1rem 1rem !important;
   overflow-x:hidden;
   overflow-y:hidden;
+  overscroll-behavior:contain;
   border:var(--table-border);
   background:var(--mantle);
   scrollbar-gutter:stable;
-  overscroll-behavior:contain;
   &:hover{
     overflow-y:auto;
     overscroll-behavior:contain;
@@ -2007,15 +2008,15 @@ table:has(>tbody>tr>td[width="200"][height="200"]){
   }
 }
 h2:has(>a[href*="/staff/reports"]) + table .padding2{
-  table-layout:fixed;
   width:100%;
   margin-top:0;
+  table-layout:fixed;
   & .center{
     text-align:left;
   }
   & td:not(:last-child){
-    border-right:var(--table-border);
     padding-inline:0.5rem !important;
+    border-right:var(--table-border);
   }
   & br{
     line-height:normal;
@@ -3115,9 +3116,9 @@ td:has(>.default_avatar){
   grid-auto-flow:column;
 }
 .tag-content a:has(img[src*="delete.png"]){
-  height:2.25rem;
-  width:2.25rem;
   display:inline-block;
+  width:2.25rem;
+  height:2.25rem;
   padding:0;
   &:hover{
     background:var(--red) !important;
@@ -3127,27 +3128,27 @@ td:has(>.default_avatar){
   }
 }
 .tag-content > a[href*="/browse.php?tags[]="]:has(+a>img[src*="delete.png"]){
+  z-index:0;
+  position:relative;
+  overflow:clip;
   border-top-right-radius:0;
   border-bottom-right-radius:0;
-  overflow:clip;
-  position:relative;
-  z-index:0;
   &:has(+a:hover>img[src*="delete.png"]){
     border-color:var(--red);
     &::before{
-      content:"";
+      z-index:1;
       position:absolute;
       inset:0;
       background-color:hsla(354, 100%, 70%, 0.15);
-      pointer-events:none;
-      z-index:1;
+      content:"";
       mix-blend-mode:screen;
+      pointer-events:none;
     }
   }
   & +a:has(>img[src*="delete.png"]){
+    margin-left:-1px;
     border-top-left-radius:0;
     border-bottom-left-radius:0;
-    margin-left:-1px;
   }
 }
 :is(a[href*="delete?delid"],a[href*="/tags/unassociate?tag"])>img[src*="delete.png"]{
@@ -3158,22 +3159,22 @@ td:has(>.default_avatar){
 	padding-left:24px;
 	background:var(--red);
 	mask:url("/pic/tokyo-night/icon/delete.svg") no-repeat;
-  mask-size:18px;
-  mask-position:8px 4.25px
+  mask-position:8px 4.25px;
+  mask-size:18px
 }
 a[href*="delete?delid"]:has(>img[src*="delete.png"]){
   display:inline-block;
-  border:1px solid transparent;
-  height:1.75rem;
   width:1.75rem;
-  border-radius:var(--main-br);
+  height:1.75rem;
   margin:-2px;
+  border:1px solid transparent;
+  border-radius:var(--main-br);
   & > img{
     mask-position:4px 3.25px;
   }
   &:hover{
-    background:var(--red) !important;
     border-color:var(--red);
+    background:var(--red) !important;
     & img{
       background:var(--button-secondary-text-hover-color)
     }
@@ -3465,34 +3466,34 @@ table:has(a[href$="/lists/my"]), table:has(td[width="12%"] > b > a[href*="/staff
   padding-bottom:0 !important;
 }
 #moresearch3 .bottom[style="padding-left: 15px"]{
-  padding-left:0 !important;
   margin-top:.25rem;
+  padding-left:0 !important;
   & > input{
     display:flex;
     align-items:center;
     justify-content:center;
-    text-transform:lowercase;
-    font-variant:small-caps;
     width:6.4rem;
     padding:0;
+    font-variant:small-caps;
+    text-transform:lowercase;
   }
 }
 #moresearch3 td:has(>a[href="browse.php?all=1"]){
   margin-top:.5rem;
   font-size:0;
   &>a{
-    font-size:var(--font-size);
-    text-transform:lowercase;
-    font-variant:small-caps;
     display:flex;
-    height:2.125rem;
-    width:6.4rem;
     align-items:center;
     justify-content:center;
-    border-radius:var(--main-br);
+    width:6.4rem;
+    height:2.125rem;
     border:var(--button-primary-border);
+    border-radius:var(--main-br);
     background:var(--button-primary-bg);
     color:var(--button-primary-text-color);
+    font-variant:small-caps;
+    font-size:var(--font-size);
+    text-transform:lowercase;
     &:hover{
       background:var(--button-primary-hover-bg);
       color:var(--button-primary-text-hover-color);
@@ -4534,8 +4535,8 @@ div[style="width: 930px; margin: 0px auto;"] > h1.left{
 	padding:.25rem;
 }
 td:has(> form > input[name*="modsetencode"]) input[name*="modsetencode"]{
-  margin-left:.25rem;
   height:2.125rem;
+  margin-left:.25rem;
 }
 td:has(> form > input[name*="modsetencode"]) form:has(input[name*="modsetencode"]){
   margin-top:.5rem;
@@ -5841,8 +5842,8 @@ span[style="float: right;"]:has(button[data-cmd="delnow"]){
 	margin-left:0;
 }
 .spackPhase #doxList .subTable{
-  padding:.125rem;
   width:100%;
+  padding:.125rem;
   & td{
     padding:0.125rem;
     border-top:0
@@ -5873,9 +5874,9 @@ button[disabled="disabled"], button[disabled=""], input[disabled="disabled"], in
 }
 .subTable button{
   height:2rem;
+	margin:-4px -4px -2px;
   padding-top:0;
   padding-bottom:0;
-	margin:-4px -4px -2px;
 }
 .subTable img{
   width:30px;
