@@ -2961,7 +2961,7 @@ td:has(>.default_avatar){
     margin-left:-1px;
   }
 }
-img[src*="delete.png"]{
+:is(a[href*="delete?delid"],a[href*="/tags/unassociate?tag"])>img[src*="delete.png"]{
 	box-sizing:content-box;
 	display:inline-block;
 	width:1.5rem !important;
@@ -2979,7 +2979,7 @@ a[href*="delete?delid"]:has(>img[src*="delete.png"]){
   width:1.75rem;
   border-radius:var(--main-br);
   margin:-2px;
-  > img{
+  & > img{
     mask-position:4px 3.25px;
   }
   &:hover{
@@ -2992,6 +2992,9 @@ a[href*="delete?delid"]:has(>img[src*="delete.png"]){
 }
 .tag-content > a{
   align-content:center;
+}
+.tag.moderate:empty{
+	display:none;
 }
 .bottom > .small{
   color:var(--subtext0);
@@ -3333,7 +3336,7 @@ td[style="padding:5px; border:black solid 1px;"]{
   display:flex;
   flex-flow:row nowrap;
   align-items:center;
-  padding:.25rem !important;
+  padding:0 .25rem !important;
   gap:.5rem;
 }
 div.chosen:nth-child(3){
@@ -3743,7 +3746,7 @@ div.chosen-container .search-choice{
   max-width:650px;
   height:auto;
   margin:0;
-  padding:.125rem .25rem;
+  padding:0rem .125rem;
   overflow:hidden;
   border:var(--general-border);
   border-radius:var(--main-br);
