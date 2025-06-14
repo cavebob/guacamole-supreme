@@ -4963,12 +4963,12 @@ h2.stattitle{
     flex-flow:row wrap;
     max-width:792px;
     padding:1rem;
-    overflow:scroll;
+    overflow-y:auto;
+    overscroll-behavior:contain;
     gap:1rem;
     border:var(--table-border);
     border-radius:var(--main-br);
     background:var(--mantle);
-    scroll-behavior:contain;
   }
   & .show-header{
     position:relative;
@@ -4997,11 +4997,11 @@ h2.stattitle{
 #tv-episode-list{
   flex:auto;
   margin-left:-1px;
+  overscroll-behavior:contain;
   border:var(--table-border);
   border-left:var(--table-border);
   border-radius:var(--main-br);
   background:var(--mantle);
-  scroll-behavior:contain;
 }
 .tv-todownload .show-torrents{
   text-align:left;
@@ -5047,10 +5047,10 @@ h2.stattitle{
   }
   & .tv-torrent{
     display:grid;
-    align-items:center;
-    gap:.125rem;
     grid-auto-flow:column;
+    align-items:center;
     justify-content:flex-start;
+    gap:.125rem;
     &>:first-child{
       order:2;
       padding-left:.25rem;
