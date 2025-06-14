@@ -104,7 +104,7 @@
 :is(#torrent-list, [action="/log"] ~ table:not(.main), table.padding2, [action="dox.php"] + p + table, form[method="get"][style="margin-bottom:20px !important;"] + table[cellpadding="5"]:not([class]), #profilesettings, form[action="dox.php"] > table, table.tableb table[width="500"], .bottom:not([id]) > script + h1 + table, #request-list, form[action="inbox.php"] > table:has(#inboxbody), .bottom:not([id]) > table[width="660"], table[width="500"]:first-child + h1:has([href*="lists"]) + h3 + table) th{
   background-color:var(--crust) !important;
 }
-:is(#torrent-list, .tablesorter, .lottery_table, .row-seclog table, .table_requests, table:has(> thead > tr > td.colhead[align="left"])) td:not(.colhead, .featured td){
+:is(#torrent-list, .tablesorter, .lottery_table, .spackPhase .lottery_table2, .row-seclog table, .table_requests, table:has(> thead > tr > td.colhead[align="left"])) td:not(.colhead, .featured td){
   border-top:var(--table-border) !important;
   background-color:var(--mantle) !important;
 }
@@ -195,6 +195,13 @@ a[href*="delete?delid"]:has(> img[src*="delete.png"]){
     &:hover > img{
       background:white !important;
     }
+  }
+}
+.spackPhase :is(button[data-cmd="delnow"], button[data-cmd="delsubs"]){
+  &:hover{
+    border-color:var(--red);
+    background:var(--red);
+    color:var(--button-primary-text-hover-color) !important;
   }
 }
 [id*=codec]{
