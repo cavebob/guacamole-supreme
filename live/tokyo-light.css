@@ -3152,7 +3152,7 @@ img[src*="delete.png"]{
 	background:var(--red);
 	mask:url("/pic/tokyo-night/icon/delete.svg") no-repeat;
   mask-size:18px;
-  mask-position:8px 7px
+  mask-position:8px 4.25px
 }
 a[href*="delete?delid"]:has(>img[src*="delete.png"]){
   display:inline-block;
@@ -3171,6 +3171,9 @@ a[href*="delete?delid"]:has(>img[src*="delete.png"]){
       background:var(--button-secondary-text-hover-color)
     }
   }
+}
+.tag-content > a{
+  align-content:center;
 }
 .bottom > .small{
   color:var(--subtext0);
@@ -4184,7 +4187,7 @@ div[style="width: 930px; margin: 0px auto;"]:has(a[name="votes"], a[name="startc
 .collapsable:has(+.hideablecontent[style="display: none;"], +.hideablecontent[style="display:none"]) .plusminus{
   display:inline flex;
   position:absolute;
-  top:-9px;
+  top:-10px;
   left:-13px;
   width:40px;
   height:40px;
@@ -4196,7 +4199,7 @@ div[style="width: 930px; margin: 0px auto;"]:has(a[name="votes"], a[name="startc
 .collapsable:has(+.hideablecontent[style="display: block;"], +.hideablecontent:not([style])) .plusminus{
   display:inline flex;
   position:absolute;
-  top:-9px;
+  top:-10px;
   left:-13px;
   width:40px;
   height:40px;
