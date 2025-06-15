@@ -339,10 +339,12 @@ h3{
   color:var(--text) !important;
 }
 [style="color: yellow"],
+[style="color: yellow;"]
 [style="color: #ffff00"]{
   color:var(--yellow) !important;
 }
 [style="color: orange"],
+[style="color: orange;"],
 [style="color: #ffa500"]{
   color:var(--peach) !important;
 }
@@ -351,6 +353,7 @@ h3{
   color:var(--pink) !important;
 }
 [style="color: green"],
+[style="color: green;"]
 [style="color: #008000"]{
   color:var(--green) !important;
 }
@@ -372,6 +375,7 @@ h3{
   color:var(--maroon) !important;
 }
 [style="color: purple"],
+[style="color: Purple"],
 [style="color: #800080"]{
   color:var(--mauve) !important;
 }
@@ -5569,6 +5573,9 @@ p.sub > a[href*="/details.php?id="]{
     background:var(--crust) !important;
   }
 }
+.spackPhase :is(.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate){
+	color:var(--subtext0);
+}
 .spackPhase .lottery_table2.dataTable.display tr:is(.selected,:hover){ 
   background:inherit;
 }
@@ -5650,9 +5657,6 @@ span[style="float: right;"]:has(button[data-cmd="delnow"]){
 }
 .spackPhase .dataTable thead :is(th, td){
 	border-bottom:none;
-}
-.spackPhase :is(.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate){
-	color:var(--subtext0);
 }
 .spackPhase :is(div.dataTables_wrapper span.select-info, div.dataTables_wrapper span.select-item){
 	margin-left:0;

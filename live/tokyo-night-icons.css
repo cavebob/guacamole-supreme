@@ -98,13 +98,13 @@
 #codec1:has([class^="medium"])::after {
   border: var(--general-border);
   background-color: var(--crust);
-  content: "H264";
+  content: "H.264";
   color: var(--codec);
 }
 #codec2:has([class^="medium"])::after {
   border: var(--general-border);
   background-color: var(--crust);
-  content: "MPEG2";
+  content: "MPEG-2";
   color: var(--codec);
 }
 #codec3:has([class^="medium"])::after {
@@ -134,7 +134,7 @@
 [id^="codec"]:has(.medium1)::before {
   border: 1px solid hsla(199, 76%, 59%, 0.5);
   background-color: hsla(199, 26%, 39%, 0.1);
-  content: "Blu-Ray";
+  content: "BD";
   color: var(--bluray);
   font-variant: all-small-caps;
 }
@@ -148,7 +148,7 @@
 [id^="codec"]:has(.medium4)::before {
   border: 1px solid hsla(350, 65%, 77%, 0.5);
   background-color: hsla(350, 25%, 10%, 0.1);
-  content: "Capture";
+  content: "CAP";
   color: var(--capture);
   font-variant: all-small-caps;
 }
