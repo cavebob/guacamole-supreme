@@ -3191,9 +3191,12 @@ a[href*="delete?delid"]:has(>img[src*="delete.png"]){
   font-size:var(--font-size-small);
 }
 .embedded:has(#news){
-  display:flex;
-  flex-flow:row wrap;
+  display:grid;
   gap:1rem;
+  grid-template-areas:"news news" "poll-title stats-title" "poll stats";
+  grid-template-columns:1fr auto;
+  width:min(960px, 100%);
+  margin:0 auto;
   & h2{
     padding:1rem;
     border-bottom:var(--table-border);
@@ -3211,8 +3214,7 @@ p[id^="news"]{
   font-size:var(--font-size-news)
 }
 #news{
-  flex:100%;
-  order:0;
+  grid-area:news;
   border:var(--table-border);
   border-radius:var(--main-br);
   background:var(--mantle);
@@ -3221,8 +3223,7 @@ p[id^="news"]{
   }
 }
 #news + h2{
-  flex:70%;
-  order:1;
+  grid-area:poll-title;
   margin-bottom:-1rem;
   padding:1rem;
   border:var(--table-border);
@@ -3230,8 +3231,7 @@ p[id^="news"]{
   background:var(--mantle);
 }
 #news ~ h2:last-of-type{
-  flex:24%;
-  order:2;
+  grid-area:stats-title;
   margin-bottom:-1rem;
   padding:1rem;
   border:var(--table-border);
@@ -3239,24 +3239,19 @@ p[id^="news"]{
   background:var(--mantle);
 }
 #news ~ table:first-of-type{
-  display:flex;
-  flex:70%;
-  justify-content:center;
-  order:3;
+  grid-area:poll;
   padding:1rem;
   border:var(--table-border);
   border-top:0;
   border-radius:0 0 var(--main-br) var(--main-br);
   background:var(--mantle);
+  border-collapse:separate;
 }
 #news ~ table:last-of-type{
-  display:flex;
-  flex:24%;
-  flex-direction:column;
-  align-items:center;
+  grid-area:stats;
   align-self:flex-start;
-  order:4;
-  padding:.5rem;
+  padding:1rem;
+  border-collapse:separate;
   border:var(--table-border);
   border-top:0;  
   border-radius:0 0 var(--main-br) var(--main-br);
@@ -3265,6 +3260,7 @@ p[id^="news"]{
 #news ~ table img[style^="max-width"]{
   max-width:100% !important;
   border-radius:var(--small-br);
+  width:100%;
 }
 #news #showmore a{
   display:block;
@@ -5897,24 +5893,6 @@ button[disabled="disabled"], button[disabled=""], input[disabled="disabled"], in
 @media (min-width: 1008px){
   .bottom:not([id]){
     max-width:960px;
-    & #news + h2{
-      flex:100%;
-      order:1;
-    }
-    #news ~ table:first-of-type{
-      flex:100%;
-      order:2;
-    }
-    & #news ~ h2:last-of-type{
-      flex:0 1 40%;
-      order:3;
-      margin-right:60%;
-    }
-    #news ~ table:last-of-type{
-      flex:0 1 40%;
-      order:4;
-      margin-right:60%;
-    }
     &:has(#tvstatboxes){
       max-width:1280px;
     }
@@ -5923,24 +5901,6 @@ button[disabled="disabled"], button[disabled=""], input[disabled="disabled"], in
 @media (min-width: 1236px){
   .bottom:not([id]){
     max-width:1200px;
-    & #news + h2{
-      flex:70%;
-      order:1;
-    }
-    #news ~ table:first-of-type{
-      flex:70%;
-      order:3;
-    }
-    & #news ~ h2:last-of-type{
-      flex:1 1 27%;
-      order:2;
-      margin-right:0;
-    }
-    & #news ~ table:last-of-type{
-      flex:1 1 27%;
-      order:4;
-      margin-right:0;
-    }
     &:has(#tvstatboxes){
       max-width:1680px;
     }
@@ -5991,23 +5951,9 @@ button[disabled="disabled"], button[disabled=""], input[disabled="disabled"], in
     overflow:hidden;
     text-overflow:ellipsis;
   }
-  & #news + h2{
-    flex:100%;
-    order:1;
-  }
-  #news ~ table:first-of-type{
-    flex:100%;
-    order:2;
-  }
-  & #news ~ h2:last-of-type{
-    flex:0 1 40%;
-    order:3;
-    margin-right:60%;
-  }
-  & #news ~ table:last-of-type{
-    flex:0 1 40%;
-    order:4;
-    margin-right:60%;
+  .embedded:has(>#news){
+    grid-template-areas:"news" "poll-title" "poll " "stats-title" "stats";
+    grid-template-columns:auto;
   }
 }
 @media (max-width: 1008px){
@@ -6046,26 +5992,10 @@ button[disabled="disabled"], button[disabled=""], input[disabled="disabled"], in
       
     }
   }
-  & #news + h2{
-    flex:100%;
-    order:1;
-  }
-  #news ~ table:first-of-type{
-    flex:100%;
-    order:2;
-  }
-  & #news ~ h2:last-of-type{
-    flex:0;
-    min-width:50%;
-    order:3;
-    margin-right:auto;
-    margin-left:auto;
-  }
-  & #news ~ table:last-of-type{
-    flex:0;
-    min-width:50%;
-    order:4;
-    margin-right:auto;
-    margin-left:auto;
+}
+@media (max-width: 768px){
+  .embedded:has(>#news){
+    grid-template-areas:"news news news" "poll-title poll-title poll-title" "poll poll poll" ". stats-title ." ". stats .";
+    grid-template-columns:auto auto auto;
   }
 }
