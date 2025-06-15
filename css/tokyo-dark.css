@@ -4768,6 +4768,7 @@ h2.stattitle{
 }
 .tv-todownload{
 	display:flex;
+  width:100%;
   & #tv-show-list{
     display:flex;
     flex:100%;
