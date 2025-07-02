@@ -4911,7 +4911,7 @@ div.statbox{
 #tvstatboxes .statbox_banners{
 	display:flex;
 	flex-flow:row wrap;
-	margin:0 1rem;
+	margin:0 1rem 1rem;
 	gap:1rem;
   & :first-child{
     flex:100%;
@@ -5063,6 +5063,32 @@ h2.stattitle{
 }
 th.sortable{
   width:auto
+}
+.bottom:has(#tvstatboxes){
+  & > #searchbox{
+    order:-4;
+  }
+  & > #pagertop{
+    cursor:default;
+    order:-3;
+  }
+  & > #torrent-list-container{
+    order:-2;
+  }
+  & > #pagerbottom{
+    cursor:default;
+    order:-1;
+  }
+  & .pagerel[onclick]{
+    cursor:pointer;
+    color:var(--link-color);
+    &:hover{
+      color:var(--link-hover-color);
+    }
+  }
+  & b > .pagerel{
+    cursor:default;
+  }
 }
 div.film-list-container{
 	box-sizing:border-box;
